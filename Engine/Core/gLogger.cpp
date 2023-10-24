@@ -1,4 +1,5 @@
 ﻿#include "gLogger.h"
+
 #include <iostream>
 #include <fstream>
 #include <sstream>

@@ -7,7 +7,6 @@
 
 
 
-
 class EngineAPI_Manager
 {
 public:
@@ -32,8 +31,6 @@ public:
 
     void ShutDownApplication();
 
-
-       
    
 
 };
