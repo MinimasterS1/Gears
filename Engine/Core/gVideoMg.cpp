@@ -54,8 +54,8 @@ void VideoAPI::CreateWindow()
         return;
     }
 
-    SCR_WIDTH = mode->width;
-    SCR_HEIGHT = mode->height;
+    SCR_WIDTH = 500;//mode->width;
+    SCR_HEIGHT = 500;  // mode->height;
 
     window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "Engine", NULL, NULL);
     if (window == NULL)

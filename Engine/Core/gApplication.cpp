@@ -2,9 +2,13 @@
 
 #include "gVideoMg.h"
 #include "gInputMg.h"
+#include "gAudioMg.h"
+
+
 
 VideoAPI      gVideoManager;
 Input*        gInputManager = nullptr;
+SoundManager  gAudioManager;
 
 EngineAPI_Manager::~EngineAPI_Manager()
 {
@@ -18,6 +22,7 @@ void EngineAPI_Manager::RunApplication()
 
 	gInputManager = new Input(camera);
 
+	
 	MainLoop();
 }
 
@@ -28,9 +33,10 @@ void EngineAPI_Manager::MainLoop()
 
 		Update();
 		Render();
-
+		
 	}
 }
+
 
 void EngineAPI_Manager::Update()
 {
@@ -46,6 +52,10 @@ void EngineAPI_Manager::ShutDownApplication()
 {
 	gVideoManager.shutDown();
 
+	gAudioManager.CleanUp();
+
 	delete  gInputManager;
 	gInputManager = nullptr;
 }
+
+

@@ -1,13 +1,23 @@
 #include "gInputMg.h"
 
+#include "gAudioMg.h"
 
-Input::Input(Camera& cam) : camera(cam), FirstMouse(true) {}
+SoundManager Sound;
+
+
+Input::Input(Camera& cam) : camera(cam), FirstMouse(true) 
+
+{
+   
+}
 
 Input::~Input() {}
 
 void Input::startUp() {
     LOG.Log(Logger::LogLevel::INFO, "InputManager Start", NULL);
 
+    
+    Sound.LoadSound("Content/Audio/01.ogg", "MySound");
 }
 
 void Input::shutDown() {
@@ -62,5 +72,26 @@ void Input::ProcessInput(GLFWwindow* window, float deltaTime)
         camera.ProcessKeyboard(LEFT, deltaTime);
     if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
         camera.ProcessKeyboard(RIGHT, deltaTime);
+
+    if (glfwGetKey(window, GLFW_KEY_Q) == GLFW_PRESS)
+    {
+      
+    
+
+    }
+
+    if (glfwGetKey(window, GLFW_KEY_P) == GLFW_PRESS)
+    {
+
+        Sound.PlaySound("MySound");
+    }
+       
+
+
+
+   
+   
+  
+  
 
 }
