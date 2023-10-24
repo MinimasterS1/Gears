@@ -7,6 +7,7 @@
 
 #include <deque>
 
+
 class Logger {
 public:
 
@@ -20,9 +21,6 @@ public:
         DESTROY
     };
 
- 
-   
-
     struct LogEntry {
 
         LogLevel level;
@@ -30,14 +28,14 @@ public:
         double Num;
     };
 
-
-
     void Log(LogLevel level, const std::string& message, double Num);
+
     const std::deque<LogEntry>& GetLogs() const;
 
 private:
 
     std::deque<LogEntry> logs;
+
     const size_t maxLogCount = 100;
 };
 

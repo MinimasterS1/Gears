@@ -16,3 +16,5 @@ File: C:\Gears\Engine\Core\gLogger.cpp, Line: 14 |  ERROR SYSTEM DEBUG | | Value
 File: C:\Gears\Engine\Core\gLogger.cpp, Line: 14 |  ERROR SYSTEM DEBUG  | Value  10.000000
 File: C:\Gears\Engine\Core\gLogger.cpp, Line: 14 | Description:  ERROR SYSTEM DEBUG  | Value  10.000000
  ERROR SYSTEM DEBUG  | Value  10.000000
+ResourcesManagerStart| Value  0.000000
+InputManager Start| Value  0.000000

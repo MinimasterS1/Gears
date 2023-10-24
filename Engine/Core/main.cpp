@@ -1,14 +1,12 @@
-#include "gLogger.h"
+#include "gApplication.h"
 
 
 int main(int argc, const char* argv[])
 {
+    EngineAPI_Manager engine;
 
-    Logger LOG;
-
-
-    LOG.Log(Logger::LogLevel::INFO, " ERROR SYSTEM DEBUG  ", 10);
-
+    engine.RunApplication();
+    
 
     return 0;
 }
