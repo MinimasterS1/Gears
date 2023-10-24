@@ -39,6 +39,9 @@
     <ClCompile Include="3rdParty\opengl\glad.c">
       <Filter>Source Files\3rdParty</Filter>
     </ClCompile>
+    <ClCompile Include="Engine\Core\gAudioMg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\Core\gCommon.h">
@@ -57,6 +60,15 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="Engine\Core\gLogger.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\gMemory.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\gMemoryMg.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\gAudioMg.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

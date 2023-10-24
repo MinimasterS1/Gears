@@ -18,3 +18,53 @@ File: C:\Gears\Engine\Core\gLogger.cpp, Line: 14 | Description:  ERROR SYSTEM DE
  ERROR SYSTEM DEBUG  | Value  10.000000
 ResourcesManagerStart| Value  0.000000
 InputManager Start| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000

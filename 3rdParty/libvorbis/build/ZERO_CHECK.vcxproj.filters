@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Gears\3rdParty\libvorbis\build\CMakeFiles\bcae89dc92188ba29ff16d8b3ee52a4f\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Gears\3rdParty\libvorbis\cmake\FindOgg.cmake">
+      <Filter>Buildsystem Input Files\cmake</Filter>
+    </None>
+    <None Include="C:\Gears\3rdParty\libvorbis\cmake\VorbisConfig.cmake.in">
+      <Filter>Buildsystem Input Files\cmake</Filter>
+    </None>
+    <None Include="C:\Gears\3rdParty\libvorbis\lib\CMakeLists.txt">
+      <Filter>Buildsystem Input Files\lib</Filter>
+    </None>
+    <None Include="C:\Gears\3rdParty\libvorbis\vorbis.pc.in">
+      <Filter>Buildsystem Input Files</Filter>
+    </None>
+    <None Include="C:\Gears\3rdParty\libvorbis\vorbisenc.pc.in">
+      <Filter>Buildsystem Input Files</Filter>
+    </None>
+    <None Include="C:\Gears\3rdParty\libvorbis\vorbisfile.pc.in">
+      <Filter>Buildsystem Input Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{0443E67E-3546-3C59-ACE9-77EDBA030A4C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{F7758910-8818-35C8-81CA-2A8720FFA456}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buildsystem Input Files">
+      <UniqueIdentifier>{943CF5B4-5D9E-3CFE-921E-FF58380DC8EA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buildsystem Input Files\cmake">
+      <UniqueIdentifier>{30C2ACC0-28D1-355D-AED4-BF2C635DEDF6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buildsystem Input Files\lib">
+      <UniqueIdentifier>{F1D57825-3A75-34BC-9267-247C0264092A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

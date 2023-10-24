@@ -30,7 +30,7 @@ public:
     void Render();
 
     void ShutDownApplication();
-
+    void PlaySound();
    
 
 };
