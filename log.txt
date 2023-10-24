@@ -1,0 +1,18 @@
+STIRNG
+STIRNG
+STIRNG DOUBLE: 0.100000
+STIRNG DOUBLE: 10.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 14 - STIRNG DOUBLE: 10.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 14 - STIRNG DOUBLE: 10.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 14 - STIRNG DOUBLE: 10.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 14 - STIRNG  10.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 14 - STIRNG |  10.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 14 - STIRNG Value  10.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 14 - STIRNG |  Value  10.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 14 - ERROE SYSTEM DEBUG |  Value  10.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 14 - | ERROE SYSTEM DEBUG |  Value  10.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 14 | | ERROE SYSTEM DEBUG |  Value  10.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 14 |  ERROR SYSTEM DEBUG | | Value  10.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 14 |  ERROR SYSTEM DEBUG  | Value  10.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 14 | Description:  ERROR SYSTEM DEBUG  | Value  10.000000
+ ERROR SYSTEM DEBUG  | Value  10.000000
