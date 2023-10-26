@@ -1,61 +1,62 @@
-#include "gApplication.h"
+﻿#include "gApplication.h"
+#include <iostream>
+#include <thread>
+#include <conio.h>
+#include <mutex>
 
 #include "gVideoMg.h"
 #include "gInputMg.h"
 #include "gAudioMg.h"
 
+VideoAPI gVideoManager;
+Input* gInputManager = nullptr;
+SoundManager gAudioManager;
 
 
-VideoAPI      gVideoManager;
-Input*        gInputManager = nullptr;
-SoundManager  gAudioManager;
 
-EngineAPI_Manager::~EngineAPI_Manager()
-{
+EngineAPI_Manager::~EngineAPI_Manager() {}
 
+void PlayMusic() {
+    gAudioManager.Init();
+ 
 }
 
-void EngineAPI_Manager::RunApplication()
-{
+void EngineAPI_Manager::RunApplication() {
+    gVideoManager.startUp();
+    gInputManager = new Input(camera);
 
-	gVideoManager.startUp();
+    // Создайте поток для воспроизведения музыки
+    std::thread musicThread(PlayMusic);
 
-	gInputManager = new Input(camera);
+    MainLoop();
 
-	
-	MainLoop();
+  
+    musicThread.join();
 }
 
-void EngineAPI_Manager::MainLoop()
-{
-
-	while (!gVideoManager.ShouldClose()) {
-
-		Update();
-		Render();
-		
-	}
+void EngineAPI_Manager::MainLoop() {
+    while (!gVideoManager.ShouldClose()) {
+       
+        Update();
+        Render();
+    }
 }
 
+void EngineAPI_Manager::Update() {
 
-void EngineAPI_Manager::Update()
-{
-	gVideoManager.update();
+    gVideoManager.update();
 }
 
-void EngineAPI_Manager::Render()
-{
-	gVideoManager.Render();
+void EngineAPI_Manager::Render() {
+
+
+    gVideoManager.Render();
 }
 
-void EngineAPI_Manager::ShutDownApplication()
-{
-	gVideoManager.shutDown();
+void EngineAPI_Manager::ShutDownApplication() {
 
-	gAudioManager.CleanUp();
-
-	delete  gInputManager;
-	gInputManager = nullptr;
+    gVideoManager.shutDown();
+    delete gInputManager;
+    gInputManager = nullptr;
 }
-
 

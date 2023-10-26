@@ -1,6 +1,8 @@
 #include "gVideoMg.h"
 
 
+
+
 float VideoAPI::FPS = 0.0f;
 float VideoAPI::DeltaTime = 0.0f;
 float VideoAPI::LastFrame = 0.0f;
@@ -102,8 +104,11 @@ void VideoAPI::CreateWindow()
 
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
+   
 
     return;
+
+ 
 }
 
 

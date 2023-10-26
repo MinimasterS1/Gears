@@ -1,7 +1,0 @@
-C:/Gears/3rdParty/libvorbis/build/CMakeFiles/INSTALL.dir
-C:/Gears/3rdParty/libvorbis/build/CMakeFiles/ALL_BUILD.dir
-C:/Gears/3rdParty/libvorbis/build/CMakeFiles/ZERO_CHECK.dir
-C:/Gears/3rdParty/libvorbis/build/lib/CMakeFiles/vorbis.dir
-C:/Gears/3rdParty/libvorbis/build/lib/CMakeFiles/vorbisenc.dir
-C:/Gears/3rdParty/libvorbis/build/lib/CMakeFiles/vorbisfile.dir
-C:/Gears/3rdParty/libvorbis/build/lib/CMakeFiles/INSTALL.dir
