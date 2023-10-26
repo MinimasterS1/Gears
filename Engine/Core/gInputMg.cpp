@@ -1,14 +1,16 @@
-#include "gInputMg.h"
+﻿#include "gInputMg.h"
 
 #include "gAudioMg.h"
 
-SoundManager Sound;
-
+SoundManager sound;
 
 Input::Input(Camera& cam) : camera(cam), FirstMouse(true) 
 
 {
-   
+    // Инициализируйте массив previousKeyState
+    for (int i = 0; i <= GLFW_KEY_LAST; i++) {
+        previousKeyState[i] = GLFW_RELEASE;
+    }
 }
 
 Input::~Input() {}
@@ -16,8 +18,7 @@ Input::~Input() {}
 void Input::startUp() {
     LOG.Log(Logger::LogLevel::INFO, "InputManager Start", NULL);
 
-    
-    Sound.LoadSound("Content/Audio/01.ogg", "MySound");
+  
 }
 
 void Input::shutDown() {
@@ -33,6 +34,7 @@ void Input::update(GLFWwindow* window, float deltaTime) {
 void Input::MouseCallback(GLFWwindow* window, double xpos, double ypos) 
 
 {
+
     if (FirstMouse) {
         Last_X = xpos;
         Last_Y = ypos;
@@ -59,6 +61,22 @@ void Input::ScrollCallback(GLFWwindow* window, double xoffset, double yoffset)
    
 }
 
+
+void Input::ProcessSingleKeyPress(GLFWwindow* window, int key, int action) {
+    if (key == GLFW_KEY_Q) {
+        if (action == GLFW_PRESS && !keyQPressed) {
+            // Код, который нужно выполнить при первом нажатии кнопки Q
+            sound.PlayMusic();
+            keyQPressed = true;
+        }
+        else if (action == GLFW_RELEASE) {
+            // Код, который нужно выполнить при отпускании кнопки Q
+           //sound.StopMusic();
+            keyQPressed = false;
+        }
+    }
+    previousKeyState[key] = action;
+}
 void Input::ProcessInput(GLFWwindow* window, float deltaTime) 
 {
 
@@ -73,25 +91,8 @@ void Input::ProcessInput(GLFWwindow* window, float deltaTime)
     if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
         camera.ProcessKeyboard(RIGHT, deltaTime);
 
-    if (glfwGetKey(window, GLFW_KEY_Q) == GLFW_PRESS)
-    {
-      
-    
+    ProcessSingleKeyPress(window, GLFW_KEY_Q, glfwGetKey(window, GLFW_KEY_Q));
+    ProcessSingleKeyPress(window, GLFW_KEY_P, glfwGetKey(window, GLFW_KEY_P));
 
-    }
-
-    if (glfwGetKey(window, GLFW_KEY_P) == GLFW_PRESS)
-    {
-
-        Sound.PlaySound("MySound");
-    }
-       
-
-
-
-   
-   
-  
-  
 
 }

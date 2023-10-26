@@ -28,12 +28,16 @@ public:
 
     void ProcessInput(GLFWwindow* window, float deltaTime);
 
+    void ProcessSingleKeyPress(GLFWwindow* window, int key, int action);
 
 private:
 
     Camera& camera;
     float Last_X, Last_Y;
     bool FirstMouse;
+
+    int previousKeyState[GLFW_KEY_LAST + 1];
+    bool keyQPressed = false;
 
 };
 

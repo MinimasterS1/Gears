@@ -1,6 +1,0 @@
-# CMake generation dependency list for this directory.
-C:/Gears/3rdParty/libvorbis/cmake/VorbisConfig.cmake.in
-C:/Gears/3rdParty/libvorbis/lib/CMakeLists.txt
-C:/Program Files/CMake/share/cmake-3.27/Modules/BasicConfigVersion-SameMajorVersion.cmake.in
-C:/Program Files/CMake/share/cmake-3.27/Modules/CMakePackageConfigHelpers.cmake
-C:/Program Files/CMake/share/cmake-3.27/Modules/WriteBasicConfigVersionFile.cmake
