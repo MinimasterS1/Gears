@@ -18,12 +18,86 @@ void Model::Draw(Shader shader)
 
 void Model::SerializeModel(const std::string& filename)
 {
+    std::ofstream out(filename, std::ios::binary);
+    if (!out.is_open()) {
 
+        // std::cout << "Could not open file for serialization: " << filename << std::endl;
+        return;
+    }
+
+
+    size_t meshCount = this->meshes.size();
+    out.write(reinterpret_cast<const char*>(&meshCount), sizeof(size_t));
+
+
+    for (const Mesh& mesh : this->meshes) {
+
+        size_t vertCount = mesh.vertices.size();
+        out.write(reinterpret_cast<const char*>(&vertCount), sizeof(size_t));
+        out.write(reinterpret_cast<const char*>(&mesh.vertices[0]), vertCount * sizeof(Vertex));
+
+
+        size_t indexCount = mesh.indices.size();
+        out.write(reinterpret_cast<const char*>(&indexCount), sizeof(size_t));
+        out.write(reinterpret_cast<const char*>(&mesh.indices[0]), indexCount * sizeof(unsigned int));
+
+        size_t texCount = mesh.textures.size();
+        out.write(reinterpret_cast<const char*>(&texCount), sizeof(size_t));
+        for (const Texture& tex : mesh.textures) {
+            size_t pathLength = tex.path.size();
+            // std::cout << "Saving texture path: " << tex.path << std::endl;
+            out.write(reinterpret_cast<const char*>(&pathLength), sizeof(size_t));
+            out.write(tex.path.c_str(), pathLength);
+
+        }
+    }
+    out.close();
 }
 
 void Model::DeserializeModel(const std::string& filename, const std::string& directory)
 {
+    std::ifstream in(filename, std::ios::binary);
+    if (!in.is_open()) {
+        // std::cout << "Could not open file for deserialization: " << filename << std::endl;
+        return;
+    }
 
+
+    size_t meshCount;
+    in.read(reinterpret_cast<char*>(&meshCount), sizeof(size_t));
+    this->meshes.resize(meshCount);
+
+
+    for (Mesh& mesh : this->meshes) {
+
+        size_t vertCount;
+        in.read(reinterpret_cast<char*>(&vertCount), sizeof(size_t));
+        mesh.vertices.resize(vertCount);
+        in.read(reinterpret_cast<char*>(&mesh.vertices[0]), vertCount * sizeof(Vertex));
+
+
+        size_t indexCount;
+        in.read(reinterpret_cast<char*>(&indexCount), sizeof(size_t));
+        mesh.indices.resize(indexCount);
+        in.read(reinterpret_cast<char*>(&mesh.indices[0]), indexCount * sizeof(unsigned int));
+
+
+        size_t texCount;
+        in.read(reinterpret_cast<char*>(&texCount), sizeof(size_t));
+        mesh.textures.resize(texCount);
+        for (Texture& tex : mesh.textures) {
+            size_t pathLength;
+            in.read(reinterpret_cast<char*>(&pathLength), sizeof(size_t));
+            tex.path.resize(pathLength);
+            in.read(&tex.path[0], pathLength);
+
+            tex.id = TextureFromFile(tex.path.c_str(), directory, this->gammaCorrection);
+            //std::cout << "Loading texture path: " << tex.path << std::endl;
+        }
+
+        mesh.setupMesh();
+    }
+    in.close();
 }
 
 void Model::loadModel(string const& path)

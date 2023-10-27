@@ -112,7 +112,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Gears\3rdParty\opengl\include;C:\Gears\3rdParty\ImGuiFileDialog;C:\Gears\3rdParty\imgui;C:\Gears\3rdParty\assimp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Gears\3rdParty\opengl\include;C:\Gears\3rdParty\ImGuiFileDialog;C:\Gears\3rdParty\imgui;C:\Gears\Engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -130,7 +130,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Gears\3rdParty\opengl\include;C:\Gears\3rdParty\ImGuiFileDialog;C:\Gears\3rdParty\imgui;C:\Gears\3rdParty\assimp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Gears\3rdParty\opengl\include;C:\Gears\3rdParty\ImGuiFileDialog;C:\Gears\3rdParty\imgui;C:\Gears\Engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -160,6 +160,8 @@
     <ClCompile Include="Engine\Core\gSoundSource.cpp" />
     <ClCompile Include="Engine\Core\gVideoMg.cpp" />
     <ClCompile Include="Engine\Core\main.cpp" />
+    <ClCompile Include="Engine\Editor\gEditor.cpp" />
+    <ClCompile Include="Engine\Editor\gHeaderPanel.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\Core\gApplication.h" />
@@ -181,6 +183,8 @@
     <ClInclude Include="Engine\Core\gSoundEffectsPlayer.h" />
     <ClInclude Include="Engine\Core\gSoundSource.h" />
     <ClInclude Include="Engine\Core\gVideoMg.h" />
+    <ClInclude Include="Engine\Editor\gEditor.h" />
+    <ClInclude Include="Engine\Editor\gHeaderPanel.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="3rdParty\vcpkg\packages\libsndfile_x64-windows\bin\sndfile.dll" />

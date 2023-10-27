@@ -1,8 +1,6 @@
 ﻿#include "gInputMg.h"
 
-#include "gAudioMg.h"
 
-//SoundManager sound;
 
 Input::Input(Camera& cam) : camera(cam), FirstMouse(true) 
 
@@ -18,7 +16,7 @@ Input::~Input() {}
 void Input::startUp() {
     LOG.Log(Logger::LogLevel::INFO, "InputManager Start", NULL);
     
-  //  sound.Init();
+  
   
 }
 
