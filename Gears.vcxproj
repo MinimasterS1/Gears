@@ -119,7 +119,7 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>C:\Gears\3rdParty\opengl\lib;C:\Gears\3rdParty\ImGuiFileDialog;C:\Gears\3rdParty\imgui;C:\Gears\3rdParty\assimp;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>assimp-vc143-mtd.lib;gdi32.lib;opengl32.lib;glu32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>gdi32.lib;opengl32.lib;glu32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -139,7 +139,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>C:\Gears\3rdParty\opengl\lib;C:\Gears\3rdParty\ImGuiFileDialog;C:\Gears\3rdParty\imgui;C:\Gears\3rdParty\assimp;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>assimp-vc143-mtd.lib;gdi32.lib;opengl32.lib;glu32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>gdi32.lib;opengl32.lib;glu32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -148,8 +148,11 @@
     <ClCompile Include="Engine\Core\gAudioBuffer.cpp" />
     <ClCompile Include="Engine\Core\gAudioMg.cpp" />
     <ClCompile Include="Engine\Core\gCommon.cpp" />
+    <ClCompile Include="Engine\Core\gImage.cpp" />
     <ClCompile Include="Engine\Core\gInputMg.cpp" />
     <ClCompile Include="Engine\Core\gLogger.cpp" />
+    <ClCompile Include="Engine\Core\gMesh.cpp" />
+    <ClCompile Include="Engine\Core\gModel.cpp" />
     <ClCompile Include="Engine\Core\gSoundBuffer.cpp" />
     <ClCompile Include="Engine\Core\gSoundDevice.cpp" />
     <ClCompile Include="Engine\Core\gSoundEffectsLib.cpp" />
@@ -164,10 +167,14 @@
     <ClInclude Include="Engine\Core\gAudioMg.h" />
     <ClInclude Include="Engine\Core\gCamera.h" />
     <ClInclude Include="Engine\Core\gCommon.h" />
+    <ClInclude Include="Engine\Core\gImage.h" />
     <ClInclude Include="Engine\Core\gInputMg.h" />
     <ClInclude Include="Engine\Core\gLogger.h" />
     <ClInclude Include="Engine\Core\gMemory.h" />
     <ClInclude Include="Engine\Core\gMemoryMg.h" />
+    <ClInclude Include="Engine\Core\gMesh.h" />
+    <ClInclude Include="Engine\Core\gModel.h" />
+    <ClInclude Include="Engine\Core\gShader.h" />
     <ClInclude Include="Engine\Core\gSoundBuffer.h" />
     <ClInclude Include="Engine\Core\gSoundDevice.h" />
     <ClInclude Include="Engine\Core\gSoundEffectsLib.h" />
