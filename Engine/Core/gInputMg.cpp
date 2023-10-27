@@ -2,7 +2,7 @@
 
 #include "gAudioMg.h"
 
-SoundManager sound;
+//SoundManager sound;
 
 Input::Input(Camera& cam) : camera(cam), FirstMouse(true) 
 
@@ -17,7 +17,8 @@ Input::~Input() {}
 
 void Input::startUp() {
     LOG.Log(Logger::LogLevel::INFO, "InputManager Start", NULL);
-
+    
+  //  sound.Init();
   
 }
 
@@ -64,9 +65,9 @@ void Input::ScrollCallback(GLFWwindow* window, double xoffset, double yoffset)
 
 void Input::ProcessSingleKeyPress(GLFWwindow* window, int key, int action) {
     if (key == GLFW_KEY_Q) {
-        if (action == GLFW_PRESS && !keyQPressed) {
+       if (action == GLFW_PRESS && !keyQPressed) {
             // Код, который нужно выполнить при первом нажатии кнопки Q
-            sound.PlayMusic();
+        //   sound.PlayMusic();
             keyQPressed = true;
         }
         else if (action == GLFW_RELEASE) {
@@ -91,8 +92,8 @@ void Input::ProcessInput(GLFWwindow* window, float deltaTime)
     if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
         camera.ProcessKeyboard(RIGHT, deltaTime);
 
-    ProcessSingleKeyPress(window, GLFW_KEY_Q, glfwGetKey(window, GLFW_KEY_Q));
-    ProcessSingleKeyPress(window, GLFW_KEY_P, glfwGetKey(window, GLFW_KEY_P));
+  //  ProcessSingleKeyPress(window, GLFW_KEY_Q, glfwGetKey(window, GLFW_KEY_Q));
+    //ProcessSingleKeyPress(window, GLFW_KEY_P, glfwGetKey(window, GLFW_KEY_P));
 
 
 }
