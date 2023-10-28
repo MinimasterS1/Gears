@@ -9,7 +9,7 @@ class HeaderPanel : public EditorAPI
 
 public:
 
-
+	void DrawHeaderPanel();
 
 
 };

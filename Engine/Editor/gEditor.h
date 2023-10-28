@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 #include "Core/gCommon.h"
 
@@ -25,51 +25,35 @@ public:
   
     void RenderEditor();
 
+      int w;
+      int h;
 
     GLFWwindow* m_Window;
+
+    
+    
+    void WindowScale(GLFWwindow* window, int* width, int* height);
+
+    void DrawPanel(const char* name, ImVec2 position, ImVec2 size, std::function<void()> contentFunc);
+   
+
 
 private:
 
     
     const char* m_Text;
 
-    static int RenderPanelWidth;
-    static int RenderPanelHeight;
-    static int Offset_X;
-    static int Offset_Y;
+   // static int RenderPanelWidth;
+   // static int RenderPanelHeight;
+   // static int Offset_X;
+   // static int Offset_Y;
 
     bool ShowLoadFileDialog = false;
     bool ShowSaveFileDialog = false;
 
+    
 };
 
 
-class Panel {
+    
 
-
-private:
-
-    std::string name;
-    ImVec2 pos;
-    ImVec2 size;
-
-
-
-public:
-
-    Panel() {};
-
-    int flags;
-
-    Panel(const std::string& panelName, const ImVec2& position, const ImVec2& panelSize, int windowFlags = 0)
-        : name(panelName), pos(position), size(panelSize), flags(windowFlags)
-    {
-        // flags = ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoResize;
-    }
-
-    void Draw(std::function<void()> contentFunc, GLFWwindow* window);
-
-    static bool editWindowEnabled;
-
-
-};

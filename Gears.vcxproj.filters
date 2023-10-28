@@ -87,6 +87,39 @@
     <ClCompile Include="Engine\Editor\gHeaderPanel.cpp">
       <Filter>Resource Files\Source Files\Editor</Filter>
     </ClCompile>
+    <ClCompile Include="3rdParty\imgui\imgui.cpp">
+      <Filter>Resource Files\Source Files\3rdParty</Filter>
+    </ClCompile>
+    <ClCompile Include="3rdParty\imgui\imgui_demo.cpp">
+      <Filter>Resource Files\Source Files\3rdParty</Filter>
+    </ClCompile>
+    <ClCompile Include="3rdParty\imgui\imgui_draw.cpp">
+      <Filter>Resource Files\Source Files\3rdParty</Filter>
+    </ClCompile>
+    <ClCompile Include="3rdParty\imgui\imgui_widgets.cpp">
+      <Filter>Resource Files\Source Files\3rdParty</Filter>
+    </ClCompile>
+    <ClCompile Include="3rdParty\imgui\imgui_tables.cpp">
+      <Filter>Resource Files\Source Files\3rdParty</Filter>
+    </ClCompile>
+    <ClCompile Include="3rdParty\imgui\misc\cpp\imgui_stdlib.cpp">
+      <Filter>Resource Files\Source Files\3rdParty</Filter>
+    </ClCompile>
+    <ClCompile Include="3rdParty\imgui\backends\imgui_impl_opengl2.cpp">
+      <Filter>Resource Files\Source Files\3rdParty</Filter>
+    </ClCompile>
+    <ClCompile Include="3rdParty\imgui\backends\imgui_impl_opengl3.cpp">
+      <Filter>Resource Files\Source Files\3rdParty</Filter>
+    </ClCompile>
+    <ClCompile Include="3rdParty\imgui\backends\imgui_impl_glfw.cpp">
+      <Filter>Resource Files\Source Files\3rdParty</Filter>
+    </ClCompile>
+    <ClCompile Include="3rdParty\ImGuiFileDialog\ImGuiFileDialog.cpp">
+      <Filter>Resource Files\Source Files\3rdParty</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Editor\gConsole.cpp">
+      <Filter>Resource Files\Source Files\Editor</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\Editor\gEditor.h">
@@ -149,8 +182,17 @@
     <ClInclude Include="Engine\Core\gVideoMg.h">
       <Filter>Resource Files\Header Files\Core</Filter>
     </ClInclude>
+    <ClInclude Include="3rdParty\imgui\imgui_impl_opengl3.h">
+      <Filter>Resource Files\Source Files\3rdParty</Filter>
+    </ClInclude>
     <ClInclude Include="Engine\Editor\gHeaderPanel.h">
-      <Filter>Resource Files\Source Files\Editor</Filter>
+      <Filter>Resource Files\Header Files\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\gTemplate.h">
+      <Filter>Resource Files\Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Editor\gConsole.h">
+      <Filter>Resource Files\Header Files\Editor</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

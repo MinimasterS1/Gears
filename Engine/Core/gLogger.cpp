@@ -62,3 +62,10 @@ void Logger::Log(LogLevel level, const std::string& message, double num) {
         logFile.close();
     }
 }
+
+const std::deque<Logger::LogEntry>& Logger::GetLogs() const {
+    {
+        return logs;
+    }
+
+}
