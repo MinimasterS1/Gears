@@ -1,6 +1,14 @@
 ﻿#include "gEditor.h"
 
 #include "Core/gCommon.h"
+#include "gHeaderPanel.h"
+#include "gConsole.h"
+
+#include <glad/glad.h>
+#include <GLFW/glfw3.h>
+
+HeaderPanel* headerPanel = nullptr;
+Console* console = nullptr;
 
 
 EditorAPI::EditorAPI(GLFWwindow* window, const char* text)
@@ -12,7 +20,7 @@ EditorAPI::EditorAPI(GLFWwindow* window, const char* text)
     ImGuiIO& io = ImGui::GetIO(); (void)io;
     io.FontGlobalScale = 1.0f;
 
-    ImFont* myFont = io.Fonts->AddFontFromFileTTF("src/fonts/Univers.ttf", 18.0f);
+    ImFont* myFont = io.Fonts->AddFontFromFileTTF("src/font/Univers.ttf", 18.0f);
 
     if (myFont == nullptr) { LOG.Log(Logger::LogLevel::ERROR, "Error set Font ", NULL); }
 
@@ -32,8 +40,9 @@ EditorAPI::EditorAPI(GLFWwindow* window, const char* text)
     bool allInitialized = true; // Предположим, что все компоненты инициализированы успешно
 
     if (allInitialized) {
-        // Создаем экземпляр ContentBrowser
-       // browser = new ContentBrowser();
+        
+       headerPanel = new HeaderPanel();
+       console = new Console();
     }
 
 }
@@ -51,30 +60,66 @@ EditorAPI::~EditorAPI()
 
 void EditorAPI::RenderEditor()
 {
+
+   // WindowScale(m_Window, &w, &h);
+
     ImVec2 windowSize = ImGui::GetIO().DisplaySize;
 
     ImGui_ImplOpenGL3_NewFrame();
     ImGui_ImplGlfw_NewFrame();
     ImGui::NewFrame();
 
+
+    headerPanel->DrawHeaderPanel();
+    console->DrawConsole();
+
     ImGui::Render();
 
     ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
 }
 
-void Panel::Draw(std::function<void()> contentFunc, GLFWwindow* window)
+void EditorAPI::WindowScale(GLFWwindow* window, int* width, int* height)
 {
-    int w, h;
-    //scale.MonitorScale(&w, &h);
+    {
 
-    if (!editWindowEnabled) {
-        flags = ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoResize;
+        {
+            if (window == NULL) {
+
+                LOG.Log(Logger::LogLevel::INFO, "now window", NULL);
+                return;
+               
+            }
+
+            glfwGetWindowSize(window, width, height);
+
+            if (width && height) {
+
+                w = *width;
+                h = *height;
+
+               // LOG.Log(Logger::LogLevel::INFO, "Scale", *width);
+
+            }
+
+        }
     }
-
-    if (ImGui::Begin(name.c_str(), nullptr, flags)) {
-
-        contentFunc();
-
-        ImGui::End();
- 
 }
+
+void EditorAPI::DrawPanel(const char* name, ImVec2 position, ImVec2 size, std::function<void()> contentFunc)
+{
+    {
+
+        ImGuiWindowFlags flags = ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoResize;
+       
+
+        ImGui::SetNextWindowPos(position);
+        ImGui::SetNextWindowSize(size);
+
+        if (ImGui::Begin(name, nullptr, flags))
+        {
+            contentFunc();
+            ImGui::End();
+        }
+    }
+}
+

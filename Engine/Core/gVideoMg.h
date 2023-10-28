@@ -15,7 +15,7 @@
 #include <fstream>
 #include <iostream>
 
-
+#include "Editor/gEditor.h"
 #include "gInputMg.h"
 
 
@@ -37,9 +37,10 @@ class VideoAPI
 
 {
 public:
+    VideoAPI() : EditorUI(nullptr)
+    {
 
-    VideoAPI() {};
-
+    }
 
     ~VideoAPI()
     {
@@ -50,6 +51,8 @@ public:
 
     inline static int SCR_WIDTH;
     inline static int SCR_HEIGHT;
+
+    
 
     static float getFPS() {
         return FPS;
@@ -86,17 +89,15 @@ public:
     void GL_Check(const char* label);
 
   
-  
-
 private:
 
     
     Input* InputManager;
-
+    std::unique_ptr<EditorAPI> EditorUI;
     static float FPS;
     static float DeltaTime;
     static float LastFrame;
-    GLFWwindow* window;
+   
 };
 
 

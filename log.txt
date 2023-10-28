@@ -1,63 +1,7 @@
-STIRNG
-STIRNG
-STIRNG DOUBLE: 0.100000
-STIRNG DOUBLE: 10.000000
-File: C:\Gears\Engine\Core\gLogger.cpp, Line: 14 - STIRNG DOUBLE: 10.000000
-File: C:\Gears\Engine\Core\gLogger.cpp, Line: 14 - STIRNG DOUBLE: 10.000000
-File: C:\Gears\Engine\Core\gLogger.cpp, Line: 14 - STIRNG DOUBLE: 10.000000
-File: C:\Gears\Engine\Core\gLogger.cpp, Line: 14 - STIRNG  10.000000
-File: C:\Gears\Engine\Core\gLogger.cpp, Line: 14 - STIRNG |  10.000000
-File: C:\Gears\Engine\Core\gLogger.cpp, Line: 14 - STIRNG Value  10.000000
-File: C:\Gears\Engine\Core\gLogger.cpp, Line: 14 - STIRNG |  Value  10.000000
-File: C:\Gears\Engine\Core\gLogger.cpp, Line: 14 - ERROE SYSTEM DEBUG |  Value  10.000000
-File: C:\Gears\Engine\Core\gLogger.cpp, Line: 14 - | ERROE SYSTEM DEBUG |  Value  10.000000
-File: C:\Gears\Engine\Core\gLogger.cpp, Line: 14 | | ERROE SYSTEM DEBUG |  Value  10.000000
-File: C:\Gears\Engine\Core\gLogger.cpp, Line: 14 |  ERROR SYSTEM DEBUG | | Value  10.000000
-File: C:\Gears\Engine\Core\gLogger.cpp, Line: 14 |  ERROR SYSTEM DEBUG  | Value  10.000000
-File: C:\Gears\Engine\Core\gLogger.cpp, Line: 14 | Description:  ERROR SYSTEM DEBUG  | Value  10.000000
- ERROR SYSTEM DEBUG  | Value  10.000000
-ResourcesManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
 VideoManagerStart| Value  0.000000
 InputManager Start| Value  0.000000
 VideoManagerStart| Value  0.000000
 InputManager Start| Value  0.000000
-InputManager ShutDown| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-InputManager ShutDown| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-InputManager ShutDown| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-InputManager ShutDown| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-InputManager ShutDown| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-InputManager ShutDown| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-InputManager ShutDown| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-InputManager ShutDown| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-InputManager ShutDown| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-InputManager ShutDown| Value  0.000000
 VideoManagerStart| Value  0.000000
 InputManager Start| Value  0.000000
 VideoManagerStart| Value  0.000000
@@ -75,155 +19,24 @@ VideoManagerStart| Value  0.000000
 InputManager Start| Value  0.000000
 InputManager ShutDown| Value  0.000000
 VideoManagerStart| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: Failed to create GLFW window| Value  0.000000
+VideoManagerStart| Value  0.000000
 InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
 InputManager ShutDown| Value  0.000000
 VideoManagerStart| Value  0.000000
 InputManager Start| Value  0.000000
 InputManager ShutDown| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
 InputManager ShutDown| Value  0.000000
 VideoManagerStart| Value  0.000000
 InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
 InputManager ShutDown| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
 InputManager ShutDown| Value  0.000000
 VideoManagerStart| Value  0.000000
 InputManager Start| Value  0.000000
 VideoManagerStart| Value  0.000000
 InputManager Start| Value  0.000000
 InputManager ShutDown| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-InputManager ShutDown| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-InputManager ShutDown| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
-VideoManagerStart| Value  0.000000
-InputManager Start| Value  0.000000
 InputManager ShutDown| Value  0.000000
 VideoManagerStart| Value  0.000000
 InputManager Start| Value  0.000000
@@ -234,10 +47,2006 @@ InputManager Start| Value  0.000000
 VideoManagerStart| Value  0.000000
 InputManager Start| Value  0.000000
 InputManager ShutDown| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+InputManager ShutDown| Value  0.000000
 VideoManagerStart| Value  0.000000
 InputManager Start| Value  0.000000
 VideoManagerStart| Value  0.000000
 InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+now window| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+Scale| Value  2560.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+now window| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+ | Value  32.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+ | Value  65.000000
+ | Value  5.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+ | Value  6.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+ | Value  35.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+ | Value  5.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+ | Value  8.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+ | Value  885.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+Input (number): | Value  88.000000
+fggd| Value  0.000000
+set_var_01| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+df| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+Input (number): | Value  88.000000
+jh| Value  0.000000
+hj| Value  0.000000
+hjhj| Value  0.000000
 InputManager ShutDown| Value  0.000000
 VideoManagerStart| Value  0.000000
 InputManager Start| Value  0.000000

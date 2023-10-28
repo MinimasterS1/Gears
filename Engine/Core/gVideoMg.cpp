@@ -1,7 +1,5 @@
 #include "gVideoMg.h"
-
-
-
+#include "gTemplate.h"
 
 float VideoAPI::FPS = 0.0f;
 float VideoAPI::DeltaTime = 0.0f;
@@ -11,11 +9,12 @@ float lastY = VideoAPI::SCR_HEIGHT / 2.0f;
 bool firstMouse = true;
 
 
-
 void VideoAPI::startUp()
 {
 	LOG.Log(Logger::LogLevel::INFO, "VideoManagerStart", NULL);
 	CreateWindow();
+
+    EditorUI.reset(new EditorAPI(window, "editor"));
 }
 
 void VideoAPI::shutDown()
@@ -39,25 +38,7 @@ void VideoAPI::CreateWindow()
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
-    GLFWmonitor* primaryMonitor = glfwGetPrimaryMonitor();
-    if (primaryMonitor == NULL)
-    {
-        LOG.Log(Logger::LogLevel::ERROR, "No primary monitor found", NULL);
-        glfwTerminate();
-        return;
-    }
-
-    const GLFWvidmode* mode = glfwGetVideoMode(primaryMonitor);
-    if (mode == NULL)
-    {
-        LOG.Log(Logger::LogLevel::ERROR, "Could not retrieve video mode for primary monitor", NULL);
-
-        glfwTerminate();
-        return;
-    }
-
-    SCR_WIDTH = 500;//mode->width;
-    SCR_HEIGHT = 500;  // mode->height;
+    MonitorScale(&SCR_WIDTH, &SCR_HEIGHT);
 
     window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "Engine", NULL, NULL);
     if (window == NULL)
@@ -136,14 +117,16 @@ void VideoAPI::Render()
 
     glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
 
-
+    EditorUI->RenderEditor();
 
     glfwSwapBuffers(window);
 }
 
 void VideoAPI::framebuffer_size_callback(GLFWwindow* window, int width, int height)
 {
+   
 	glViewport(0, 0, width, height);
+    
 }
 
 void VideoAPI::GL_Check(const char* label)
@@ -169,3 +152,4 @@ void VideoAPI::GL_Check(const char* label)
         }
     }
 }
+
