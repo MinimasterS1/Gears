@@ -120,6 +120,21 @@
     <ClCompile Include="Engine\Editor\gConsole.cpp">
       <Filter>Resource Files\Source Files\Editor</Filter>
     </ClCompile>
+    <ClCompile Include="Engine\Editor\gContentBrowser.cpp">
+      <Filter>Resource Files\Source Files\Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Core\gObject.cpp">
+      <Filter>Resource Files\Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Editor\gGizmo.cpp">
+      <Filter>Resource Files\Source Files\Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Editor\gGizmoInit.cpp">
+      <Filter>Resource Files\Source Files\Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Core\gParticleEmitter.cpp">
+      <Filter>Resource Files\Source Files\Core</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\Editor\gEditor.h">
@@ -193,6 +208,36 @@
     </ClInclude>
     <ClInclude Include="Engine\Editor\gConsole.h">
       <Filter>Resource Files\Header Files\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Editor\gContentBrowser.h">
+      <Filter>Resource Files\Header Files\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\Containers\gObjectsList.h">
+      <Filter>Resource Files\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\gObject.h">
+      <Filter>Resource Files\Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\gAmbientLight.h">
+      <Filter>Resource Files\Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\gDefferedShading.h">
+      <Filter>Resource Files\Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\gParticle.h">
+      <Filter>Resource Files\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Editor\linalg.h">
+      <Filter>Resource Files\Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Editor\gUtil.hpp">
+      <Filter>Resource Files\Header Files\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Editor\gGizmo.hpp">
+      <Filter>Resource Files\Header Files\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\gParticleEmitter.h">
+      <Filter>Resource Files\Header Files\Core</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

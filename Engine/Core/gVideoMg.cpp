@@ -1,5 +1,8 @@
-#include "gVideoMg.h"
+﻿#include "gVideoMg.h"
 #include "gTemplate.h"
+#include "gObject.h"
+
+
 
 float VideoAPI::FPS = 0.0f;
 float VideoAPI::DeltaTime = 0.0f;
@@ -7,6 +10,7 @@ float VideoAPI::LastFrame = 0.0f;
 float lastX = VideoAPI::SCR_WIDTH / 2.0f;
 float lastY = VideoAPI::SCR_HEIGHT / 2.0f;
 bool firstMouse = true;
+
 
 
 void VideoAPI::startUp()
@@ -21,6 +25,8 @@ void VideoAPI::shutDown()
 {
 	LOG.Log(Logger::LogLevel::INFO, "VideoManagerShutDown", NULL);
 
+    glfwMakeContextCurrent(window);
+    glfwDestroyWindow(window);
 	glfwTerminate();
 }
 
@@ -59,6 +65,24 @@ void VideoAPI::CreateWindow()
     InputManager->startUp();
 
   
+    glfwSetCharCallback(window, [](GLFWwindow* window, unsigned int codepoint) {
+        auto w = (VideoAPI*)glfwGetWindowUserPointer(window); if (w->on_char) w->on_char(codepoint);
+        });
+
+    glfwSetKeyCallback(window, [](GLFWwindow* window, int key, int, int action, int mods) {
+        auto w = (VideoAPI*)glfwGetWindowUserPointer(window); if (w->on_key) w->on_key(key, action, mods);
+        });
+
+    glfwSetMouseButtonCallback(window, [](GLFWwindow* window, int button, int action, int mods) {
+        auto w = (VideoAPI*)glfwGetWindowUserPointer(window); if (w->on_mouse_button) w->on_mouse_button(button, action, mods);
+        });
+
+    glfwSetDropCallback(window, [](GLFWwindow* window, int numFiles, const char** paths) {
+        auto w = (VideoAPI*)glfwGetWindowUserPointer(window); if (w->on_drop) w->on_drop(numFiles, paths);
+        });
+
+    glfwSetWindowUserPointer(window, this);
+
     glfwSetCursorPosCallback(window, [](GLFWwindow* window, double x, double y) {
         static_cast<VideoAPI*>(glfwGetWindowUserPointer(window))->InputManager->MouseCallback(window, x, y);
         });
@@ -77,6 +101,15 @@ void VideoAPI::CreateWindow()
     }
 
 
+    //const char* vendor = reinterpret_cast<const char*>(glGetString(GL_VENDOR));
+    const char* renderer = reinterpret_cast<const char*>(glGetString(GL_RENDERER));
+    const char* version = reinterpret_cast<const char*>(glGetString(GL_VERSION));
+
+    //LOG.Log(Logger::LogLevel::INFO, vendor, NULL);
+    LOG.Log(Logger::LogLevel::INFO, renderer, NULL );
+    LOG.Log(Logger::LogLevel::INFO, version, NULL);
+ 
+
     glEnable(GL_DEPTH_TEST);
 
     glEnable(GL_PROGRAM_POINT_SIZE);
@@ -85,7 +118,7 @@ void VideoAPI::CreateWindow()
 
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
-   
+    glGetString;
 
     return;
 
@@ -113,6 +146,25 @@ void VideoAPI::Render()
 
 
     glClearColor(0.5f, 0.5f, 0.5f, 0.0f);
+
+
+    Scene& scene = Scene::Instance();
+
+
+    for (SceneObject& object : scene.objects) {
+        if (!object.hasMeshes()) {
+            // Обработка объектов без мешей
+        }
+        else {
+            object.Draw(camera, SCR_WIDTH, SCR_HEIGHT);
+
+            // Логирование позиции объекта
+            glm::vec3 position = object.getPosition();
+            std::stringstream ss;
+            // ss << "Object Position: (" << position.x << ", " << position.y << ", " << position.z << ")";
+             // logger.Log(FT_Logger::LogLevel::INFO, "SC");
+        }
+    }
 
 
     glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);

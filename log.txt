@@ -2051,3 +2051,657 @@ InputManager ShutDown| Value  0.000000
 VideoManagerStart| Value  0.000000
 InputManager Start| Value  0.000000
 InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA Corporation| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::PROGRAM_LINKING_ERROR of type: Vertex info
+-----------
+(0) : error C5145: must write to gl_Position
+| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::PROGRAM_LINKING_ERROR of type: Vertex info
+-----------
+(0) : error C5145: must write to gl_Position
+| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::PROGRAM_LINKING_ERROR of type: Vertex info
+-----------
+(0) : error C5145: must write to gl_Position
+| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000

@@ -25,6 +25,8 @@ public:
   
     void RenderEditor();
 
+    void DrawFrameBuffer();
+
       int w;
       int h;
 
@@ -37,16 +39,40 @@ public:
     void DrawPanel(const char* name, ImVec2 position, ImVec2 size, std::function<void()> contentFunc);
    
 
+    static int  getWidth() {
+        return RenderPanelWidth;
+    }
+
+    static int getHeight() {
+        return RenderPanelHeight;
+    }
+
+    static int getXoffset() {
+        return Offset_X;
+    }
+
+    static int getYOffset() {
+        return Offset_Y;
+    }
+
+    static void setWidth(int width) {
+        RenderPanelWidth = width;
+    }
+
+    static void setHeight(int height) {
+        RenderPanelHeight = height;
+    }
+
 
 private:
 
     
     const char* m_Text;
 
-   // static int RenderPanelWidth;
-   // static int RenderPanelHeight;
-   // static int Offset_X;
-   // static int Offset_Y;
+    static int RenderPanelWidth;
+    static int RenderPanelHeight;
+    static int Offset_X;
+    static int Offset_Y;
 
     bool ShowLoadFileDialog = false;
     bool ShowSaveFileDialog = false;

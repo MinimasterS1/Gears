@@ -3,12 +3,21 @@
 #include "Core/gCommon.h"
 #include "gHeaderPanel.h"
 #include "gConsole.h"
+#include "gContentBrowser.h"
 
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
+#include <Core/gVideoMg.h>
 
 HeaderPanel* headerPanel = nullptr;
 Console* console = nullptr;
+ContentBrowser* browser = nullptr;
+
+
+int EditorAPI::RenderPanelWidth = 1580;
+int EditorAPI::RenderPanelHeight = 1090;
+int EditorAPI::Offset_X = 0;
+int EditorAPI::Offset_Y = 150;
 
 
 EditorAPI::EditorAPI(GLFWwindow* window, const char* text)
@@ -43,6 +52,7 @@ EditorAPI::EditorAPI(GLFWwindow* window, const char* text)
         
        headerPanel = new HeaderPanel();
        console = new Console();
+       browser = new ContentBrowser();
     }
 
 }
@@ -72,10 +82,54 @@ void EditorAPI::RenderEditor()
 
     headerPanel->DrawHeaderPanel();
     console->DrawConsole();
-
+    browser->DrawBrowser();
+    browser->DrawSceneObjects();
+    browser->DrawProperties();
+    DrawFrameBuffer();
     ImGui::Render();
 
     ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
+}
+
+void EditorAPI::DrawFrameBuffer()
+{
+    int w, h;
+   WindowScale(window, &w, &h);
+
+   
+
+    ImGui::SetNextWindowPos(ImVec2(w / 5, 150));
+
+    ImGui::SetNextWindowSize(ImVec2(w - (w / 2.5), h - 345));
+
+    ImGuiStyle& default_style = ImGui::GetStyle();
+    ImVec4 default_window_bg = default_style.Colors[ImGuiCol_WindowBg];
+
+    ImGuiStyle& style = ImGui::GetStyle();
+
+    style.Colors[ImGuiCol_WindowBg].w = 0.0f;
+
+    ImGui::Begin("Background Window", nullptr, ImGuiWindowFlags_NoInputs | ImGuiWindowFlags_NoTitleBar);
+
+
+    ImGui::Text("FPS: %.1f", VideoAPI::getFPS());
+
+
+
+    // ImGui::Text("Time: %.1f", VideoManager::GetSimTime());
+
+
+
+    ImGui::Text("Polys: %.1f", "0");
+
+
+    ImGui::Text("Vertex: %.1f", "0");
+
+    ImGui::End();
+
+    style.Colors[ImGuiCol_WindowBg] = default_window_bg;
+
+      
 }
 
 void EditorAPI::WindowScale(GLFWwindow* window, int* width, int* height)
