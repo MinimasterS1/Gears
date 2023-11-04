@@ -10,7 +10,7 @@ void Console::DrawConsole()
 
     int panelHeight = std::max(h - 2500, 150);
 
-    DrawPanel("Console", ImVec2(w / 5 , h - 195), ImVec2(1500, panelHeight), [&]()
+    DrawPanel("Console", ImVec2(w / 5 , h - 195), ImVec2(1536, panelHeight), [&]()
         {
 
             static char inputBuffer[256] = "";
@@ -49,12 +49,12 @@ void Console::DrawConsole()
                 [](ImGuiInputTextCallbackData* data) -> int
                 {
                     if (allowedChars.find(data->EventChar) != std::string::npos)
-                        return 0;  // Разрешить символы, указанные в allowedChars
+                        return 0;  
                     else
-                        return 0;  // Игнорировать остальные символы
+                        return 0;  
                 }))
             {
-                // Проверяем, является ли введенный текст числом
+               
                 bool isNumber = true;
                 for (int i = 0; inputBuffer[i] != '\0'; i++) {
                     if (!isdigit(inputBuffer[i]) && inputBuffer[i] != '.' && inputBuffer[i] != '-') {

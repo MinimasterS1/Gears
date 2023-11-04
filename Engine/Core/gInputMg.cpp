@@ -1,4 +1,5 @@
 ﻿#include "gInputMg.h"
+#include "Editor/gEditor.h"
 
 
 Input::Input(Camera& cam) : camera(cam), FirstMouse(true) 
@@ -51,6 +52,30 @@ void Input::MouseCallback(GLFWwindow* window, double xpos, double ypos)
 
     double mouseX, mouseY;
     glfwGetCursorPos(window, &mouseX, &mouseY);
+
+    int x_offset = EditorAPI::getXoffset();
+    int y_offset = EditorAPI::getYOffset();
+    int  framebuffer_width = EditorAPI::getWidth();
+    int  framebuffer_height = EditorAPI::getHeight();
+    bool isInsideFramebuffer = (mouseX >= x_offset && mouseX <= x_offset + framebuffer_width) &&
+        (mouseY >= y_offset && mouseY <= y_offset + framebuffer_height);
+
+    if (isInsideFramebuffer) {
+
+
+        if (glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_RIGHT) == GLFW_PRESS)
+        {
+            camera.ProcessMouseMovement(xoffset, yoffset);
+        }
+
+        //logger.Log(Logger::LogLevel::ERROR, ("Call mouse "));
+
+
+    }
+    else {
+
+        // camera.ProcessMouseMovement(xoffset, yoffset);
+    }
 
 }
 
