@@ -2705,3 +2705,1306 @@ InputManager Start| Value  0.000000
 NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
 3.3.0 NVIDIA 536.23| Value  0.000000
 InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::PROGRAM_LINKING_ERROR of type: Vertex info
+-----------
+(0) : error C5145: must write to gl_Position
+| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+Load| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+Load| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+Load| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+| Value  0.000000
+| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+Load| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+| Value  0.000000
+| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+wood| Value  0.000000
+wood| Value  0.000000
+unti888tled| Value  0.000000
+wood| Value  0.000000
+unti888tled| Value  0.000000
+untitled| Value  0.000000
+unti888tled| Value  0.000000
+untitled| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+wood| Value  0.000000
+unti888tled| Value  0.000000
+unti888tled| Value  0.000000
+untitled| Value  0.000000
+wood| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+Object: wood Position: (0.000000, 0.000000, 0.000000)| Value  0.000000
+Object: wood Position: (-1.300000, 0.900000, 0.000000)| Value  0.000000
+Object: wood Position: (-1.300000, 0.900000, 3.900000)| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+Object: wood
+Position: (0.000000, 0.000000, 0.000000)
+Rotation: (0.000000, 0.000000, 0.000000)
+Scale: (1.000000, 1.000000, 1.000000)| Value  0.000000
+Object: wood
+Position: (1.100000, 0.100000, -6.500000)
+Rotation: (73.000000, 0.000000, 0.000000)
+Scale: (1.000000, 2.100000, 1.000000)| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+Load| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+Load| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+Load| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+Load| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+Load| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+Load| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+Load| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+Load| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::PROGRAM_LINKING_ERROR of type: Vertex info
+-----------
+(0) : error C5145: must write to gl_Position
+| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::PROGRAM_LINKING_ERROR of type: Vertex info
+-----------
+(0) : error C5145: must write to gl_Position
+| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::PROGRAM_LINKING_ERROR of type: Vertex info
+-----------
+(0) : error C5145: must write to gl_Position
+| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+Load| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::PROGRAM_LINKING_ERROR of type: Vertex info
+-----------
+(0) : error C5145: must write to gl_Position
+| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::PROGRAM_LINKING_ERROR of type: Vertex info
+-----------
+(0) : error C5145: must write to gl_Position
+| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+Load| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::PROGRAM_LINKING_ERROR of type: Vertex info
+-----------
+(0) : error C5145: must write to gl_Position
+| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::PROGRAM_LINKING_ERROR of type: Vertex info
+-----------
+(0) : error C5145: must write to gl_Position
+| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+Load| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::PROGRAM_LINKING_ERROR of type: Vertex info
+-----------
+(0) : error C5145: must write to gl_Position
+| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::PROGRAM_LINKING_ERROR of type: Vertex info
+-----------
+(0) : error C5145: must write to gl_Position
+| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+Load| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::PROGRAM_LINKING_ERROR of type: Vertex info
+-----------
+(0) : error C5145: must write to gl_Position
+| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::PROGRAM_LINKING_ERROR of type: Vertex info
+-----------
+(0) : error C5145: must write to gl_Position
+| Value  0.000000
+Load| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::PROGRAM_LINKING_ERROR of type: Vertex info
+-----------
+(0) : error C5145: must write to gl_Position
+| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::PROGRAM_LINKING_ERROR of type: Vertex info
+-----------
+(0) : error C5145: must write to gl_Position
+| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::PROGRAM_LINKING_ERROR of type: Vertex info
+-----------
+(0) : error C5145: must write to gl_Position
+| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::PROGRAM_LINKING_ERROR of type: Vertex info
+-----------
+(0) : error C5145: must write to gl_Position
+| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::PROGRAM_LINKING_ERROR of type: Vertex info
+-----------
+(0) : error C5145: must write to gl_Position
+| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::PROGRAM_LINKING_ERROR of type: Vertex info
+-----------
+(0) : error C5145: must write to gl_Position
+| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::PROGRAM_LINKING_ERROR of type: Vertex info
+-----------
+(0) : error C5145: must write to gl_Position
+| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::PROGRAM_LINKING_ERROR of type: Vertex info
+-----------
+(0) : error C5145: must write to gl_Position
+| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::PROGRAM_LINKING_ERROR of type: Vertex info
+-----------
+(0) : error C5145: must write to gl_Position
+| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+Load| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::PROGRAM_LINKING_ERROR of type: Vertex info
+-----------
+(0) : error C5145: must write to gl_Position
+| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::PROGRAM_LINKING_ERROR of type: Vertex info
+-----------
+(0) : error C5145: must write to gl_Position
+| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+Init| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+Init| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+Init| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+Init| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+Init| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+Load| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::PROGRAM_LINKING_ERROR of type: Vertex info
+-----------
+(0) : error C5145: must write to gl_Position
+| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::PROGRAM_LINKING_ERROR of type: Vertex info
+-----------
+(0) : error C5145: must write to gl_Position
+| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+Init| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+Load| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::PROGRAM_LINKING_ERROR of type: Vertex info
+-----------
+(0) : error C5145: must write to gl_Position
+| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::PROGRAM_LINKING_ERROR of type: Vertex info
+-----------
+(0) : error C5145: must write to gl_Position
+| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+Init| Value  0.000000
+Load| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::PROGRAM_LINKING_ERROR of type: Vertex info
+-----------
+(0) : error C5145: must write to gl_Position
+| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::PROGRAM_LINKING_ERROR of type: Vertex info
+-----------
+(0) : error C5145: must write to gl_Position
+| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+Init| Value  0.000000
+Load| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::PROGRAM_LINKING_ERROR of type: Vertex info
+-----------
+(0) : error C5145: must write to gl_Position
+| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::PROGRAM_LINKING_ERROR of type: Vertex info
+-----------
+(0) : error C5145: must write to gl_Position
+| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+Load| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::PROGRAM_LINKING_ERROR of type: Vertex info
+-----------
+(0) : error C5145: must write to gl_Position
+| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::PROGRAM_LINKING_ERROR of type: Vertex info
+-----------
+(0) : error C5145: must write to gl_Position
+| Value  0.000000
+Init| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+NVIDIA GeForce RTX 3060 Ti/PCIe/SSE2| Value  0.000000
+3.3.0 NVIDIA 536.23| Value  0.000000
+Load| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::PROGRAM_LINKING_ERROR of type: Vertex info
+-----------
+(0) : error C5145: must write to gl_Position
+| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::PROGRAM_LINKING_ERROR of type: Vertex info
+-----------
+(0) : error C5145: must write to gl_Position
+| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+Init| Value  0.000000
+InputManager ShutDown| Value  0.000000
+VideoManagerStart| Value  0.000000
+InputManager Start| Value  0.000000
+Load| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::PROGRAM_LINKING_ERROR of type: Vertex info
+-----------
+(0) : error C5145: must write to gl_Position
+| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ| Value  0.000000
+File: C:\Gears\Engine\Core\gLogger.cpp, Line: 15 | Description: ERROR::PROGRAM_LINKING_ERROR of type: Vertex info
+-----------
+(0) : error C5145: must write to gl_Position
+| Value  0.000000
+InputManager ShutDown| Value  0.000000

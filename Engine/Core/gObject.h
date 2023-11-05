@@ -16,9 +16,9 @@ public:
     SceneObject() {};
 
     SceneObject(Model model)
-        : model(model), position(0.0f), rotation(0.0f), scale(1.0f), highlightColor(0.0f, 1.0f, 0.0f, 1.0f)
+        : model(model), position(0.0f), rotation(0.0f), scale(1.0f), highlightColor(1.0f, 1.0f, 1.0f, 1.0f)
     {
-        modelShader = Shader("Shaders/model_load_vs.vs", "Shaders/model_load_fs.fs");
+        modelShader = Shader("../model_load_vs.vs", "../model_load_fs.fs");
 
     }
 
@@ -80,10 +80,26 @@ public:
         objectName = name;
     }
 
+    std::string getInfo() const {
+        // Создайте строку, содержащую информацию о характеристиках объекта
+        std::string objectInfo = "Object: " + objectName + "\n" +
+            "Position: (" + std::to_string(position.x) + ", " +
+            std::to_string(position.y) + ", " +
+            std::to_string(position.z) + ")\n" +
+            "Rotation: (" + std::to_string(rotation.x) + ", " +
+            std::to_string(rotation.y) + ", " +
+            std::to_string(rotation.z) + ")\n" +
+            "Scale: (" + std::to_string(scale.x) + ", " +
+            std::to_string(scale.y) + ", " +
+            std::to_string(scale.z) + ")";
+        return objectInfo;
+    }
 
-private:
 
     std::string objectName;
+private:
+
+  
     std::string texturePath;
 
 };
@@ -101,13 +117,20 @@ public:
         objects.push_back(object);
     }
 
+    void LogSceneObjectsInfo() const {
+        for (const SceneObject& object : objects) {
+            // Получите информацию о объекте с помощью метода getInfo
+            std::string objectInfo = object.getInfo();
+            // Выведите информацию в лог
+            LOG.Log(Logger::LogLevel::INFO, objectInfo.c_str(), NULL);
+        }
+    }
+
     static Scene& Instance() {
         static Scene instance;
         return instance;
     }
 private:
-
     Scene() {}
-
 };
-#endif SCENE_H
+#endif SCENE_Hтр ьм
