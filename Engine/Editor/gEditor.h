@@ -25,6 +25,8 @@ public:
   
     void RenderEditor();
 
+    void RenderConsole();
+
     void DrawFrameBuffer();
 
       int w;

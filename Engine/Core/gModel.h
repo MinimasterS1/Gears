@@ -41,7 +41,7 @@ public:
     string directory;
     bool gammaCorrection;
 
-
+   
 
     Model(string const& path, bool gamma = false) : gammaCorrection(gamma)
     {
@@ -50,7 +50,7 @@ public:
 
     void Draw(Shader shader);
    
-
+   
     void SerializeModel(const std::string& filename);
 
     void DeserializeModel(const std::string& filename, const std::string& directory);
@@ -65,8 +65,16 @@ public:
    
     
 
-    vector<Texture> loadMaterialTextures(aiMaterial* mat, aiTextureType type, string typeName);
+ vector<Texture> loadMaterialTextures(aiMaterial* mat, aiTextureType type, string typeName);
    
+
+ vector<Texture> diffuseMaps;
+
+ vector<Texture> specularMaps;
+
+ std::vector<Texture> normalMaps;
+ std::vector<Texture> heightMaps;
+
 
 };
 
@@ -90,6 +98,7 @@ inline unsigned int TextureFromFile(const char* path, const string& directory, b
             format = GL_RGBA;
 
         glBindTexture(GL_TEXTURE_2D, textureID);
+       
         glTexImage2D(GL_TEXTURE_2D, 0, format, width, height, 0, format, GL_UNSIGNED_BYTE, data);
         glGenerateMipmap(GL_TEXTURE_2D);
 
@@ -103,13 +112,18 @@ inline unsigned int TextureFromFile(const char* path, const string& directory, b
     }
     else
     {
-        std::cout << "Texture failed to load at path: " << path << std::endl;
+       // std::cout << "Texture failed to load at path: " << path << std::endl;
         stbi_image_free(data);
         return 0;  // Возвращаем 0, если загрузка не удалась
     }
 
     return textureID;
 }
+
+
+
+
+
 
 
 

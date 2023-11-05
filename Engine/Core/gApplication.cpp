@@ -4,10 +4,14 @@
 
 #include "gVideoMg.h"
 #include "gInputMg.h"
+#include "gResources.h"
+
+
 
 
 VideoAPI gVideoManager;
 Input* gInputManager = nullptr;
+Resources resources;
 
 
 
@@ -20,10 +24,11 @@ void EngineAPI_Manager::RunApplication() {
     gVideoManager.startUp();
     gInputManager = new Input(camera);
 
+    resources.LoadLevel();
+ 
     MainLoop();
 
   
-   
 }
 
 void EngineAPI_Manager::MainLoop() {
@@ -36,6 +41,7 @@ void EngineAPI_Manager::MainLoop() {
 
 void EngineAPI_Manager::Update() {
 
+   
     gVideoManager.update();
 }
 

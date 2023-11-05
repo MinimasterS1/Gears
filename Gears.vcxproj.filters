@@ -135,6 +135,12 @@
     <ClCompile Include="Engine\Core\gParticleEmitter.cpp">
       <Filter>Resource Files\Source Files\Core</Filter>
     </ClCompile>
+    <ClCompile Include="Engine\Core\gRersources.cpp">
+      <Filter>Resource Files\Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Game\gActor.cpp">
+      <Filter>Resource Files\Source Files\Editor</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\Editor\gEditor.h">
@@ -237,6 +243,12 @@
       <Filter>Resource Files\Header Files\Editor</Filter>
     </ClInclude>
     <ClInclude Include="Engine\Core\gParticleEmitter.h">
+      <Filter>Resource Files\Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\gResources.h">
+      <Filter>Resource Files\Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Game\gActor.h">
       <Filter>Resource Files\Header Files\Core</Filter>
     </ClInclude>
   </ItemGroup>

@@ -29,7 +29,7 @@ EditorAPI::EditorAPI(GLFWwindow* window, const char* text)
     ImGuiIO& io = ImGui::GetIO(); (void)io;
     io.FontGlobalScale = 1.0f;
 
-    ImFont* myFont = io.Fonts->AddFontFromFileTTF("src/font/Univers.ttf", 18.0f);
+    ImFont* myFont = io.Fonts->AddFontFromFileTTF("../src/font/Univers.ttf", 18.0f);
 
     if (myFont == nullptr) { LOG.Log(Logger::LogLevel::ERROR, "Error set Font ", NULL); }
 
@@ -70,8 +70,7 @@ EditorAPI::~EditorAPI()
 
 void EditorAPI::RenderEditor()
 {
-
-   // WindowScale(m_Window, &w, &h);
+    // WindowScale(m_Window, &w, &h);
 
     ImVec2 windowSize = ImGui::GetIO().DisplaySize;
 
@@ -79,13 +78,43 @@ void EditorAPI::RenderEditor()
     ImGui_ImplGlfw_NewFrame();
     ImGui::NewFrame();
 
+    if (EditorMode)
+    {
+        headerPanel->DrawHeaderPanel();
+        console->DrawConsole();
+        browser->DrawBrowser();
+        browser->DrawSceneObjects();
+        browser->DrawProperties();
+        DrawFrameBuffer();
 
-    headerPanel->DrawHeaderPanel();
-    console->DrawConsole();
-    browser->DrawBrowser();
-    browser->DrawSceneObjects();
-    browser->DrawProperties();
-    DrawFrameBuffer();
+    }
+
+    
+    ImGui::Render();
+
+    ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
+   
+}
+
+void EditorAPI::RenderConsole()
+{
+    // WindowScale(m_Window, &w, &h);
+
+    ImVec2 windowSize = ImGui::GetIO().DisplaySize;
+
+    ImGui_ImplOpenGL3_NewFrame();
+    ImGui_ImplGlfw_NewFrame();
+    ImGui::NewFrame();
+
+   
+    if (!GameConsole)
+    {
+        console->DrawConsole();
+    }
+
+   
+
+
     ImGui::Render();
 
     ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());

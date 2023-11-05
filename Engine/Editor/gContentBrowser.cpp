@@ -19,7 +19,6 @@ static bool ShowObjectHierarchy = false;
 
 Scene& myScene = Scene::Instance();
 ObjectList& objectList = ObjectList::getInstance();
-Particle particle;
 
 
 void ContentBrowser::DrawBrowser()
@@ -62,8 +61,8 @@ void ContentBrowser::DrawBrowser()
 
 
                             if (relativePath.substr(relativePath.find_last_of(".") + 1) == "modelbin") {
-                                outputPath = "src/Models/" + relativePath.substr(0, relativePath.find_last_of(".")) + ".modelbin";
-                                texturePath = "src/Models";
+                                outputPath = "../src/Models/" + relativePath.substr(0, relativePath.find_last_of(".")) + ".modelbin";
+                                texturePath = "../src/Models";
                                 modelInstance.DeserializeModel(relativePath, texturePath);
                                 // std::cout << "Model Load from: " << relativePath << std::endl;
                             }
@@ -73,8 +72,8 @@ void ContentBrowser::DrawBrowser()
 
 
                                 std::string fileSerializeName = relativePath.substr(relativePath.find_last_of("/") + 1);
-                                texturePath = "src/Textures/props";
-                                outputPath = "src/Models/" + fileSerializeName.substr(0, fileSerializeName.find_last_of(".")) + ".modelbin";
+                                texturePath = "../src/Textures/props";
+                                outputPath = "../src/Models/" + fileSerializeName.substr(0, fileSerializeName.find_last_of(".")) + ".modelbin";
                                 modelInstance.SerializeModel(outputPath);
                                 //  std::cout << "Model Serialized to: " << outputPath << std::endl;
 
@@ -170,9 +169,9 @@ void LoadDataFromFile(const std::string& filePath, std::vector<ContentBrowser::O
 }
 
 void ContentBrowser::LoadOnScene(const std::vector<fs::path>& filePaths,
-    const std::vector<glm::vec3>& initialPositions,
-    const std::vector<glm::vec3>& initialScale,
-    const std::vector<glm::vec3>& initialRotation)
+                                const std::vector<glm::vec3>& initialPositions,
+                                const std::vector<glm::vec3>& initialScale,
+                                const std::vector<glm::vec3>& initialRotation)
 {
 
 
@@ -185,7 +184,7 @@ void ContentBrowser::LoadOnScene(const std::vector<fs::path>& filePaths,
 
         if (relativePath.substr(relativePath.find_last_of(".") + 1) == "modelbin") {
             try {
-                std::string texturePath = "src/Textures/props";
+                std::string texturePath = "../src/Textures/props";
 
                 Model modelInstance;
 
@@ -217,8 +216,6 @@ void ContentBrowser::LoadOnScene(const std::vector<fs::path>& filePaths,
     }
 }
 
-
-
 void ContentBrowser::SelectedFile(const fs::path& filePath)
 {
     std::string relativePath = ConvertToRelativePath(filePath.string());
@@ -226,7 +223,7 @@ void ContentBrowser::SelectedFile(const fs::path& filePath)
     if (relativePath.substr(relativePath.find_last_of(".") + 1) == "modelbin") {
         try {
             Model modelInstance;
-            std::string texturePath = "src/Textures/props";
+            std::string texturePath = "../src/Textures/props";
 
             modelInstance.DeserializeModel(relativePath, texturePath);
             //  std::cout << "Model Load from: " << relativePath << std::endl;
@@ -247,10 +244,9 @@ void ContentBrowser::SelectedFile(const fs::path& filePath)
     }
 }
 
-
 std::string ContentBrowser::ConvertToRelativePath(const std::string& fullPath)
 {
-    const std::string rootPath = "C:\\Gears\\";
+    const std::string rootPath = "../Gears/";
     size_t pos = fullPath.find(rootPath);
     std::string relativePath;
     if (pos != std::string::npos) {
@@ -269,7 +265,6 @@ std::string ContentBrowser::ConvertToRelativePath(const std::string& fullPath)
 
     return relativePath;
 }
-
 
 void ContentBrowser::DrawSceneObjects()
 {
@@ -317,7 +312,6 @@ void ContentBrowser::DrawSceneObjects()
    
    
 }
-
 
 void ContentBrowser::DrawProperties()
 {
@@ -417,9 +411,6 @@ void ContentBrowser::AddObjectToData(int index, const glm::vec3& position, const
     objInfo.rotation = rotation;
     objectData.push_back(objInfo);
 }
-
-
-
 
 void ContentBrowser::UpdateObjectData()
 {

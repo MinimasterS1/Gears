@@ -49,29 +49,47 @@ void Console::DrawConsole()
                 [](ImGuiInputTextCallbackData* data) -> int
                 {
                     if (allowedChars.find(data->EventChar) != std::string::npos)
-                        return 0;  
+                        return 0;
                     else
-                        return 0;  
+                        return 0;
                 }))
             {
-               
-                bool isNumber = true;
-                for (int i = 0; inputBuffer[i] != '\0'; i++) {
-                    if (!isdigit(inputBuffer[i]) && inputBuffer[i] != '.' && inputBuffer[i] != '-') {
-                        isNumber = false;
-                        break;
+                if (strcmp(inputBuffer, "EditorMode") == 0) {
+                    EditorMode = !EditorMode; // Изменение EditorMode на противоположное значение
+                    LOG.Log(Logger::LogLevel::INFO, "Editor mode is ", NULL);
+                }
+                else if (strcmp(inputBuffer, "EditorModeOn") == 0) {
+                    if (!EditorMode) {
+                        EditorMode = true;
+                        LOG.Log(Logger::LogLevel::INFO, "Editor mode is ON", NULL);
+                    }
+                }
+                else if (strcmp(inputBuffer, "EditorModeOff") == 0) {
+                    if (EditorMode) {
+                        EditorMode = false;
+                        LOG.Log(Logger::LogLevel::INFO, "Editor mode is OFF", NULL);
+                    }
+                }
+                else {
+                    bool isNumber = true;
+                    for (int i = 0; inputBuffer[i] != '\0'; i++) {
+                        if (!isdigit(inputBuffer[i]) && inputBuffer[i] != '.' && inputBuffer[i] != '-') {
+                            isNumber = false;
+                            break;
+                        }
+                    }
+
+                    if (isNumber) {
+                        double inputValue = std::stod(inputBuffer);
+                        LOG.Log(Logger::LogLevel::INFO, "Input (number): ", inputValue);
+                    }
+                    else {
+                        LOG.Log(Logger::LogLevel::INFO, inputBuffer, NULL);
                     }
                 }
 
-                if (isNumber) {
-                    double inputValue = std::stod(inputBuffer);
-                    LOG.Log(Logger::LogLevel::INFO, "Input (number): ", inputValue);
-                }
-                else {
-                    LOG.Log(Logger::LogLevel::INFO, inputBuffer, NULL);
-                }
-
                 memset(inputBuffer, 0, sizeof(inputBuffer));
+               
             }
 
 

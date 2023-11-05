@@ -1,8 +1,7 @@
 ﻿#include "gVideoMg.h"
 #include "gTemplate.h"
 #include "gObject.h"
-
-
+#include "gShader.h"
 
 float VideoAPI::FPS = 0.0f;
 float VideoAPI::DeltaTime = 0.0f;
@@ -11,11 +10,15 @@ float lastX = VideoAPI::SCR_WIDTH / 2.0f;
 float lastY = VideoAPI::SCR_HEIGHT / 2.0f;
 bool firstMouse = true;
 
+glm::vec3 lightPos(0.0f, 0.0f, 10.0f);
+
+Shader lightingShader;
+
 
 
 void VideoAPI::startUp()
 {
-	LOG.Log(Logger::LogLevel::INFO, "VideoManagerStart", NULL);
+	//LOG.Log(Logger::LogLevel::INFO, "VideoManagerStart", NULL);
 	CreateWindow();
 
     EditorUI.reset(new EditorAPI(window, "editor"));
@@ -23,7 +26,7 @@ void VideoAPI::startUp()
 
 void VideoAPI::shutDown()
 {
-	LOG.Log(Logger::LogLevel::INFO, "VideoManagerShutDown", NULL);
+	//LOG.Log(Logger::LogLevel::INFO, "VideoManagerShutDown", NULL);
 
     glfwMakeContextCurrent(window);
     glfwDestroyWindow(window);
@@ -93,6 +96,7 @@ void VideoAPI::CreateWindow()
 
     glfwSetFramebufferSizeCallback(window, VideoAPI::framebuffer_size_callback_static);
 
+
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
     {
         LOG.Log(Logger::LogLevel::ERROR, "Failed to initialize GLAD", NULL);
@@ -101,14 +105,7 @@ void VideoAPI::CreateWindow()
     }
 
 
-    //const char* vendor = reinterpret_cast<const char*>(glGetString(GL_VENDOR));
-    const char* renderer = reinterpret_cast<const char*>(glGetString(GL_RENDERER));
-    const char* version = reinterpret_cast<const char*>(glGetString(GL_VERSION));
-
-    //LOG.Log(Logger::LogLevel::INFO, vendor, NULL);
-    LOG.Log(Logger::LogLevel::INFO, renderer, NULL );
-    LOG.Log(Logger::LogLevel::INFO, version, NULL);
- 
+    
 
     glEnable(GL_DEPTH_TEST);
 
@@ -118,7 +115,12 @@ void VideoAPI::CreateWindow()
 
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
-    glGetString;
+    glEnable(GL_CULL_FACE);
+
+    glCullFace(GL_FRONT);
+
+    glFrontFace(GL_CW);
+  
 
     return;
 
@@ -139,7 +141,7 @@ void VideoAPI::Render()
     DeltaTime = currentFrame - LastFrame;
     LastFrame = currentFrame;
     FPS = 1.0f / DeltaTime;
-
+    actor.EventTick(currentFrame);
     InputManager->update(window, DeltaTime);
 
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -147,10 +149,9 @@ void VideoAPI::Render()
 
     glClearColor(0.5f, 0.5f, 0.5f, 0.0f);
 
-
     Scene& scene = Scene::Instance();
 
-
+  
     for (SceneObject& object : scene.objects) {
         if (!object.hasMeshes()) {
             // Обработка объектов без мешей
@@ -166,10 +167,34 @@ void VideoAPI::Render()
         }
     }
 
+  
 
-    glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
 
-    EditorUI->RenderEditor();
+    glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED); 
+    
+    camera.CameraMode = true;
+
+   static bool beginPlayExecuted = false; // Инициализируем флаг
+
+    if (EditorMode)
+    {
+        EditorUI->RenderEditor();
+        camera.CameraMode = false;
+
+        glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
+    }
+    else
+    {
+        if (!beginPlayExecuted)
+        {
+            actor.BeginPlay();
+            beginPlayExecuted = true; // Помечаем, что операция была выполнена
+        }
+    }
+
+ 
+
+   
 
     glfwSwapBuffers(window);
 }
