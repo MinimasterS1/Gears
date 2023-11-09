@@ -155,12 +155,12 @@ void VideoAPI::Render()
   
     for (SceneObject& object : scene.objects) {
         if (!object.hasMeshes()) {
-            // Обработка объектов без мешей
+           
         }
         else {
             object.Draw(camera, SCR_WIDTH, SCR_HEIGHT);
 
-            // Логирование позиции объекта
+            
             glm::vec3 position = object.getPosition();
             std::stringstream ss;
             // ss << "Object Position: (" << position.x << ", " << position.y << ", " << position.z << ")";
@@ -177,7 +177,7 @@ void VideoAPI::Render()
     
     camera.CameraMode = true;
 
-   static bool beginPlayExecuted = false; // Инициализируем флаг
+   static bool beginPlayExecuted = false; 
 
     if (EditorMode)
     {
@@ -191,7 +191,7 @@ void VideoAPI::Render()
         if (!beginPlayExecuted)
         {
         
-            beginPlayExecuted = true; // Помечаем, что операция была выполнена
+            beginPlayExecuted = true; 
         }
     }
 
