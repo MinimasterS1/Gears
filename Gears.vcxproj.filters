@@ -141,6 +141,12 @@
     <ClCompile Include="Engine\Game\gActor.cpp">
       <Filter>Resource Files\Source Files\Editor</Filter>
     </ClCompile>
+    <ClCompile Include="Engine\Core\gPrimitives.cpp">
+      <Filter>Resource Files\Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Game\gTerrain.cpp">
+      <Filter>Resource Files\Source Files\Editor</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\Editor\gEditor.h">
@@ -250,6 +256,15 @@
     </ClInclude>
     <ClInclude Include="Engine\Game\gActor.h">
       <Filter>Resource Files\Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\gPrimitives.h">
+      <Filter>Resource Files\Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\gTimer.h">
+      <Filter>Resource Files\Source Files\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Game\gTerrain.h">
+      <Filter>Resource Files\Source Files\Editor</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

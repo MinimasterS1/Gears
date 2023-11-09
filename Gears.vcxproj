@@ -160,7 +160,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Gears\3rdParty\opengl\include;C:\Gears\3rdParty\ImGuiFileDialog;C:\Gears\3rdParty\imgui;C:\Gears\Engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Gears\Engine\Core;C:\Gears\Engine\Game;C:\Gears\Engine\Editor;C:\Gears\3rdParty\opengl\include;C:\Gears\3rdParty\ImGuiFileDialog;C:\Gears\3rdParty\imgui;C:\Gears\Engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -178,7 +178,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Gears\3rdParty\opengl\include;C:\Gears\3rdParty\ImGuiFileDialog;C:\Gears\3rdParty\imgui;C:\Gears\Engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Gears\Engine\Core;C:\Gears\Engine\Game;C:\Gears\Engine\Editor;C:\Gears\3rdParty\opengl\include;C:\Gears\3rdParty\ImGuiFileDialog;C:\Gears\3rdParty\imgui;C:\Gears\Engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -198,7 +198,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Gears\3rdParty\opengl\include;C:\Gears\3rdParty\ImGuiFileDialog;C:\Gears\3rdParty\imgui;C:\Gears\Engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Gears\Engine\Core;C:\Gears\Engine\Game;C:\Gears\Engine\Editor;C:\Gears\3rdParty\opengl\include;C:\Gears\3rdParty\ImGuiFileDialog;C:\Gears\3rdParty\imgui;C:\Gears\Engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -233,6 +233,7 @@
     <ClCompile Include="Engine\Core\gModel.cpp" />
     <ClCompile Include="Engine\Core\gObject.cpp" />
     <ClCompile Include="Engine\Core\gParticleEmitter.cpp" />
+    <ClCompile Include="Engine\Core\gPrimitives.cpp" />
     <ClCompile Include="Engine\Core\gRersources.cpp" />
     <ClCompile Include="Engine\Core\gSoundBuffer.cpp" />
     <ClCompile Include="Engine\Core\gSoundDevice.cpp" />
@@ -248,6 +249,7 @@
     <ClCompile Include="Engine\Editor\gGizmoInit.cpp" />
     <ClCompile Include="Engine\Editor\gHeaderPanel.cpp" />
     <ClCompile Include="Engine\Game\gActor.cpp" />
+    <ClCompile Include="Engine\Game\gTerrain.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="3rdParty\imgui\imgui_impl_opengl3.h" />
@@ -269,6 +271,7 @@
     <ClInclude Include="Engine\Core\gObject.h" />
     <ClInclude Include="Engine\Core\gParticleEmitter.h" />
     <ClInclude Include="Engine\Core\gParticle.h" />
+    <ClInclude Include="Engine\Core\gPrimitives.h" />
     <ClInclude Include="Engine\Core\gResources.h" />
     <ClInclude Include="Engine\Core\gShader.h" />
     <ClInclude Include="Engine\Core\gSoundBuffer.h" />
@@ -277,6 +280,7 @@
     <ClInclude Include="Engine\Core\gSoundEffectsPlayer.h" />
     <ClInclude Include="Engine\Core\gSoundSource.h" />
     <ClInclude Include="Engine\Core\gTemplate.h" />
+    <ClInclude Include="Engine\Core\gTimer.h" />
     <ClInclude Include="Engine\Core\gVideoMg.h" />
     <ClInclude Include="Engine\Editor\gConsole.h" />
     <ClInclude Include="Engine\Editor\gContentBrowser.h" />
@@ -286,6 +290,7 @@
     <ClInclude Include="Engine\Editor\gUtil.hpp" />
     <ClInclude Include="Engine\Editor\linalg.h" />
     <ClInclude Include="Engine\Game\gActor.h" />
+    <ClInclude Include="Engine\Game\gTerrain.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="3rdParty\vcpkg\packages\libsndfile_x64-windows\bin\sndfile.dll" />

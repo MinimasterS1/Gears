@@ -6,20 +6,25 @@
 
 #include "gEditor.h"
 
-
+#include "Core/Containers/gObjectsList.h"
+#include "Core/gObject.h"
 #include <functional>
 #include <filesystem>
 
 namespace fs = std::filesystem;
 
-
+extern Scene& myScene;
+extern ObjectList& objectList;
 
 class ContentBrowser : public EditorAPI
 {
 public:
 
+   
 
     ContentBrowser() {};
+
+
 
     void DrawBrowser();
     void DrawFolderTree(const fs::path& directory, int level);
@@ -59,15 +64,16 @@ public:
     std::vector<ObjectInfo> objectData;
 
 
+    int ObjectID;
 
-
+    std::string fileSerializeName;
 private:
 
     std::vector<glm::vec3> initialPositions;
     std::vector<glm::vec3> initialScale;
     std::vector<glm::vec3> initialRotation;
 
-    std::string fileSerializeName;
+    
 
 
 };
