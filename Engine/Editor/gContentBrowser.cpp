@@ -5,21 +5,17 @@
 
 #include <glm/gtc/type_ptr.hpp>
 
-#include "Core/Containers/gObjectsList.h"
 #include "Core/gObject.h"
-
 #include <functional>
 #include "ImGuiFileDialog.h"
 #include <fstream>
 #include <string>
-#include "Core/gParticle.h"
 
 
 static bool ShowObjectHierarchy = false;
 
-Scene& myScene = Scene::Instance();
-ObjectList& objectList = ObjectList::getInstance();
-
+ Scene& myScene = Scene::Instance();
+ ObjectList& objectList = ObjectList::getInstance();
 
 void ContentBrowser::DrawBrowser()
 {
@@ -31,7 +27,7 @@ void ContentBrowser::DrawBrowser()
 
     //int panelHeight = std::max(h - 2500, 150);
 
-    DrawPanel("Browser", ImVec2(0, 150), ImVec2(w / 5, h/ 2), [&]()
+    DrawPanel("Browser", ImVec2(0, 150), ImVec2(w / 7, h/ 2), [&]()
         {
 
 
@@ -178,7 +174,7 @@ void ContentBrowser::LoadOnScene(const std::vector<fs::path>& filePaths,
     assert(filePaths.size() == initialPositions.size());
     assert(filePaths.size() == initialScale.size());
     assert(filePaths.size() == initialRotation.size());
-
+   
     for (size_t i = 0; i < filePaths.size(); ++i) {
         std::string relativePath = ConvertToRelativePath(filePaths[i].string());
 
@@ -187,24 +183,21 @@ void ContentBrowser::LoadOnScene(const std::vector<fs::path>& filePaths,
                 std::string texturePath = "../src/Textures/props";
 
                 Model modelInstance;
-
+             
                 modelInstance.DeserializeModel(relativePath, texturePath);
-                //std::cout << "Model Load from: " << relativePath << std::endl;
-
+           
                 SceneObject newSceneObject(modelInstance);
-
-                // Устанавливаем позицию объекта
+               
                 newSceneObject.setPosition(initialPositions[i]);
                 newSceneObject.setScale(initialScale[i]);
                 newSceneObject.setRotation(initialRotation[i]);
-
-                // Set the object's name using the file name without extension
                 newSceneObject.setObjectName(filePaths[i].stem().string());
-
-
-
                 objectList.loadedModels.push_back(modelInstance);
+              
+              
                 myScene.AddObject(newSceneObject);
+              
+               
             }
             catch (const std::exception& e) {
                 std::cerr << "ErrorLoadModel: " << e.what() << std::endl;
@@ -273,7 +266,7 @@ void ContentBrowser::DrawSceneObjects()
 
     //int panelHeight = std::max(h - 2500, 150);
 
-    DrawPanel("SceneObjects", ImVec2(0, h / 1.651), ImVec2(w / 5, 515  ), [&]()
+    DrawPanel("SceneObjects", ImVec2(0, h / 1.651), ImVec2(w / 7, 515  ), [&]()
         {
         ImGui::Text("Selected Objects");
 
@@ -321,7 +314,7 @@ void ContentBrowser::DrawProperties()
 
     //int panelHeight = std::max(h - 2500, 150);
 
-    DrawPanel("Properties", ImVec2(w -  (w / 5), 150), ImVec2(w / 5, h - 195), [&]()
+    DrawPanel("Properties", ImVec2(w -  (w / 7), 150), ImVec2(w / 5, h - 195), [&]()
         {
 
         if (selectedObjectIndex >= 0 && selectedObjectIndex < myScene.objects.size()) {

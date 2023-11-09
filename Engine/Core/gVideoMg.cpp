@@ -1,7 +1,12 @@
 ﻿#include "gVideoMg.h"
 #include "gTemplate.h"
 #include "gObject.h"
-#include "gShader.h"
+#include "Game/gActor.h"
+
+
+
+
+AActor Actor;
 
 float VideoAPI::FPS = 0.0f;
 float VideoAPI::DeltaTime = 0.0f;
@@ -9,11 +14,6 @@ float VideoAPI::LastFrame = 0.0f;
 float lastX = VideoAPI::SCR_WIDTH / 2.0f;
 float lastY = VideoAPI::SCR_HEIGHT / 2.0f;
 bool firstMouse = true;
-
-glm::vec3 lightPos(0.0f, 0.0f, 10.0f);
-
-Shader lightingShader;
-
 
 
 void VideoAPI::startUp()
@@ -104,7 +104,8 @@ void VideoAPI::CreateWindow()
         return;
     }
 
-
+  
+    Actor.BeginPlay();
     
 
     glEnable(GL_DEPTH_TEST);
@@ -141,7 +142,7 @@ void VideoAPI::Render()
     DeltaTime = currentFrame - LastFrame;
     LastFrame = currentFrame;
     FPS = 1.0f / DeltaTime;
-    actor.EventTick(currentFrame);
+    Actor.EventTick(currentFrame);
     InputManager->update(window, DeltaTime);
 
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -167,8 +168,10 @@ void VideoAPI::Render()
         }
     }
 
-  
 
+     
+ 
+   
 
     glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED); 
     
@@ -187,7 +190,7 @@ void VideoAPI::Render()
     {
         if (!beginPlayExecuted)
         {
-            actor.BeginPlay();
+        
             beginPlayExecuted = true; // Помечаем, что операция была выполнена
         }
     }

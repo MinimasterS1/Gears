@@ -127,9 +127,9 @@ void EditorAPI::DrawFrameBuffer()
 
    
 
-    ImGui::SetNextWindowPos(ImVec2(w / 5, 150));
+    ImGui::SetNextWindowPos(ImVec2(w / 7, 150));
 
-    ImGui::SetNextWindowSize(ImVec2(w - (w / 2.5), h - 345));
+    ImGui::SetNextWindowSize(ImVec2(w - (w / 3.5), h - 345));
 
     ImGuiStyle& default_style = ImGui::GetStyle();
     ImVec4 default_window_bg = default_style.Colors[ImGuiCol_WindowBg];

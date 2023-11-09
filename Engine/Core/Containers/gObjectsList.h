@@ -11,6 +11,16 @@ class   ObjectList {
 
 public:
 
+
+
+    ObjectList() = default;
+    ~ObjectList() = default;
+    ObjectList(const  ObjectList&) = delete;
+    ObjectList& operator=(const  ObjectList&) = delete;
+
+
+    int ModelIndex = -1;
+
     static  ObjectList& getInstance() {
         static  ObjectList instance;  // Экземпляр синглтона создается при первом вызове функции
         return instance;
@@ -35,16 +45,7 @@ public:
     std::vector<int> selectedModelIndices;
     std::vector<Model> displayedModels;
     std::string saveDirectory;
-private:
 
-
-    ObjectList() = default;
-    ~ObjectList() = default;
-    ObjectList(const  ObjectList&) = delete;
-    ObjectList& operator=(const  ObjectList&) = delete;
-
-
-    int ModelIndex = -1;
 
 
 };

@@ -28,7 +28,7 @@ struct ObjectInfo {
 void Resources::LoadLevel() {
 
    // LOG.Log(Logger::LogLevel::INFO, "Load", NULL);
-    std::vector<std::string> modelNames = { "untitled.modelbin", "terrain.modelbin" };
+    std::vector<std::string> modelNames = { "terrain.modelbin" };
     std::vector<std::filesystem::path> multiplePaths;
 
     // Предполагая, что модели находятся в папке "src/Models"
@@ -45,15 +45,15 @@ void Resources::LoadLevel() {
 
     // Задаем координаты для каждого объекта
     initialPositions.push_back(glm::vec3(0.0f, 0.0f, 0.0f)); // Первый объект
-    initialPositions.push_back(glm::vec3(-19.0f, 3.0f, 11.3f)); // Второй объект
+   // initialPositions.push_back(glm::vec3(-19.0f, 3.0f, 11.3f)); // Второй объект
 
     // Задаем масштаб для каждого объекта
     initialScale.push_back(glm::vec3(1.0f, 1.0f, 1.0f)); // Первый объект
-    initialScale.push_back(glm::vec3(7.6f, 0.1f, 19.8f)); // Второй объект
+   // initialScale.push_back(glm::vec3(7.6f, 0.1f, 19.8f)); // Второй объект
 
     // Задаем вращение для каждого объекта
     initialRotation.push_back(glm::vec3(0.0f, 0.0f, 0.0f)); // Первый объект
-    initialRotation.push_back(glm::vec3(0.0f, 0.0f, 0.0f)); // Второй объект
+   // initialRotation.push_back(glm::vec3(0.0f, 0.0f, 0.0f)); // Второй объект
 
     // Вызываем LoadOnScene только один раз после заполнения всех данных
     brow->LoadOnScene(multiplePaths, initialPositions, initialScale, initialRotation);
