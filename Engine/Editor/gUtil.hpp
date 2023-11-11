@@ -1,5 +1,3 @@
-// This is free and unencumbered software released into the public domain.
-// For more information, please refer to <http://unlicense.org>
 
 #pragma once
 
@@ -21,9 +19,7 @@
 #include "gGizmo.hpp"
 #include "linalg.h"
 
-///////////////////////////////////
-//   Windowing & App Lifecycle   //
-///////////////////////////////////
+
 
 struct ray { linalg::aliases::float3 origin; linalg::aliases::float3 direction; };
 

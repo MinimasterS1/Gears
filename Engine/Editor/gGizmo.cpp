@@ -1,5 +1,3 @@
-// This is free and unencumbered software released into the public domain.
-// For more information, please refer to <http://unlicense.org>
 
 #include "gGizmo.hpp"
 
@@ -15,9 +13,7 @@
 using namespace minalg;
 using namespace tinygizmo;
 
-///////////////////////
-//   Utility Math    //
-///////////////////////
+
 
 static const float4x4 Identity4x4 = { { 1, 0, 0, 0 },{ 0, 1, 0, 0 },{ 0, 0, 1, 0 },{ 0, 0, 0, 1 } };
 static const float3x3 Identity3x3 = { { 1, 0, 0 },{ 0, 1, 0 },{ 0, 0, 1 } };

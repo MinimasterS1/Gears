@@ -55,7 +55,7 @@ void Console::DrawConsole()
                 }))
             {
                 if (strcmp(inputBuffer, "EditorMode") == 0) {
-                    EditorMode = !EditorMode; // Изменение EditorMode на противоположное значение
+                    EditorMode = !EditorMode; 
                     LOG.Log(Logger::LogLevel::INFO, "Editor mode is ", NULL);
                 }
                 else if (strcmp(inputBuffer, "EditorModeOn") == 0) {

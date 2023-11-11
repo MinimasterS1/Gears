@@ -233,6 +233,7 @@
     <ClCompile Include="Engine\Core\gModel.cpp" />
     <ClCompile Include="Engine\Core\gObject.cpp" />
     <ClCompile Include="Engine\Core\gParticleEmitter.cpp" />
+    <ClCompile Include="Engine\Core\gPhysicsWorld.cpp" />
     <ClCompile Include="Engine\Core\gPrimitives.cpp" />
     <ClCompile Include="Engine\Core\gRersources.cpp" />
     <ClCompile Include="Engine\Core\gSoundBuffer.cpp" />
@@ -271,6 +272,7 @@
     <ClInclude Include="Engine\Core\gObject.h" />
     <ClInclude Include="Engine\Core\gParticleEmitter.h" />
     <ClInclude Include="Engine\Core\gParticle.h" />
+    <ClInclude Include="Engine\Core\gPhysicsWorld.h" />
     <ClInclude Include="Engine\Core\gPrimitives.h" />
     <ClInclude Include="Engine\Core\gResources.h" />
     <ClInclude Include="Engine\Core\gShader.h" />

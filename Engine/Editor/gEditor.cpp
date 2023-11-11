@@ -46,7 +46,7 @@ EditorAPI::EditorAPI(GLFWwindow* window, const char* text)
     style.WindowRounding = 5.0f; 
     style.FrameRounding = 2.0f;
 
-    bool allInitialized = true; // Предположим, что все компоненты инициализированы успешно
+    bool allInitialized = true; 
 
     if (allInitialized) {
         

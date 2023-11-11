@@ -19,14 +19,11 @@ enum Camera_Movement {
     RIGHT
 };
 
-const float YAW = -90.0f;
-const float PITCH = 0.0f;
-const float SENSITIVITY = 0.2f;
-const float ZOOM = 60.0f;
-const float ROLL = 0.0f;
-
-
-
+        const float YAW = -90.0f;
+        const float PITCH = 0.0f;
+        const float SENSITIVITY = 0.2f;
+        const float ZOOM = 60.0f;
+        const float ROLL = 0.0f;
 
 class Camera
 {
@@ -65,7 +62,7 @@ public:
         WorldUp = up;
         Yaw = yaw;
         Pitch = pitch;
-        Roll = roll;  // Добавляем roll
+        Roll = roll;  
         updateCameraVectors();
     }
 
@@ -75,7 +72,7 @@ public:
         WorldUp = glm::vec3(upX, upY, upZ);
         Yaw = yaw;
         Pitch = pitch;
-        Roll = roll;  // Добавляем roll
+        Roll = roll;  
         updateCameraVectors();
     }
 

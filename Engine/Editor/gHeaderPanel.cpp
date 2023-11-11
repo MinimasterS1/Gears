@@ -73,16 +73,16 @@ void HeaderPanel::SaveObjectsToBinaryFile(const std::vector<SceneObject>& object
 {
     std::ofstream file(filename, std::ios::binary);
     if (file.is_open()) {
-        // Сначала сохраняем количество объектов
+       
         int numObjects = static_cast<int>(objects.size());
         file.write(reinterpret_cast<const char*>(&numObjects), sizeof(int));
 
-        // Затем сохраняем каждый объект и его характеристики
+      
         for (const SceneObject& object : objects) {
-            file.write(object.objectName.c_str(), object.objectName.size() + 1); // Сохраняем название объекта
-            file.write(reinterpret_cast<const char*>(&object.position), sizeof(glm::vec3)); // Сохраняем позицию
-            file.write(reinterpret_cast<const char*>(&object.rotation), sizeof(glm::vec3)); // Сохраняем вращение
-            file.write(reinterpret_cast<const char*>(&object.scale), sizeof(glm::vec3)); // Сохраняем масштаб
+            file.write(object.objectName.c_str(), object.objectName.size() + 1);
+            file.write(reinterpret_cast<const char*>(&object.position), sizeof(glm::vec3)); 
+            file.write(reinterpret_cast<const char*>(&object.rotation), sizeof(glm::vec3)); 
+            file.write(reinterpret_cast<const char*>(&object.scale), sizeof(glm::vec3)); 
         }
 
         file.close();
