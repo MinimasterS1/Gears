@@ -2,11 +2,12 @@
 #include "gTemplate.h"
 #include "gObject.h"
 #include "Game/gActor.h"
-
+#include "Game/gTerrain.h"
 
 
 
 AActor Actor;
+
 
 float VideoAPI::FPS = 0.0f;
 float VideoAPI::DeltaTime = 0.0f;
@@ -106,7 +107,7 @@ void VideoAPI::CreateWindow()
 
   
     Actor.BeginPlay();
-    
+  
 
     glEnable(GL_DEPTH_TEST);
 
@@ -143,6 +144,7 @@ void VideoAPI::Render()
     LastFrame = currentFrame;
     FPS = 1.0f / DeltaTime;
     Actor.EventTick(currentFrame);
+  
     InputManager->update(window, DeltaTime);
 
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -152,9 +154,12 @@ void VideoAPI::Render()
 
     Scene& scene = Scene::Instance();
 
+
+   
   
     for (SceneObject& object : scene.objects) {
         if (!object.hasMeshes()) {
+
            
         }
         else {

@@ -28,6 +28,9 @@
     <Filter Include="Resource Files\Header Files\Core">
       <UniqueIdentifier>{d2f67161-023c-4103-945d-d6fb9505f53f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resource Files\Header Files\Core\Containers">
+      <UniqueIdentifier>{8baf6f56-1924-4344-9932-63d6179560dd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="3rdParty\opengl\glad.c">
@@ -138,14 +141,20 @@
     <ClCompile Include="Engine\Core\gRersources.cpp">
       <Filter>Resource Files\Source Files\Core</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\Game\gActor.cpp">
-      <Filter>Resource Files\Source Files\Editor</Filter>
-    </ClCompile>
     <ClCompile Include="Engine\Core\gPrimitives.cpp">
       <Filter>Resource Files\Source Files\Core</Filter>
     </ClCompile>
     <ClCompile Include="Engine\Game\gTerrain.cpp">
+      <Filter>Resource Files\Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Core\gPhysicsWorld.cpp">
+      <Filter>Resource Files\Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Editor\gParcticleEditor.cpp">
       <Filter>Resource Files\Source Files\Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Game\gActor.cpp">
+      <Filter>Resource Files\Source Files\Core</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -224,9 +233,6 @@
     <ClInclude Include="Engine\Editor\gContentBrowser.h">
       <Filter>Resource Files\Header Files\Editor</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\Core\Containers\gObjectsList.h">
-      <Filter>Resource Files\Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Engine\Core\gObject.h">
       <Filter>Resource Files\Header Files\Core</Filter>
     </ClInclude>
@@ -235,9 +241,6 @@
     </ClInclude>
     <ClInclude Include="Engine\Core\gDefferedShading.h">
       <Filter>Resource Files\Header Files\Core</Filter>
-    </ClInclude>
-    <ClInclude Include="Engine\Core\gParticle.h">
-      <Filter>Resource Files\Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Engine\Editor\linalg.h">
       <Filter>Resource Files\Header Files\Core</Filter>
@@ -258,13 +261,25 @@
       <Filter>Resource Files\Header Files\Core</Filter>
     </ClInclude>
     <ClInclude Include="Engine\Core\gPrimitives.h">
-      <Filter>Resource Files\Source Files\Core</Filter>
+      <Filter>Resource Files\Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\Containers\gObjectsList.h">
+      <Filter>Resource Files\Header Files\Core\Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\gParticle.h">
+      <Filter>Resource Files\Header Files\Core</Filter>
     </ClInclude>
     <ClInclude Include="Engine\Core\gTimer.h">
-      <Filter>Resource Files\Source Files\Editor</Filter>
+      <Filter>Resource Files\Header Files\Core</Filter>
     </ClInclude>
     <ClInclude Include="Engine\Game\gTerrain.h">
-      <Filter>Resource Files\Source Files\Editor</Filter>
+      <Filter>Resource Files\Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\gPhysicsWorld.h">
+      <Filter>Resource Files\Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Editor\gParticleEditor.h">
+      <Filter>Resource Files\Header Files\Editor</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

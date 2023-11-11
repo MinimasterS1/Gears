@@ -3,21 +3,14 @@
 #include <inttypes.h>
 #include <AL\alext.h>
 
-/// <summary>
-/// Static class access.
-/// </summary>
-/// <returns>A pointer to the only instantiation allowed.</returns>
+
 SoundEffectsLibrary* SoundEffectsLibrary::Get()
 {
 	static SoundEffectsLibrary* sndbuf = new SoundEffectsLibrary();
 	return sndbuf;
 }
 
-/// <summary>
-/// Loads the sound file into memory.
-/// </summary>
-/// <param name="filename">path to the file to load</param>
-/// <returns>access id</returns>
+
 ALuint SoundEffectsLibrary::Load(const char* filename)
 {
 
@@ -29,7 +22,7 @@ ALuint SoundEffectsLibrary::Load(const char* filename)
 	sf_count_t num_frames;
 	ALsizei num_bytes;
 
-	/* Open the audio file and check that it's usable. */
+	
 	sndfile = sf_open(filename, SFM_READ, &sfinfo);
 	if (!sndfile)
 	{
@@ -43,7 +36,7 @@ ALuint SoundEffectsLibrary::Load(const char* filename)
 		return 0;
 	}
 
-	/* Get the sound format, and figure out the OpenAL format */
+	
 	format = AL_NONE;
 	if (sfinfo.channels == 1)
 		format = AL_FORMAT_MONO16;
@@ -66,7 +59,7 @@ ALuint SoundEffectsLibrary::Load(const char* filename)
 		return 0;
 	}
 
-	/* Decode the whole audio file to a buffer. */
+	
 	membuf = static_cast<short*>(malloc((size_t)(sfinfo.frames * sfinfo.channels) * sizeof(short)));
 
 	num_frames = sf_readf_short(sndfile, membuf, sfinfo.frames);
@@ -79,9 +72,7 @@ ALuint SoundEffectsLibrary::Load(const char* filename)
 	}
 	num_bytes = (ALsizei)(num_frames * sfinfo.channels) * (ALsizei)sizeof(short);
 
-	/* Buffer the audio data into a new buffer object, then free the data and
-	 * close the file.
-	 */
+	
 	buffer = 0;
 	alGenBuffers(1, &buffer);
 	alBufferData(buffer, format, membuf, num_bytes, sfinfo.samplerate);
@@ -89,7 +80,7 @@ ALuint SoundEffectsLibrary::Load(const char* filename)
 	free(membuf);
 	sf_close(sndfile);
 
-	/* Check if an error occured, and clean up if so. */
+	
 	err = alGetError();
 	if (err != AL_NO_ERROR)
 	{
@@ -104,11 +95,7 @@ ALuint SoundEffectsLibrary::Load(const char* filename)
 	return buffer;
 }
 
-/// <summary>
-/// Unloads the sound file from memory.
-/// </summary>
-/// <param name="buffer"></param>
-/// <returns></returns>
+
 bool SoundEffectsLibrary::UnLoad(const ALuint& buffer)
 {
 	auto it = p_SoundEffectBuffers.begin();
@@ -126,20 +113,16 @@ bool SoundEffectsLibrary::UnLoad(const ALuint& buffer)
 			++it;
 		}
 	}
-	return false;  // couldn't find to remove
+	return false;  
 }
 
-/// <summary>
-/// Class initialization.
-/// </summary>
+
 SoundEffectsLibrary::SoundEffectsLibrary()
 {
 	p_SoundEffectBuffers.clear();
 }
 
-/// <summary>
-/// Class Destructor. Removes all loaded sounds from memory.
-/// </summary>
+
 SoundEffectsLibrary::~SoundEffectsLibrary()
 {
 	alDeleteBuffers((ALsizei)p_SoundEffectBuffers.size(), p_SoundEffectBuffers.data());

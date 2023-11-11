@@ -20,7 +20,7 @@ ALuint SoundBuffer::addSoundEffect(const char* filename)
 	sf_count_t num_frames;
 	ALsizei num_bytes;
 
-	/* Open the audio file and check that it's usable. */
+
 	sndfile = sf_open(filename, SFM_READ, &sfinfo);
 	if (!sndfile)
 	{
@@ -34,7 +34,7 @@ ALuint SoundBuffer::addSoundEffect(const char* filename)
 		return 0;
 	}
 
-	/* Get the sound format, and figure out the OpenAL format */
+
 	format = AL_NONE;
 	if (sfinfo.channels == 1)
 		format = AL_FORMAT_MONO16;
@@ -57,7 +57,7 @@ ALuint SoundBuffer::addSoundEffect(const char* filename)
 		return 0;
 	}
 
-	/* Decode the whole audio file to a buffer. */
+	
 	membuf = static_cast<short*>(malloc((size_t)(sfinfo.frames * sfinfo.channels) * sizeof(short)));
 
 	num_frames = sf_readf_short(sndfile, membuf, sfinfo.frames);
@@ -70,9 +70,7 @@ ALuint SoundBuffer::addSoundEffect(const char* filename)
 	}
 	num_bytes = (ALsizei)(num_frames * sfinfo.channels) * (ALsizei)sizeof(short);
 
-	/* Buffer the audio data into a new buffer object, then free the data and
-	 * close the file.
-	 */
+	
 	buffer = 0;
 	alGenBuffers(1, &buffer);
 	alBufferData(buffer, format, membuf, num_bytes, sfinfo.samplerate);
@@ -80,7 +78,7 @@ ALuint SoundBuffer::addSoundEffect(const char* filename)
 	free(membuf);
 	sf_close(sndfile);
 
-	/* Check if an error occured, and clean up if so. */
+	
 	err = alGetError();
 	if (err != AL_NO_ERROR)
 	{
@@ -90,7 +88,7 @@ ALuint SoundBuffer::addSoundEffect(const char* filename)
 		return 0;
 	}
 
-	p_SoundEffectBuffers.push_back(buffer);  // add to the list of known buffers
+	p_SoundEffectBuffers.push_back(buffer); 
 
 	return buffer;
 }
@@ -112,7 +110,7 @@ bool SoundBuffer::removeSoundEffect(const ALuint& buffer)
 			++it;
 		}
 	}
-	return false;  // couldn't find to remove
+	return false;  
 }
 
 

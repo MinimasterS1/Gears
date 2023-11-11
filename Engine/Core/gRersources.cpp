@@ -43,19 +43,19 @@ void Resources::LoadLevel() {
     std::vector<glm::vec3> initialScale;
     std::vector<glm::vec3> initialRotation;
 
-    // Задаем координаты для каждого объекта
-    initialPositions.push_back(glm::vec3(0.0f, 0.0f, 0.0f)); // Первый объект
-   // initialPositions.push_back(glm::vec3(-19.0f, 3.0f, 11.3f)); // Второй объект
+   
+    initialPositions.push_back(glm::vec3(0.0f, 0.0f, 0.0f)); 
+   
 
-    // Задаем масштаб для каждого объекта
-    initialScale.push_back(glm::vec3(1.0f, 1.0f, 1.0f)); // Первый объект
-   // initialScale.push_back(glm::vec3(7.6f, 0.1f, 19.8f)); // Второй объект
+   
+    initialScale.push_back(glm::vec3(1.0f, 1.0f, 1.0f)); 
+   
 
-    // Задаем вращение для каждого объекта
-    initialRotation.push_back(glm::vec3(0.0f, 0.0f, 0.0f)); // Первый объект
-   // initialRotation.push_back(glm::vec3(0.0f, 0.0f, 0.0f)); // Второй объект
+   
+    initialRotation.push_back(glm::vec3(0.0f, 0.0f, 0.0f)); 
+  
 
-    // Вызываем LoadOnScene только один раз после заполнения всех данных
+    
     brow->LoadOnScene(multiplePaths, initialPositions, initialScale, initialRotation);
 
 }

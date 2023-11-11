@@ -1,31 +1,26 @@
-// This is free and unencumbered software released into the public domain.
-// For more information, please refer to <http://unlicense.org>
 
 #pragma once
 
 #ifndef tinygizmo_hpp
 #define tinygizmo_hpp
 
-#include <cmath>        // For various unary math functions, such as std::sqrt
-#include <cstdlib>      // To resolve std::abs ambiguity on clang
-#include <array>        // For std::array, used in the relational operator overloads
-#include <limits>       // For std::numeric_limits/epsilon
-#include <functional>   // For std::function callbacks
-#include <memory>       // For std::unique_ptr
-#include <vector>       // For ... 
-#include <ostream>      // For overloads of operator<< to std::ostream& in the operator<< overloads provided by this library
+#include <cmath>      
+#include <cstdlib>     
+#include <array>        
+#include <limits>      
+#include <functional>   
+#include <memory>     
+#include <vector>      
+#include <ostream>      
 
-// Visual Studio versions prior to 2015 lack constexpr support
+
 #if defined(_MSC_VER) && _MSC_VER < 1900 && !defined(constexpr)
 #define constexpr
 #endif
 
-// This library includes an inline version of linalg.h (https://github.com/sgorsten/linalg) in a separate minalg
-// namespace. This is to reduce the number of files in this library to 2, without a separate header specifically
-// for 3d math. 
 namespace minalg
 {
-    // Small, fixed-length vector type, consisting of exactly M elements of type T, and presumed to be a column-vector unless otherwise noted
+   
     template<class T, int M> struct vec;
     template<class T> struct vec<T, 2>
     {
@@ -462,9 +457,6 @@ namespace tinygizmo
     struct geometry_vertex { minalg::float3 position, normal; minalg::float4 color; };
     struct geometry_mesh { std::vector<geometry_vertex> vertices; std::vector<minalg::uint3> triangles; };
 
-    ///////////////
-    //   Gizmo   //
-    ///////////////
 
     enum class transform_mode
     {
@@ -499,10 +491,10 @@ namespace tinygizmo
         gizmo_context();
         ~gizmo_context();
 
-        void update(const gizmo_application_state& state);         // Clear geometry buffer and update internal `gizmo_application_state` data
-        void draw();                                                // Trigger a render callback per call to `update(...)`
-        transform_mode get_mode() const;                            // Return the active mode being used by `transform_gizmo(...)`
-        std::function<void(const geometry_mesh& r)> render;        // Callback to render the gizmo meshes
+        void update(const gizmo_application_state& state);         
+        void draw();                                             
+        transform_mode get_mode() const;                           
+        std::function<void(const geometry_mesh& r)> render;       
     };
 
     bool transform_gizmo(const std::string& name, gizmo_context& g, rigid_transform& t);

@@ -32,10 +32,10 @@ public:
 
 
     float Lerp(float a, float b, float t) {
-        // Убедитесь, что t находится в диапазоне от 0 до 1
+        
         t = glm::clamp(t, 0.0f, 1.0f);
 
-        // Выполняем интерполяцию
+        
         return a + t * (b - a);
     }
 

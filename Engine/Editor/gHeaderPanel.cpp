@@ -13,6 +13,7 @@ Scene& my = Scene::Instance();
 ObjectList& object = ObjectList::getInstance();
 
 
+
 void HeaderPanel::DrawHeaderPanel()
 {
     ImVec2 buttonSize = ImVec2(65, 25);
@@ -26,18 +27,25 @@ void HeaderPanel::DrawHeaderPanel()
         {
            
 
-            if (ImGui::Button("Load Level", buttonSize)) {
+            if (ImGui::Button("Load ", buttonSize)) {
                 
                 loadLevel.LoadLevel();
             }
 
-            if (ImGui::Button("Save Level", buttonSize))
-            
+            if (ImGui::Button("Save", buttonSize))
             {
+                if (currentTab == PARTICLE)
+                {
+                    ImGuiFileDialog::Instance()->OpenDialog("SaveFileDlgKey", "Save File", ".part", ".");
+                    ShowSaveFileDialog = true;
+                }
 
-               SaveObjectsToBinaryFile(my.objects, "level_data.bin");
-
-               
+                if (currentTab == LEVEL)
+                {
+                    ImGuiFileDialog::Instance()->OpenDialog("SaveFileDlgKey", "Save File", ".lvl", ".");
+                    ShowSaveFileDialog = true;
+                }
+              
             }
 
 
@@ -51,7 +59,34 @@ void HeaderPanel::DrawHeaderPanel()
                         std::string filePathName = ImGuiFileDialog::Instance()->GetFilePathName();
                         std::cout << "Save file: " << filePathName << std::endl;
 
-                      
+                        // Создайте пустой файл в зависимости от текущего типа файла
+                        if (currentFileType == FILE_PART)
+                        {
+                            if (filePathName.find(".part") != std::string::npos)
+                            {
+                                std::ofstream outputFile(filePathName, std::ios::binary);
+
+                                if (outputFile.is_open())
+                                {
+                                    outputFile.close();
+                                }
+                                else
+                                {
+                                    // Обработка ошибки: не удалось создать файл
+                                    // Вы можете добавить здесь код обработки ошибки по вашему усмотрению
+                                }
+                            }
+                        }
+                        else if (currentFileType == FILE_LVL)
+                        {
+                            // Создайте пустой файл .lvl
+                        }
+                        else if (currentFileType == FILE_MAT)
+                        {
+                            // Создайте пустой файл .mat
+                        }
+                        // Другие условия для других типов файлов
+                        // ...
 
                         ImGuiFileDialog::Instance()->Close();
                         ShowSaveFileDialog = false;
@@ -61,9 +96,36 @@ void HeaderPanel::DrawHeaderPanel()
                 }
             }
 
+
             if (ImGui::Button("Simulation", buttonSize)) {
                 // Действия при нажатии
             }
+
+
+            ImGui::SameLine(w / 2 - 4 * buttonSize.x / 2);
+
+            if (ImGui::Button("Level", buttonSize)) {
+                currentTab = LEVEL;
+            }
+
+            ImGui::SameLine();
+
+            if (ImGui::Button("Materials", buttonSize)) {
+                currentTab = MATERIAL;
+            }
+
+            ImGui::SameLine();
+
+            if (ImGui::Button("Particles", buttonSize)) {
+                currentTab = PARTICLE;
+            }
+
+            ImGui::SameLine();
+
+            if (ImGui::Button("Animations", buttonSize)) {
+                currentTab = ANIMATION;
+            }
+
 
             
         });
@@ -73,16 +135,16 @@ void HeaderPanel::SaveObjectsToBinaryFile(const std::vector<SceneObject>& object
 {
     std::ofstream file(filename, std::ios::binary);
     if (file.is_open()) {
-        // Сначала сохраняем количество объектов
+       
         int numObjects = static_cast<int>(objects.size());
         file.write(reinterpret_cast<const char*>(&numObjects), sizeof(int));
 
-        // Затем сохраняем каждый объект и его характеристики
+      
         for (const SceneObject& object : objects) {
-            file.write(object.objectName.c_str(), object.objectName.size() + 1); // Сохраняем название объекта
-            file.write(reinterpret_cast<const char*>(&object.position), sizeof(glm::vec3)); // Сохраняем позицию
-            file.write(reinterpret_cast<const char*>(&object.rotation), sizeof(glm::vec3)); // Сохраняем вращение
-            file.write(reinterpret_cast<const char*>(&object.scale), sizeof(glm::vec3)); // Сохраняем масштаб
+            file.write(object.objectName.c_str(), object.objectName.size() + 1);
+            file.write(reinterpret_cast<const char*>(&object.position), sizeof(glm::vec3)); 
+            file.write(reinterpret_cast<const char*>(&object.rotation), sizeof(glm::vec3)); 
+            file.write(reinterpret_cast<const char*>(&object.scale), sizeof(glm::vec3)); 
         }
 
         file.close();

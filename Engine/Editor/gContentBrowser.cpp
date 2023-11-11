@@ -130,7 +130,7 @@ void ContentBrowser::DrawFolderTree(const fs::path& directory, int level)
                 }
                 else if (fs::is_regular_file(entry)) {
                     std::string fileName = entry.path().filename().string();
-                    if (fileName.size() >= 8 && fileName.substr(fileName.size() - 8) == "modelbin") {
+                    if (fileName.size() >= 8 && (fileName.substr(fileName.size() - 8) == "modelbin" || fileName.substr(fileName.size() - 4) == "part")) {
                         std::string objectName = fileName.substr(0, fileName.find_last_of("."));
                         if (ImGui::Selectable(objectName.c_str())) {
                             selectedPaths.clear();  // Очищаем временный вектор перед добавлением нового пути
