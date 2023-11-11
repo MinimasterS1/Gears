@@ -141,17 +141,20 @@
     <ClCompile Include="Engine\Core\gRersources.cpp">
       <Filter>Resource Files\Source Files\Core</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\Game\gActor.cpp">
-      <Filter>Resource Files\Source Files\Editor</Filter>
-    </ClCompile>
     <ClCompile Include="Engine\Core\gPrimitives.cpp">
       <Filter>Resource Files\Source Files\Core</Filter>
     </ClCompile>
     <ClCompile Include="Engine\Game\gTerrain.cpp">
-      <Filter>Resource Files\Source Files\Editor</Filter>
+      <Filter>Resource Files\Source Files\Core</Filter>
     </ClCompile>
     <ClCompile Include="Engine\Core\gPhysicsWorld.cpp">
+      <Filter>Resource Files\Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Editor\gParcticleEditor.cpp">
       <Filter>Resource Files\Source Files\Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Game\gActor.cpp">
+      <Filter>Resource Files\Source Files\Core</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -274,6 +277,9 @@
     </ClInclude>
     <ClInclude Include="Engine\Core\gPhysicsWorld.h">
       <Filter>Resource Files\Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Editor\gParticleEditor.h">
+      <Filter>Resource Files\Header Files\Editor</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

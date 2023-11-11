@@ -154,9 +154,12 @@ void VideoAPI::Render()
 
     Scene& scene = Scene::Instance();
 
+
+   
   
     for (SceneObject& object : scene.objects) {
         if (!object.hasMeshes()) {
+
            
         }
         else {

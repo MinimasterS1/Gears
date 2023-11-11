@@ -71,7 +71,9 @@ public:
       
     }
 
-  
+    bool hasMeshes() const { return !model.meshes.empty(); }
+
+
     void setHighlightColor(const glm::vec4& color) { highlightColor = color; }
 
     glm::vec4 getHighlightColor() const { return highlightColor; }

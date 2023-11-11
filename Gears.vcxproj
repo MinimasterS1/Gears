@@ -249,6 +249,7 @@
     <ClCompile Include="Engine\Editor\gGizmo.cpp" />
     <ClCompile Include="Engine\Editor\gGizmoInit.cpp" />
     <ClCompile Include="Engine\Editor\gHeaderPanel.cpp" />
+    <ClCompile Include="Engine\Editor\gParcticleEditor.cpp" />
     <ClCompile Include="Engine\Game\gActor.cpp" />
     <ClCompile Include="Engine\Game\gTerrain.cpp" />
   </ItemGroup>
@@ -289,6 +290,7 @@
     <ClInclude Include="Engine\Editor\gEditor.h" />
     <ClInclude Include="Engine\Editor\gGizmo.hpp" />
     <ClInclude Include="Engine\Editor\gHeaderPanel.h" />
+    <ClInclude Include="Engine\Editor\gParticleEditor.h" />
     <ClInclude Include="Engine\Editor\gUtil.hpp" />
     <ClInclude Include="Engine\Editor\linalg.h" />
     <ClInclude Include="Engine\Game\gActor.h" />

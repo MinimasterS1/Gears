@@ -22,7 +22,7 @@ void SoundDevice::GetLocation(float& x, float& y, float& z)
 	
 }
 
->
+
 void SoundDevice::GetOrientation(float& ori)
 {
 	alGetListenerfv(AL_ORIENTATION, &ori);

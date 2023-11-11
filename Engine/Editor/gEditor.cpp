@@ -4,6 +4,7 @@
 #include "gHeaderPanel.h"
 #include "gConsole.h"
 #include "gContentBrowser.h"
+#include "gParticleEditor.h"
 
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
@@ -12,6 +13,7 @@
 HeaderPanel* headerPanel = nullptr;
 Console* console = nullptr;
 ContentBrowser* browser = nullptr;
+ParticleUI* particles = nullptr;
 
 
 int EditorAPI::RenderPanelWidth = 1580;
@@ -53,6 +55,7 @@ EditorAPI::EditorAPI(GLFWwindow* window, const char* text)
        headerPanel = new HeaderPanel();
        console = new Console();
        browser = new ContentBrowser();
+       particles = new ParticleUI();
     }
 
 }
@@ -80,14 +83,36 @@ void EditorAPI::RenderEditor()
 
     if (EditorMode)
     {
-        headerPanel->DrawHeaderPanel();
-        console->DrawConsole();
-        browser->DrawBrowser();
-        browser->DrawSceneObjects();
-        browser->DrawProperties();
+
+        if (headerPanel->GetCurrentTab() == HeaderPanel::LEVEL)
+        {
+            headerPanel->DrawHeaderPanel();
+            console->DrawConsole();
+            browser->DrawBrowser();
+            browser->DrawSceneObjects();
+            browser->DrawProperties();
+        }
+       
+     
+        if (headerPanel->GetCurrentTab() == HeaderPanel::PARTICLE)
+        {
+            headerPanel->DrawHeaderPanel();
+            console->DrawConsole();
+            browser->DrawBrowser();
+          
+            particles->DrawEmitterSettings();
+           
+        }
+
+
+       
+
+       
         DrawFrameBuffer();
 
     }
+
+    
 
     
     ImGui::Render();
