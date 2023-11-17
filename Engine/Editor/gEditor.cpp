@@ -1,5 +1,5 @@
 ﻿#include "gEditor.h"
-
+#include "gMemory.h"
 #include "Core/gCommon.h"
 #include "gHeaderPanel.h"
 #include "gConsole.h"
@@ -10,9 +10,14 @@
 #include <GLFW/glfw3.h>
 #include <Core/gVideoMg.h>
 
-HeaderPanel* headerPanel = nullptr;
-Console* console = nullptr;
-ContentBrowser* browser = nullptr;
+
+MemoryPool ConsoleMemory(800, 1024);
+MemoryPool EditorMemo(800, 1024);
+MemoryPool BrowserMemory(800, 1024);
+
+HeaderPanel* headerPanel = new HeaderPanel();
+Console* console = new Console;
+ContentBrowser* browser = new ContentBrowser;
 ParticleUI* particles = nullptr;
 
 
@@ -31,7 +36,7 @@ EditorAPI::EditorAPI(GLFWwindow* window, const char* text)
     ImGuiIO& io = ImGui::GetIO(); (void)io;
     io.FontGlobalScale = 1.0f;
 
-    ImFont* myFont = io.Fonts->AddFontFromFileTTF("../src/font/Univers.ttf", 18.0f);
+    ImFont* myFont = io.Fonts->AddFontFromFileTTF("../Resources/Fonts/Univers.ttf", 18.0f);
 
     if (myFont == nullptr) { LOG.Log(Logger::LogLevel::ERROR, "Error set Font ", NULL); }
 
@@ -52,9 +57,14 @@ EditorAPI::EditorAPI(GLFWwindow* window, const char* text)
 
     if (allInitialized) {
         
-       headerPanel = new HeaderPanel();
-       console = new Console();
-       browser = new ContentBrowser();
+       HeaderPanel* headerPanel = new(EditorMemo.allocate(sizeof(HeaderPanel))) HeaderPanel();
+
+       Console* console = new(ConsoleMemory.allocate(sizeof(Console))) Console();
+
+       ContentBrowser* contentBrowser = new(BrowserMemory.allocate(sizeof(ContentBrowser))) ContentBrowser();
+
+       //console = new Console();
+      // browser = new ContentBrowser();
        particles = new ParticleUI();
     }
 
@@ -62,6 +72,8 @@ EditorAPI::EditorAPI(GLFWwindow* window, const char* text)
 
 EditorAPI::~EditorAPI()
 {
+    //ContentBrowser->~ContentBrowser(); // Вызовите деструктор (если это необходимо)
+   
 
     ImGui_ImplOpenGL3_Shutdown();
 
@@ -98,9 +110,11 @@ void EditorAPI::RenderEditor()
         {
             headerPanel->DrawHeaderPanel();
             console->DrawConsole();
-            browser->DrawBrowser();
+           // browser->DrawBrowser();
           
             particles->DrawEmitterSettings();
+
+           // BrowserMemory.deallocate(headerPanel, sizeof(ContentBrowser));
            
         }
 

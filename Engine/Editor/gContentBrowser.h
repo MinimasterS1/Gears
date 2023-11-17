@@ -11,10 +11,15 @@
 #include <functional>
 #include <filesystem>
 
+#include "gApplication.h"
+
 namespace fs = std::filesystem;
 
 extern Scene& myScene;
 extern ObjectList& objectList;
+//extern EngineAPI_Manager& enginelight = EngineAPI_Manager::GetInstance();
+
+
 
 class ContentBrowser : public EditorAPI
 {
@@ -22,9 +27,16 @@ public:
 
    
 
-    ContentBrowser() {};
+    ContentBrowser(
+    ) {
+
+    
+    
+    };
 
 
+
+   
 
     void DrawBrowser();
     void DrawFolderTree(const fs::path& directory, int level);
@@ -67,6 +79,9 @@ public:
     int ObjectID;
 
     std::string fileSerializeName;
+
+    float DragStep = 0.03;
+  
 private:
 
     std::vector<glm::vec3> initialPositions;
@@ -74,6 +89,7 @@ private:
     std::vector<glm::vec3> initialRotation;
 
     
+   
 
 
 };

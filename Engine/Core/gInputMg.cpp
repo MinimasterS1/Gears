@@ -74,7 +74,7 @@ void Input::MouseCallback(GLFWwindow* window, double xpos, double ypos)
         int y_offset = EditorAPI::getYOffset();
         int  framebuffer_width = EditorAPI::getWidth();
         int  framebuffer_height = EditorAPI::getHeight();
-        bool isInsideFramebuffer = (mouseX >= x_offset && mouseX <= x_offset + framebuffer_width) &&
+       bool isInsideFramebuffer = (mouseX >= x_offset && mouseX <= x_offset + framebuffer_width) &&
             (mouseY >= y_offset && mouseY <= y_offset + framebuffer_height);
 
         if (isInsideFramebuffer) {

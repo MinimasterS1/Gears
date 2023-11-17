@@ -1,5 +1,7 @@
 #pragma once
-#pragma once
+
+
+#include "gCommon.h"
 
 #include <map>
 #include <vector>
@@ -28,6 +30,8 @@ public:
             if (it->second.empty()) {
                 free_blocks.erase(it);
             }
+
+            LOG.Log(Logger::LogLevel::INFO, "Memory Use", size);
             return ptr;
         }
 
@@ -48,6 +52,8 @@ public:
     void deallocate(void* ptr, size_t size, size_t alignment = alignof(std::max_align_t)) {
         size = align(size, alignment);
         free_blocks[size].push_back(ptr);
+
+        LOG.Log(Logger::LogLevel::INFO, "Memory Free", size);
     }
 
 private:

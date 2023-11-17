@@ -228,6 +228,7 @@
     <ClCompile Include="Engine\Core\gCommon.cpp" />
     <ClCompile Include="Engine\Core\gImage.cpp" />
     <ClCompile Include="Engine\Core\gInputMg.cpp" />
+    <ClCompile Include="Engine\Core\gLighting.cpp" />
     <ClCompile Include="Engine\Core\gLogger.cpp" />
     <ClCompile Include="Engine\Core\gMesh.cpp" />
     <ClCompile Include="Engine\Core\gModel.cpp" />
@@ -265,6 +266,7 @@
     <ClInclude Include="Engine\Core\gDefferedShading.h" />
     <ClInclude Include="Engine\Core\gImage.h" />
     <ClInclude Include="Engine\Core\gInputMg.h" />
+    <ClInclude Include="Engine\Core\gLighting.h" />
     <ClInclude Include="Engine\Core\gLogger.h" />
     <ClInclude Include="Engine\Core\gMemory.h" />
     <ClInclude Include="Engine\Core\gMemoryMg.h" />
@@ -277,6 +279,7 @@
     <ClInclude Include="Engine\Core\gPrimitives.h" />
     <ClInclude Include="Engine\Core\gResources.h" />
     <ClInclude Include="Engine\Core\gShader.h" />
+    <ClInclude Include="Engine\Core\gShadow.h" />
     <ClInclude Include="Engine\Core\gSoundBuffer.h" />
     <ClInclude Include="Engine\Core\gSoundDevice.h" />
     <ClInclude Include="Engine\Core\gSoundEffectsLib.h" />

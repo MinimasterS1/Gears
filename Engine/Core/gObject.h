@@ -18,9 +18,9 @@ public:
 
 
     SceneObject(Model model)
-        : model(model), position(0.0f), rotation(0.0f), scale(1.0f), highlightColor(1.0f, 1.0f, 1.0f, 1.0f)
+        : model(model), position(0.0f), rotation(0.0f), scale(1.0f), highlightColor(1.0f, 1.0f, 1.0f, 1.0f), baseColor (0.0f, 0.0f, 1.0f)
     {
-        modelShader = Shader("../model_load_vs.vs", "../model_load_fs.fs");
+        modelShader = Shader("../Shaders/model_load_vs.vs", "../Shaders/model_load_fs.fs");
     }
 
     void setPosition(const glm::vec3& pos) { position = pos; }
@@ -65,6 +65,7 @@ public:
         modelShader.setMat4("view", view);
         modelShader.setMat4("model", modelMat);
         modelShader.setVec4("highlightColor", highlightColor);
+        modelShader.setVec3("baseColor", baseColor);
         glm::mat4 transform = getTransform();
         modelShader.setMat4("model", transform);
         model.Draw(modelShader);
@@ -82,7 +83,7 @@ public:
     glm::vec3 position;
     glm::vec3 rotation;
     glm::vec3 scale;
-
+    glm::vec3 baseColor;
     glm::vec4 highlightColor;
 
     Shader modelShader;

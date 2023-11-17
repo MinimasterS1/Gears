@@ -8,11 +8,15 @@
 
 
 
+
 extern Logger LOG;
 
 extern Camera camera;
 
 extern  GLFWwindow* window;
+
+
+
 
 // colsole
 

@@ -156,6 +156,9 @@
     <ClCompile Include="Engine\Game\gActor.cpp">
       <Filter>Resource Files\Source Files\Core</Filter>
     </ClCompile>
+    <ClCompile Include="Engine\Core\gLighting.cpp">
+      <Filter>Resource Files\Source Files\Editor</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\Editor\gEditor.h">
@@ -280,6 +283,12 @@
     </ClInclude>
     <ClInclude Include="Engine\Editor\gParticleEditor.h">
       <Filter>Resource Files\Header Files\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\gLighting.h">
+      <Filter>Resource Files\Source Files\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\gShadow.h">
+      <Filter>Resource Files\Source Files\Editor</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -18,7 +18,7 @@
 #include "Editor/gEditor.h"
 #include "gInputMg.h"
 
-
+#include "gLighting.h"
 
 
 extern float LastX;
@@ -54,6 +54,7 @@ public:
     inline static int SCR_WIDTH;
     inline static int SCR_HEIGHT;
 
+    Lighting DirectionalLight;
     
     std::function<void(unsigned int codepoint)> on_char;
     std::function<void(int key, int action, int mods)> on_key;
@@ -108,6 +109,9 @@ public:
     void close() { glfwSetWindowShouldClose(window, 1); }
 
 
+
+
+
   
 private:
 
@@ -117,6 +121,9 @@ private:
     static float FPS;
     static float DeltaTime;
     static float LastFrame;
+
+
+  
    
 };
 
