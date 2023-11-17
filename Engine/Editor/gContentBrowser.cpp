@@ -12,7 +12,6 @@
 #include <string>
 
 
-
 static bool ShowObjectHierarchy = false;
 
  Scene& myScene = Scene::Instance();
@@ -34,13 +33,10 @@ void ContentBrowser::DrawBrowser()
     DrawPanel("Browser", ImVec2(0, 150), ImVec2(w / 7, h/ 2), [&]()
         {
 
-
             int columnCount = 0;
             static bool showFileDialog = false;
 
             Mesh* meshInstance = nullptr;
-
-
 
             if (ImGui::Button("Import", buttonSize)) {
                 ImGuiFileDialog::Instance()->OpenDialog("ChooseFileDlgKey", "Choose File", ".obj,.fbx", ".");
@@ -76,8 +72,6 @@ void ContentBrowser::DrawBrowser()
                                 outputPath = "../Resources/Models/" + fileSerializeName.substr(0, fileSerializeName.find_last_of(".")) + ".modelbin";
                                 modelInstance.SerializeModel(outputPath);
                                 //  std::cout << "Model Serialized to: " << outputPath << std::endl;
-
-
                             }
 
                             objectList.loadedModels.push_back(modelInstance);
@@ -94,8 +88,6 @@ void ContentBrowser::DrawBrowser()
                     ImGuiFileDialog::Instance()->Close();
                     showFileDialog = false;
                 }
-
-
             }
 
             ImGui::SameLine();
@@ -103,17 +95,15 @@ void ContentBrowser::DrawBrowser()
             if (ImGui::Button("Objects", buttonSize)) {
 
                 ShowObjectHierarchy = !ShowObjectHierarchy;
-
-
             }
+
             if (ShowObjectHierarchy) {
 
-                DrawFolderTree("2", 0);
+                DrawFolderTree("../Resources", 0);
 
             }
 
-
-          
+        
         });
 
        
@@ -124,7 +114,7 @@ void ContentBrowser::DrawFolderTree(const fs::path& directory, int level)
     try {
         if (fs::exists(directory) && fs::is_directory(directory)) {
             int i = 0;
-            std::vector<fs::path> selectedPaths;  // Временный вектор для хранения одного пути
+            std::vector<fs::path> selectedPaths; 
             for (const auto& entry : fs::directory_iterator(directory)) {
                 if (fs::is_directory(entry)) {
                     if (ImGui::TreeNode(entry.path().filename().string().c_str())) {
@@ -137,9 +127,9 @@ void ContentBrowser::DrawFolderTree(const fs::path& directory, int level)
                     if (fileName.size() >= 8 && (fileName.substr(fileName.size() - 8) == "modelbin" || fileName.substr(fileName.size() - 4) == "part")) {
                         std::string objectName = fileName.substr(0, fileName.find_last_of("."));
                         if (ImGui::Selectable(objectName.c_str())) {
-                            selectedPaths.clear();  // Очищаем временный вектор перед добавлением нового пути
-                            selectedPaths.push_back(entry.path());  // Добавляем один путь во временный вектор
-                            SelectedFile(entry.path());  // Передаем временный вектор функции HandleFileSelection
+                            selectedPaths.clear();  
+                            selectedPaths.push_back(entry.path());  
+                            SelectedFile(entry.path()); 
                         }
                     }
                 }
@@ -253,7 +243,6 @@ std::string ContentBrowser::ConvertToRelativePath(const std::string& fullPath)
         relativePath = fullPath;
     }
 
-
     for (size_t i = 0; i < relativePath.size(); i++) {
         if (relativePath[i] == '\\') {
             relativePath[i] = '/';
@@ -289,7 +278,6 @@ void ContentBrowser::DrawSceneObjects()
                 glm::vec3 scale = selectedObject.getScale();
                 glm::vec3 rotation = selectedObject.getRotation();
 
-
             }
 
             if (i == selectedObjectIndex) {
@@ -299,20 +287,16 @@ void ContentBrowser::DrawSceneObjects()
                 object.setHighlightColor(glm::vec4(1.0f, 1.0f, 1.0f, 1.0f));
             }
         }
-
         if (selectedObjectIndex != -1 && ImGui::IsKeyPressed(ImGuiKey_Delete)) {
             myScene.objects.erase(myScene.objects.begin() + selectedObjectIndex);
             selectedObjectIndex = -1;
         }
        
        });
-   
-   
 }
 
 void ContentBrowser::DrawProperties()
 {
-
     int w, h;
     WindowScale(window, &w, &h);
 
@@ -350,62 +334,18 @@ void ContentBrowser::DrawProperties()
 
                 static glm::vec4 highlightColor = selectedObject.getHighlightColor();
 
-                // Отображаем окно выбора цвета
-               // ImGui::ColorPicker4("SetColor", (float*)&highlightColor, ImGuiColorEditFlags_Float);
-
-                // Устанавливаем выбранный цвет в качестве выделенного цвета объекта
                 selectedObject.setHighlightColor(glm::vec4(highlightColor.r, highlightColor.g, highlightColor.b, highlightColor.a));
 
-
-
-                // Инициализация MaterialUI для загрузки текстур
-               // MaterialUI materialUI;
-
-                std::vector<std::string> textureNames = { "Texture1" };
-                std::string TextureName = textureNames[0];  // Имя текущей выбранной текстуры
-                if (ImGui::BeginCombo("Texture", TextureName.c_str())) {
-                    ImGuiFileDialog::Instance()->OpenDialog("LoadTexture", "Load", ".jpg", ".");
-
-                    std::string selectedTexturePath;
-
-                    if (ImGuiFileDialog::Instance()->Display("LoadTexture")) {
-                        if (ImGuiFileDialog::Instance()->IsOk()) {
-                            selectedTexturePath = ImGuiFileDialog::Instance()->GetFilePathName();
-                            //std::cout << " failed1 " << selectedTexturePath << std::endl;
-
-                        }
-                        ImGuiFileDialog::Instance()->Close();
-                    }
-
-                    for (const auto& textureName : textureNames) {
-                        bool isSelected = (TextureName == textureName);
-                        if (ImGui::Selectable(textureName.c_str(), isSelected)) {
-                            TextureName = textureName;
-
-                            //selectedObject.setTexture(selectedTexturePath);
-
-                        }
-                        if (isSelected) {
-                            ImGui::SetItemDefaultFocus();  // Установим фокус на выбранный элемент
-                        }
-                    }
-                    ImGui::EndCombo();
-                }
-            }
-            else {
-                ImGui::Text("No object selected.");
+             
             }
 
 
-          
-
-            
 
             ImGui::Text("DirectionalLight");
 
            
-       static glm::vec3 color= enginelight.gVideoManager.DirectionalLight.getDirectionalLightColor();
-
+         static glm::vec3 color= enginelight.gVideoManager.DirectionalLight.getDirectionalLightColor();
+           ImGui::SetNextItemWidth(250.0f);
            ImGui::ColorPicker4("SetColor", (float*)&color, ImGuiColorEditFlags_Float);
 
           
