@@ -55,6 +55,8 @@ public:
         setupMesh();
     }
 
+    ~Mesh();
+
     void Initialize(vector<Vertex> vertices, vector<unsigned int> indices, vector<Texture> textures);
    
 

@@ -12,10 +12,14 @@
 #include <string>
 
 
+
 static bool ShowObjectHierarchy = false;
 
  Scene& myScene = Scene::Instance();
+
  ObjectList& objectList = ObjectList::getInstance();
+
+ EngineAPI_Manager& enginelight = EngineAPI_Manager::GetInstance();
 
 void ContentBrowser::DrawBrowser()
 {
@@ -57,9 +61,9 @@ void ContentBrowser::DrawBrowser()
 
 
                             if (relativePath.substr(relativePath.find_last_of(".") + 1) == "modelbin") {
-                                outputPath = "../src/Models/" + relativePath.substr(0, relativePath.find_last_of(".")) + ".modelbin";
-                                texturePath = "../src/Models";
-                                modelInstance.DeserializeModel(relativePath, texturePath);
+                               // outputPath = "../Resources/Models/" + relativePath.substr(0, relativePath.find_last_of(".")) + ".modelbin";
+                               // texturePath = "../Resources/Models";
+                               // modelInstance.DeserializeModel(relativePath, texturePath);
                                 // std::cout << "Model Load from: " << relativePath << std::endl;
                             }
                             else {
@@ -68,8 +72,8 @@ void ContentBrowser::DrawBrowser()
 
 
                                 std::string fileSerializeName = relativePath.substr(relativePath.find_last_of("/") + 1);
-                                texturePath = "../src/Textures/props";
-                                outputPath = "../src/Models/" + fileSerializeName.substr(0, fileSerializeName.find_last_of(".")) + ".modelbin";
+                                texturePath = "../Resources/Textures/Props";
+                                outputPath = "../Resources/Models/" + fileSerializeName.substr(0, fileSerializeName.find_last_of(".")) + ".modelbin";
                                 modelInstance.SerializeModel(outputPath);
                                 //  std::cout << "Model Serialized to: " << outputPath << std::endl;
 
@@ -104,7 +108,7 @@ void ContentBrowser::DrawBrowser()
             }
             if (ShowObjectHierarchy) {
 
-                DrawFolderTree("src", 0);
+                DrawFolderTree("2", 0);
 
             }
 
@@ -180,7 +184,7 @@ void ContentBrowser::LoadOnScene(const std::vector<fs::path>& filePaths,
 
         if (relativePath.substr(relativePath.find_last_of(".") + 1) == "modelbin") {
             try {
-                std::string texturePath = "../src/Textures/props";
+                std::string texturePath = "../Resources/Textures/Props";
 
                 Model modelInstance;
              
@@ -216,7 +220,7 @@ void ContentBrowser::SelectedFile(const fs::path& filePath)
     if (relativePath.substr(relativePath.find_last_of(".") + 1) == "modelbin") {
         try {
             Model modelInstance;
-            std::string texturePath = "../src/Textures/props";
+            std::string texturePath = "../Resources/Textures/Props";
 
             modelInstance.DeserializeModel(relativePath, texturePath);
             //  std::cout << "Model Load from: " << relativePath << std::endl;
@@ -314,84 +318,122 @@ void ContentBrowser::DrawProperties()
 
     //int panelHeight = std::max(h - 2500, 150);
 
-    DrawPanel("Properties", ImVec2(w -  (w / 7), 150), ImVec2(w / 5, h - 195), [&]()
+    DrawPanel("Properties", ImVec2(w - (w / 7), 150), ImVec2(w / 5, h - 195), [&]()
         {
 
-        if (selectedObjectIndex >= 0 && selectedObjectIndex < myScene.objects.size()) {
-            SceneObject& selectedObject = myScene.objects[selectedObjectIndex];
-            float dragSpeed = 0.1f;
+            if (selectedObjectIndex >= 0 && selectedObjectIndex < myScene.objects.size()) {
+                SceneObject& selectedObject = myScene.objects[selectedObjectIndex];
+                float dragSpeed = 0.1f;
 
-            ImGui::Text("Position");
-            glm::vec3 position = selectedObject.getPosition();
-            if (ImGui::DragFloat3("Position##Pos", glm::value_ptr(position), dragSpeed)) {
-                selectedObject.setPosition(position);
-            }
-
-            float rotation_drag_speed = 1.0f;
-
-            ImGui::Text("Rotation");
-            glm::vec3 rotation = selectedObject.getRotation();
-            if (ImGui::DragFloat3("Rotation##Rot", glm::value_ptr(rotation), rotation_drag_speed)) {
-                selectedObject.setRotation(rotation);
-            }
-
-            float scale_drag_speed = 0.1f;
-
-            ImGui::Text("Scale");
-            glm::vec3 scale = selectedObject.getScale();
-            if (ImGui::DragFloat3("Scale##Scale", glm::value_ptr(scale), scale_drag_speed)) {
-                selectedObject.setScale(scale);
-            }
-
-
-            static glm::vec4 highlightColor = selectedObject.getHighlightColor();
-
-            // Отображаем окно выбора цвета
-            ImGui::ColorPicker4("SetColor", (float*)&highlightColor, ImGuiColorEditFlags_Float);
-
-            // Устанавливаем выбранный цвет в качестве выделенного цвета объекта
-            selectedObject.setHighlightColor(glm::vec4(highlightColor.r, highlightColor.g, highlightColor.b, highlightColor.a));
-
-
-
-            // Инициализация MaterialUI для загрузки текстур
-           // MaterialUI materialUI;
-
-            std::vector<std::string> textureNames = { "Texture1" };
-            std::string TextureName = textureNames[0];  // Имя текущей выбранной текстуры
-            if (ImGui::BeginCombo("Texture", TextureName.c_str())) {
-                ImGuiFileDialog::Instance()->OpenDialog("LoadTexture", "Load", ".jpg", ".");
-
-                std::string selectedTexturePath;
-
-                if (ImGuiFileDialog::Instance()->Display("LoadTexture")) {
-                    if (ImGuiFileDialog::Instance()->IsOk()) {
-                        selectedTexturePath = ImGuiFileDialog::Instance()->GetFilePathName();
-                        //std::cout << " failed1 " << selectedTexturePath << std::endl;
-
-                    }
-                    ImGuiFileDialog::Instance()->Close();
+                ImGui::Text("Position");
+                glm::vec3 position = selectedObject.getPosition();
+                if (ImGui::DragFloat3("Position##Pos", glm::value_ptr(position), dragSpeed)) {
+                    selectedObject.setPosition(position);
                 }
 
-                for (const auto& textureName : textureNames) {
-                    bool isSelected = (TextureName == textureName);
-                    if (ImGui::Selectable(textureName.c_str(), isSelected)) {
-                        TextureName = textureName;
+                float rotation_drag_speed = 1.0f;
 
-                        //selectedObject.setTexture(selectedTexturePath);
-
-                    }
-                    if (isSelected) {
-                        ImGui::SetItemDefaultFocus();  // Установим фокус на выбранный элемент
-                    }
+                ImGui::Text("Rotation");
+                glm::vec3 rotation = selectedObject.getRotation();
+                if (ImGui::DragFloat3("Rotation##Rot", glm::value_ptr(rotation), rotation_drag_speed)) {
+                    selectedObject.setRotation(rotation);
                 }
-                ImGui::EndCombo();
-            }
-        }
-        else {
-            ImGui::Text("No object selected.");
-        }
 
+                float scale_drag_speed = 0.1f;
+
+                ImGui::Text("Scale");
+                glm::vec3 scale = selectedObject.getScale();
+                if (ImGui::DragFloat3("Scale##Scale", glm::value_ptr(scale), scale_drag_speed)) {
+                    selectedObject.setScale(scale);
+                }
+
+
+                static glm::vec4 highlightColor = selectedObject.getHighlightColor();
+
+                // Отображаем окно выбора цвета
+               // ImGui::ColorPicker4("SetColor", (float*)&highlightColor, ImGuiColorEditFlags_Float);
+
+                // Устанавливаем выбранный цвет в качестве выделенного цвета объекта
+                selectedObject.setHighlightColor(glm::vec4(highlightColor.r, highlightColor.g, highlightColor.b, highlightColor.a));
+
+
+
+                // Инициализация MaterialUI для загрузки текстур
+               // MaterialUI materialUI;
+
+                std::vector<std::string> textureNames = { "Texture1" };
+                std::string TextureName = textureNames[0];  // Имя текущей выбранной текстуры
+                if (ImGui::BeginCombo("Texture", TextureName.c_str())) {
+                    ImGuiFileDialog::Instance()->OpenDialog("LoadTexture", "Load", ".jpg", ".");
+
+                    std::string selectedTexturePath;
+
+                    if (ImGuiFileDialog::Instance()->Display("LoadTexture")) {
+                        if (ImGuiFileDialog::Instance()->IsOk()) {
+                            selectedTexturePath = ImGuiFileDialog::Instance()->GetFilePathName();
+                            //std::cout << " failed1 " << selectedTexturePath << std::endl;
+
+                        }
+                        ImGuiFileDialog::Instance()->Close();
+                    }
+
+                    for (const auto& textureName : textureNames) {
+                        bool isSelected = (TextureName == textureName);
+                        if (ImGui::Selectable(textureName.c_str(), isSelected)) {
+                            TextureName = textureName;
+
+                            //selectedObject.setTexture(selectedTexturePath);
+
+                        }
+                        if (isSelected) {
+                            ImGui::SetItemDefaultFocus();  // Установим фокус на выбранный элемент
+                        }
+                    }
+                    ImGui::EndCombo();
+                }
+            }
+            else {
+                ImGui::Text("No object selected.");
+            }
+
+
+          
+
+            
+
+            ImGui::Text("DirectionalLight");
+
+           
+       static glm::vec3 color= enginelight.gVideoManager.DirectionalLight.getDirectionalLightColor();
+
+           ImGui::ColorPicker4("SetColor", (float*)&color, ImGuiColorEditFlags_Float);
+
+          
+           ImGui::SetNextItemWidth(300.0f);
+          static glm::vec3 position (0.0f, 0.0f, 0.0f);
+           ImGui::DragFloat3("Position", glm::value_ptr(position), DragStep);
+
+           ImGui::SetNextItemWidth(200.0f);
+           static glm::vec3 Ambient(0.2f);
+           ImGui::DragFloat("Ambient  [ Def. 0.2 ] ", glm::value_ptr(Ambient),DragStep);
+           ImGui::SetNextItemWidth(200.0f);
+           static glm::vec3 Diffuse(1.0f);
+           ImGui::DragFloat("Diffuse [ Def. 1.0 ]", glm::value_ptr(Diffuse), DragStep);
+           ImGui::SetNextItemWidth(200.0f);
+           static glm::vec3 Specular(0.5f);
+           ImGui::DragFloat("Specular [ Def. 0.5 ] ", glm::value_ptr(Specular),DragStep);
+           ImGui::SetNextItemWidth(200.0f);
+           static float Strength  = 2.5f;
+           ImGui::DragFloat("Strength [ Def. 2.5 ]", &Strength, DragStep);
+           ImGui::SetNextItemWidth(200.0f);
+           static float Attenuation = 0.0f;
+           ImGui::DragFloat("Attenuation [ Def. 0.0 ]", &Attenuation, DragStep);
+              
+    
+           enginelight.gVideoManager.DirectionalLight.setDirectionalLight(color ,position, Ambient, Diffuse, Specular);
+           enginelight.gVideoManager.DirectionalLight.setDirectionalLightAttenuation(Attenuation);
+           enginelight.gVideoManager.DirectionalLight.setDirectionalLightStrength(Strength);
+              
         });
 }
 

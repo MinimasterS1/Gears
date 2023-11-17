@@ -9,17 +9,6 @@
 
 
 
-VideoAPI gVideoManager;
-Input* gInputManager = nullptr;
-Resources resources;
-
-
-
-
-EngineAPI_Manager::~EngineAPI_Manager() {}
-
-
-
 void EngineAPI_Manager::RunApplication() {
     gVideoManager.startUp();
     gInputManager = new Input(camera);

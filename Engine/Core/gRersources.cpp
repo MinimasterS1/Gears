@@ -27,12 +27,12 @@ struct ObjectInfo {
 
 void Resources::LoadLevel() {
 
-   // LOG.Log(Logger::LogLevel::INFO, "Load", NULL);
+    LOG.Log(Logger::LogLevel::INFO, "Load", NULL);
     std::vector<std::string> modelNames = { "terrain.modelbin" };
     std::vector<std::filesystem::path> multiplePaths;
 
-    // Предполагая, что модели находятся в папке "src/Models"
-    std::string modelsFolderPath = "../src/Models";
+    
+   std::string modelsFolderPath = "../Resources/Models";
 
     for (const auto& modelName : modelNames) {
         std::string fullModelPath = modelsFolderPath + "/" + modelName;
@@ -44,7 +44,7 @@ void Resources::LoadLevel() {
     std::vector<glm::vec3> initialRotation;
 
    
-    initialPositions.push_back(glm::vec3(0.0f, 0.0f, 0.0f)); 
+   initialPositions.push_back(glm::vec3(0.0f, 0.0f, 0.0f)); 
    
 
    

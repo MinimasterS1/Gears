@@ -1,5 +1,8 @@
 #include "gMesh.h"
 
+
+unsigned int VBO, EBO;
+
 void Mesh::Initialize(vector<Vertex> vertices, vector<unsigned int> indices, vector<Texture> textures)
 {
     {
@@ -9,6 +12,15 @@ void Mesh::Initialize(vector<Vertex> vertices, vector<unsigned int> indices, vec
         setupMesh();
     }
 }
+
+
+Mesh::~Mesh()
+{
+    //glDeleteVertexArrays(1, &VAO);
+   // glDeleteBuffers(1, &VBO);
+   // glDeleteBuffers(1, &EBO);
+}
+
 
 void Mesh::Draw(Shader& shader)
 {
@@ -48,7 +60,7 @@ void Mesh::setupMesh()
 {
 
     {
-        unsigned int VBO, EBO;
+      
 
         glGenVertexArrays(1, &VAO);
         glGenBuffers(1, &VBO);

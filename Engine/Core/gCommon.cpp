@@ -6,8 +6,12 @@ Logger LOG;
 
 GLFWwindow* window;
 
+
+
+
 bool EditorMode = true;
 bool GameConsole = true;
+
 
 
 

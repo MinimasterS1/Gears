@@ -1,9 +1,11 @@
 ﻿#include "gApplication.h"
 
+EngineAPI_Manager& engine = EngineAPI_Manager::GetInstance();
+
 
 int main(int argc, const char* argv[])
 {
-    EngineAPI_Manager engine;
+    
 
     engine.RunApplication();
     

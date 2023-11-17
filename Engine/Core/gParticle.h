@@ -22,7 +22,7 @@ public:
     glm::vec3 velocity;
     float Lifetime;
     float Age;
-
+   
 
     Particle() : position(0.0f), velocity(0.0f), color(1.0f), Lifetime(0.0f) {}
 
