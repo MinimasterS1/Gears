@@ -1,5 +1,5 @@
-#pragma once
-
+#ifndef PRIMITIVES_H
+#define PRIMITIVES_H
 
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
@@ -29,3 +29,4 @@ private:
 
 };
 
+#endif // PRIMITIVES_H

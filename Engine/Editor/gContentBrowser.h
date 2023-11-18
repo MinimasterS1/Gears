@@ -51,7 +51,7 @@ public:
 
     std::string ConvertToRelativePath(const std::string& fullPath);
 
-
+   
   
     void DrawProperties();
 
@@ -88,7 +88,8 @@ private:
     std::vector<glm::vec3> initialScale;
     std::vector<glm::vec3> initialRotation;
 
-    
+
+        
    
 
 

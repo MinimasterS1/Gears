@@ -26,6 +26,7 @@ void HeaderPanel::DrawHeaderPanel()
     DrawPanel("Toolbar", ImVec2(0, 0), ImVec2(w, panelHeight), [&]()
         {
            
+         
 
             if (ImGui::Button("Load ", buttonSize)) {
                 
@@ -79,7 +80,8 @@ void HeaderPanel::DrawHeaderPanel()
                         }
                         else if (currentFileType == FILE_LVL)
                         {
-                            // Создайте пустой файл .lvl
+
+                            
                         }
                         else if (currentFileType == FILE_MAT)
                         {
@@ -141,10 +143,10 @@ void HeaderPanel::SaveObjectsToBinaryFile(const std::vector<SceneObject>& object
 
       
         for (const SceneObject& object : objects) {
-            file.write(object.objectName.c_str(), object.objectName.size() + 1);
-            file.write(reinterpret_cast<const char*>(&object.position), sizeof(glm::vec3)); 
-            file.write(reinterpret_cast<const char*>(&object.rotation), sizeof(glm::vec3)); 
-            file.write(reinterpret_cast<const char*>(&object.scale), sizeof(glm::vec3)); 
+            file.write(object.ObjectName.c_str(), object.ObjectName.size() + 1);
+            file.write(reinterpret_cast<const char*>(&object.Position), sizeof(glm::vec3)); 
+            file.write(reinterpret_cast<const char*>(&object.Rotation), sizeof(glm::vec3)); 
+            file.write(reinterpret_cast<const char*>(&object.Scale), sizeof(glm::vec3)); 
         }
 
         file.close();
@@ -164,10 +166,10 @@ std::vector<SceneObject> HeaderPanel::LoadObjectsFromBinaryFile(const std::strin
                 SceneObject object;
                 char objectName[256];
                 file.read(objectName, 256);
-                object.objectName = objectName;
-                file.read(reinterpret_cast<char*>(&object.position), sizeof(glm::vec3));
-                file.read(reinterpret_cast<char*>(&object.rotation), sizeof(glm::vec3));
-                file.read(reinterpret_cast<char*>(&object.scale), sizeof(glm::vec3));
+                object.ObjectName = objectName;
+                file.read(reinterpret_cast<char*>(&object.Position), sizeof(glm::vec3));
+                file.read(reinterpret_cast<char*>(&object.Rotation), sizeof(glm::vec3));
+                file.read(reinterpret_cast<char*>(&object.Scale), sizeof(glm::vec3));
                 loadedObjects.push_back(object);
             }
 

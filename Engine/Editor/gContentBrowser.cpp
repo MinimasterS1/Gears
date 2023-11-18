@@ -12,7 +12,7 @@
 #include <string>
 
 
-static bool ShowObjectHierarchy = false;
+ static bool ShowObjectHierarchy = false;
 
  Scene& myScene = Scene::Instance();
 
@@ -28,7 +28,7 @@ void ContentBrowser::DrawBrowser()
     int w, h;
     WindowScale(window, &w, &h);
 
-    //int panelHeight = std::max(h - 2500, 150);
+  
 
     DrawPanel("Browser", ImVec2(0, 150), ImVec2(w / 7, h/ 2), [&]()
         {
@@ -56,29 +56,29 @@ void ContentBrowser::DrawBrowser()
                             std::string texturePath;
 
 
-                            if (relativePath.substr(relativePath.find_last_of(".") + 1) == "modelbin") {
-                               // outputPath = "../Resources/Models/" + relativePath.substr(0, relativePath.find_last_of(".")) + ".modelbin";
-                               // texturePath = "../Resources/Models";
-                               // modelInstance.DeserializeModel(relativePath, texturePath);
-                                // std::cout << "Model Load from: " << relativePath << std::endl;
-                            }
-                            else {
-                                modelInstance.loadModel(relativePath);
-                                // std::cout << "Model Load Successful: " << relativePath << std::endl;
+                                if (relativePath.substr(relativePath.find_last_of(".") + 1) == "modelbin") {
+                                   // outputPath = "../Resources/Models/" + relativePath.substr(0, relativePath.find_last_of(".")) + ".modelbin";
+                                   // texturePath = "../Resources/Models";
+                                   // modelInstance.DeserializeModel(relativePath, texturePath);
+                                    // std::cout << "Model Load from: " << relativePath << std::endl;
+                                }
+                                    else {
+                                        modelInstance.loadModel(relativePath);
+                                        // std::cout << "Model Load Successful: " << relativePath << std::endl;
 
 
-                                std::string fileSerializeName = relativePath.substr(relativePath.find_last_of("/") + 1);
-                                texturePath = "../Resources/Textures/Props";
-                                outputPath = "../Resources/Models/" + fileSerializeName.substr(0, fileSerializeName.find_last_of(".")) + ".modelbin";
-                                modelInstance.SerializeModel(outputPath);
-                                //  std::cout << "Model Serialized to: " << outputPath << std::endl;
-                            }
+                                        std::string fileSerializeName = relativePath.substr(relativePath.find_last_of("/") + 1);
+                                        texturePath = "../Resources/Textures/Props";
+                                        outputPath = "../Resources/Models/" + fileSerializeName.substr(0, fileSerializeName.find_last_of(".")) + ".modelbin";
+                                        modelInstance.SerializeModel(outputPath);
+                                        //  std::cout << "Model Serialized to: " << outputPath << std::endl;
+                                    }
 
-                            objectList.loadedModels.push_back(modelInstance);
-                        }
-                        catch (const std::exception& e) {
-                            std::cerr << "ErrorLoadModel: " << e.what() << std::endl;
-                        }
+                          objectList.loadedModels.push_back(modelInstance);
+                    }
+                     catch (const std::exception& e) {
+                     std::cerr << "ErrorLoadModel: " << e.what() << std::endl;
+                    }
 
 
                         ImGuiFileDialog::Instance()->Close();
@@ -90,7 +90,7 @@ void ContentBrowser::DrawBrowser()
                 }
             }
 
-            ImGui::SameLine();
+ ImGui::SameLine();
 
             if (ImGui::Button("Objects", buttonSize)) {
 
@@ -103,10 +103,8 @@ void ContentBrowser::DrawBrowser()
 
             }
 
-        
         });
-
-       
+     
 }
 
 void ContentBrowser::DrawFolderTree(const fs::path& directory, int level)
@@ -186,9 +184,12 @@ void ContentBrowser::LoadOnScene(const std::vector<fs::path>& filePaths,
                 newSceneObject.setScale(initialScale[i]);
                 newSceneObject.setRotation(initialRotation[i]);
                 newSceneObject.setObjectName(filePaths[i].stem().string());
+
                 objectList.loadedModels.push_back(modelInstance);
-              
-              
+
+               
+
+             
                 myScene.AddObject(newSceneObject);
               
                
@@ -214,11 +215,8 @@ void ContentBrowser::SelectedFile(const fs::path& filePath)
 
             modelInstance.DeserializeModel(relativePath, texturePath);
             //  std::cout << "Model Load from: " << relativePath << std::endl;
-
             SceneObject newSceneObject(modelInstance);
-            // Set the object's name using the file name without extension
             newSceneObject.setObjectName(filePath.stem().string());
-
             objectList.loadedModels.push_back(modelInstance);
             myScene.AddObject(newSceneObject);
         }
@@ -236,18 +234,19 @@ std::string ContentBrowser::ConvertToRelativePath(const std::string& fullPath)
     const std::string rootPath = "../Gears/";
     size_t pos = fullPath.find(rootPath);
     std::string relativePath;
+
     if (pos != std::string::npos) {
         relativePath = fullPath.substr(pos + rootPath.size());
     }
-    else {
-        relativePath = fullPath;
-    }
-
-    for (size_t i = 0; i < relativePath.size(); i++) {
-        if (relativePath[i] == '\\') {
-            relativePath[i] = '/';
+        else {
+            relativePath = fullPath;
         }
-    }
+
+            for (size_t i = 0; i < relativePath.size(); i++) {
+                if (relativePath[i] == '\\') {
+                    relativePath[i] = '/';
+                }
+            }
 
     return relativePath;
 }
@@ -267,12 +266,17 @@ void ContentBrowser::DrawSceneObjects()
 
         for (int i = 0; i < myScene.objects.size(); ++i) {
             SceneObject& object = myScene.objects[i];
-            std::string objectInfo = fileSerializeName + std::to_string(i);
+
+           
+            std::string objectInfo = object.getObjectName() + "             " + " ID " + std::to_string(i);
 
             if (ImGui::Selectable(objectInfo.c_str(), i == selectedObjectIndex)) {
                 selectedObjectIndex = i;
+
                 objectList.setModelIndex(i);
+
                 int index = objectList.getModelIndex();
+
                 SceneObject& selectedObject = myScene.objects[selectedObjectIndex];
                 glm::vec3 position = selectedObject.getPosition();
                 glm::vec3 scale = selectedObject.getScale();
@@ -280,12 +284,12 @@ void ContentBrowser::DrawSceneObjects()
 
             }
 
-            if (i == selectedObjectIndex) {
-                object.setHighlightColor(glm::vec4(0.0f, 1.0f, 0.0f, 0.5f));
-            }
-            else {
-                object.setHighlightColor(glm::vec4(1.0f, 1.0f, 1.0f, 1.0f));
-            }
+                if (i == selectedObjectIndex) {
+                    object.setHighlightColor(glm::vec4(0.0f, 1.0f, 0.0f, 0.5f));
+                }
+                    else {
+                        object.setHighlightColor(glm::vec4(1.0f, 1.0f, 1.0f, 1.0f));
+                    }
         }
         if (selectedObjectIndex != -1 && ImGui::IsKeyPressed(ImGuiKey_Delete)) {
             myScene.objects.erase(myScene.objects.begin() + selectedObjectIndex);
@@ -309,27 +313,27 @@ void ContentBrowser::DrawProperties()
                 SceneObject& selectedObject = myScene.objects[selectedObjectIndex];
                 float dragSpeed = 0.1f;
 
-                ImGui::Text("Position");
-                glm::vec3 position = selectedObject.getPosition();
-                if (ImGui::DragFloat3("Position##Pos", glm::value_ptr(position), dragSpeed)) {
-                    selectedObject.setPosition(position);
-                }
+                    ImGui::Text("Position");
+                    glm::vec3 position = selectedObject.getPosition();
+                    if (ImGui::DragFloat3("Position##Pos", glm::value_ptr(position), dragSpeed)) {
+                        selectedObject.setPosition(position);
+                    }
 
-                float rotation_drag_speed = 1.0f;
+                        float rotation_drag_speed = 1.0f;
 
-                ImGui::Text("Rotation");
-                glm::vec3 rotation = selectedObject.getRotation();
-                if (ImGui::DragFloat3("Rotation##Rot", glm::value_ptr(rotation), rotation_drag_speed)) {
-                    selectedObject.setRotation(rotation);
-                }
+                        ImGui::Text("Rotation");
+                        glm::vec3 rotation = selectedObject.getRotation();
+                        if (ImGui::DragFloat3("Rotation##Rot", glm::value_ptr(rotation), rotation_drag_speed)) {
+                            selectedObject.setRotation(rotation);
+                        }
 
-                float scale_drag_speed = 0.1f;
+                            float scale_drag_speed = 0.1f;
 
-                ImGui::Text("Scale");
-                glm::vec3 scale = selectedObject.getScale();
-                if (ImGui::DragFloat3("Scale##Scale", glm::value_ptr(scale), scale_drag_speed)) {
-                    selectedObject.setScale(scale);
-                }
+                            ImGui::Text("Scale");
+                            glm::vec3 scale = selectedObject.getScale();
+                            if (ImGui::DragFloat3("Scale##Scale", glm::value_ptr(scale), scale_drag_speed)) {
+                                selectedObject.setScale(scale);
+                            }
 
 
                 static glm::vec4 highlightColor = selectedObject.getHighlightColor();
@@ -380,10 +384,15 @@ void ContentBrowser::DrawProperties()
 void ContentBrowser::AddObjectToData(int index, const glm::vec3& position, const glm::vec3& scale, const glm::vec3& rotation)
 {
     ObjectInfo objInfo;
+
     objInfo.index = index;
+
     objInfo.position = position;
+
     objInfo.scale = scale;
+
     objInfo.rotation = rotation;
+
     objectData.push_back(objInfo);
 }
 
@@ -392,6 +401,7 @@ void ContentBrowser::UpdateObjectData()
     objectData.clear(); // Очищаем данные перед обновлением
 
     for (int i = 0; i < myScene.objects.size(); ++i) {
+
         SceneObject& object = myScene.objects[i];
 
         int index = objectList.getModelIndex();
