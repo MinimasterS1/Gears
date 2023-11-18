@@ -276,7 +276,7 @@
     <ClInclude Include="Engine\Core\gParticleEmitter.h" />
     <ClInclude Include="Engine\Core\gParticle.h" />
     <ClInclude Include="Engine\Core\gPhysicsWorld.h" />
-    <ClInclude Include="Engine\Core\gPrimitives.h" />
+    <ClInclude Include="Engine\Core\gPrimitive.h" />
     <ClInclude Include="Engine\Core\gResources.h" />
     <ClInclude Include="Engine\Core\gShader.h" />
     <ClInclude Include="Engine\Core\gShadow.h" />

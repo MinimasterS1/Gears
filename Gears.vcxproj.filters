@@ -150,14 +150,14 @@
     <ClCompile Include="Engine\Core\gPhysicsWorld.cpp">
       <Filter>Resource Files\Source Files\Core</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\Editor\gParcticleEditor.cpp">
-      <Filter>Resource Files\Source Files\Editor</Filter>
-    </ClCompile>
     <ClCompile Include="Engine\Game\gActor.cpp">
       <Filter>Resource Files\Source Files\Core</Filter>
     </ClCompile>
     <ClCompile Include="Engine\Core\gLighting.cpp">
-      <Filter>Resource Files\Source Files\Editor</Filter>
+      <Filter>Resource Files\Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Editor\gParcticleEditor.cpp">
+      <Filter>Resource Files\Source Files\Core</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -263,7 +263,7 @@
     <ClInclude Include="Engine\Game\gActor.h">
       <Filter>Resource Files\Header Files\Core</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\Core\gPrimitives.h">
+    <ClInclude Include="Engine\Core\gPrimitive.h">
       <Filter>Resource Files\Header Files\Core</Filter>
     </ClInclude>
     <ClInclude Include="Engine\Core\Containers\gObjectsList.h">
@@ -285,10 +285,10 @@
       <Filter>Resource Files\Header Files\Editor</Filter>
     </ClInclude>
     <ClInclude Include="Engine\Core\gLighting.h">
-      <Filter>Resource Files\Source Files\Editor</Filter>
+      <Filter>Resource Files\Header Files\Core</Filter>
     </ClInclude>
     <ClInclude Include="Engine\Core\gShadow.h">
-      <Filter>Resource Files\Source Files\Editor</Filter>
+      <Filter>Resource Files\Header Files\Core</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -11,6 +11,13 @@
 #include "iostream"
 #include <filesystem>
 #include <vector>
+
+#include "gPrimitive.h"
+
+
+
+
+
 class SceneObject {
 public:
 
@@ -18,33 +25,33 @@ public:
 
 
     SceneObject(Model model)
-        : model(model), position(0.0f), rotation(0.0f), scale(1.0f), highlightColor(1.0f, 1.0f, 1.0f, 1.0f), baseColor (0.0f, 0.0f, 1.0f)
+        : model(model), Position(0.0f), Rotation(0.0f), Scale(1.0f), HighlightColor(1.0f, 1.0f, 1.0f, 1.0f), BaseColor (0.0f, 0.0f, 1.0f)
     {
         modelShader = Shader("../Shaders/model_load_vs.vs", "../Shaders/model_load_fs.fs");
     }
 
-    void setPosition(const glm::vec3& pos) { position = pos; }
+    void setPosition(const glm::vec3& pos) { Position = pos; }
 
-    glm::vec3 getPosition() const { return position; }
+    glm::vec3 getPosition() const { return Position; }
 
-    void setRotation(const glm::vec3& rot) { rotation = rot; }
+    void setRotation(const glm::vec3& rot) { Rotation = rot; }
 
-    glm::vec3 getRotation() const { return rotation; }
+    glm::vec3 getRotation() const { return Rotation; }
 
-    void setScale(const glm::vec3& s) { scale = s; }
+    void setScale(const glm::vec3& s) { Scale = s; }
 
-    glm::vec3 getScale() const { return scale; }
+    glm::vec3 getScale() const { return Scale; }
 
 
     glm::mat4 getTransform() const {
 
         glm::mat4 transform = glm::mat4(1.0f);
 
-        transform = glm::translate(transform, position);
-        transform = glm::rotate(transform, glm::radians(rotation.x), glm::vec3(1.0f, 0.0f, 0.0f));
-        transform = glm::rotate(transform, glm::radians(rotation.y), glm::vec3(0.0f, 1.0f, 0.0f));
-        transform = glm::rotate(transform, glm::radians(rotation.z), glm::vec3(0.0f, 0.0f, 1.0f));
-        transform = glm::scale(transform, scale);
+        transform = glm::translate(transform, Position);
+        transform = glm::rotate(transform, glm::radians(Rotation.x), glm::vec3(1.0f, 0.0f, 0.0f));
+        transform = glm::rotate(transform, glm::radians(Rotation.y), glm::vec3(0.0f, 1.0f, 0.0f));
+        transform = glm::rotate(transform, glm::radians(Rotation.z), glm::vec3(0.0f, 0.0f, 1.0f));
+        transform = glm::scale(transform, Scale);
 
         return transform;
     }
@@ -60,12 +67,13 @@ public:
         glm::mat4 view = camera.GetViewMatrix();
         glm::mat4 modelMat = getTransform();
         modelShader.use();
+        
         //modelShader.setUnsignedInt("textureID", textureID);
         modelShader.setMat4("projection", camera.projection);
         modelShader.setMat4("view", view);
         modelShader.setMat4("model", modelMat);
-        modelShader.setVec4("highlightColor", highlightColor);
-        modelShader.setVec3("baseColor", baseColor);
+        modelShader.setVec4("highlightColor", HighlightColor);
+        modelShader.setVec3("baseColor", BaseColor);
         glm::mat4 transform = getTransform();
         modelShader.setMat4("model", transform);
         model.Draw(modelShader);
@@ -74,48 +82,43 @@ public:
 
     bool hasMeshes() const { return !model.meshes.empty(); }
 
+    void setHighlightColor(const glm::vec4& color) { HighlightColor = color; }
 
-    void setHighlightColor(const glm::vec4& color) { highlightColor = color; }
-
-    glm::vec4 getHighlightColor() const { return highlightColor; }
+    glm::vec4 getHighlightColor() const { return HighlightColor; }
     Model model;
 
-    glm::vec3 position;
-    glm::vec3 rotation;
-    glm::vec3 scale;
-    glm::vec3 baseColor;
-    glm::vec4 highlightColor;
-
+    glm::vec3 Position;
+    glm::vec3 Rotation;
+    glm::vec3 Scale;
+    glm::vec3 BaseColor;
+    glm::vec4 HighlightColor;
+    std::string ObjectName;
     Shader modelShader;
 
     void setObjectName(const std::string& name) {
-        objectName = name;
+        ObjectName = name;
+    }
+
+    const std::string& getObjectName() const {
+        return ObjectName;
     }
 
 
-    std::string getInfo() const {
+    std::string getObjectInfo() const {
       
-        std::string objectInfo = "Object: " + objectName + "\n" +
-            "Position: (" + std::to_string(position.x) + ", " +
-            std::to_string(position.y) + ", " +
-            std::to_string(position.z) + ")\n" +
-            "Rotation: (" + std::to_string(rotation.x) + ", " +
-            std::to_string(rotation.y) + ", " +
-            std::to_string(rotation.z) + ")\n" +
-            "Scale: (" + std::to_string(scale.x) + ", " +
-            std::to_string(scale.y) + ", " +
-            std::to_string(scale.z) + ")";
+        std::string objectInfo = "Object: " + ObjectName + "\n" +
+            "Position: (" + std::to_string(Position.x) + ", " +
+            std::to_string(Position.y) + ", " +
+            std::to_string(Position.z) + ")\n" +
+            "Rotation: (" + std::to_string(Rotation.x) + ", " +
+            std::to_string(Rotation.y) + ", " +
+            std::to_string(Rotation.z) + ")\n" +
+            "Scale: (" + std::to_string(Scale.x) + ", " +
+            std::to_string(Scale.y) + ", " +
+            std::to_string(Scale.z) + ")";
 
         return objectInfo;
     }
-
-    std::string objectName;
-
-
-private:
-
-    std::string texturePath;
-
 
 };
 
@@ -140,7 +143,7 @@ public:
     void LogSceneObjectsInfo() const {
         for (const SceneObject& object : objects) {
            
-            std::string objectInfo = object.getInfo();
+            std::string objectInfo = object.getObjectInfo();
            
             LOG.Log(Logger::LogLevel::INFO, objectInfo.c_str(), NULL);
         }
