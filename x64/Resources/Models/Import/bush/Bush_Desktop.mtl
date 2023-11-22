@@ -1,0 +1,15 @@
+# Wavefront Object Material File
+# Generated using SpeedTree tools
+
+newmtl Bark_Mat
+map_Kd Bark_Color.png
+map_bump Bark_Normal.png
+bump Bark_Normal.png -bm 1
+
+
+newmtl Bush_Desktop_Mat
+map_Kd Bush_Desktop_Color.png
+map_bump Bush_Desktop_Normal.png
+bump Bush_Desktop_Normal.png -bm 1
+
+

@@ -8,9 +8,9 @@ void Console::DrawConsole()
     int w, h;
     WindowScale(window, &w, &h);
 
-    int panelHeight = std::max(h - 2500, 150);
+   // int panelHeight = std::max(h - 2500, 150);
 
-    DrawPanel("Console", ImVec2(w / 5 , h - 195), ImVec2(1536, panelHeight), [&]()
+    DrawPanel("Console", ImVec2(0, h / 1.651), ImVec2(w / 7, 515), [&]()
         {
 
             static char inputBuffer[256] = "";

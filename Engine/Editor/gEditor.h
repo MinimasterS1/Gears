@@ -66,6 +66,11 @@ public:
     }
 
 
+    bool DirLightProperties; 
+
+ 
+    float DragStep = 0.03;
+
 private:
 
     
@@ -78,6 +83,12 @@ private:
 
     bool ShowLoadFileDialog = false;
     bool ShowSaveFileDialog = false;
+
+
+
+
+
+  
 
     
 };

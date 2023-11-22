@@ -247,8 +247,6 @@
     <ClCompile Include="Engine\Editor\gConsole.cpp" />
     <ClCompile Include="Engine\Editor\gContentBrowser.cpp" />
     <ClCompile Include="Engine\Editor\gEditor.cpp" />
-    <ClCompile Include="Engine\Editor\gGizmo.cpp" />
-    <ClCompile Include="Engine\Editor\gGizmoInit.cpp" />
     <ClCompile Include="Engine\Editor\gHeaderPanel.cpp" />
     <ClCompile Include="Engine\Editor\gParcticleEditor.cpp" />
     <ClCompile Include="Engine\Game\gActor.cpp" />
@@ -257,6 +255,7 @@
   <ItemGroup>
     <ClInclude Include="3rdParty\imgui\imgui_impl_opengl3.h" />
     <ClInclude Include="Engine\Core\Containers\gObjectsList.h" />
+    <ClInclude Include="Engine\Core\gAnimation.h" />
     <ClInclude Include="Engine\Core\gAmbientLight.h" />
     <ClInclude Include="Engine\Core\gApplication.h" />
     <ClInclude Include="Engine\Core\gAudioBuffer.h" />
@@ -291,11 +290,8 @@
     <ClInclude Include="Engine\Editor\gConsole.h" />
     <ClInclude Include="Engine\Editor\gContentBrowser.h" />
     <ClInclude Include="Engine\Editor\gEditor.h" />
-    <ClInclude Include="Engine\Editor\gGizmo.hpp" />
     <ClInclude Include="Engine\Editor\gHeaderPanel.h" />
     <ClInclude Include="Engine\Editor\gParticleEditor.h" />
-    <ClInclude Include="Engine\Editor\gUtil.hpp" />
-    <ClInclude Include="Engine\Editor\linalg.h" />
     <ClInclude Include="Engine\Game\gActor.h" />
     <ClInclude Include="Engine\Game\gTerrain.h" />
   </ItemGroup>

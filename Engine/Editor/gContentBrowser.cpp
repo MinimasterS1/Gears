@@ -48,13 +48,11 @@ void ContentBrowser::DrawBrowser()
                     if (ImGuiFileDialog::Instance()->IsOk()) {
                         std::string filePathName = ImGuiFileDialog::Instance()->GetFilePathName();
                         std::string relativePath = ConvertToRelativePath(filePathName);
-                        //  std::cout << "Received path: " << relativePath << std::endl;
-
-                        try {
+                      
+                     try {
                             Model modelInstance;
                             std::string outputPath;
                             std::string texturePath;
-
 
                                 if (relativePath.substr(relativePath.find_last_of(".") + 1) == "modelbin") {
                                    // outputPath = "../Resources/Models/" + relativePath.substr(0, relativePath.find_last_of(".")) + ".modelbin";
@@ -64,9 +62,7 @@ void ContentBrowser::DrawBrowser()
                                 }
                                     else {
                                         modelInstance.loadModel(relativePath);
-                                        // std::cout << "Model Load Successful: " << relativePath << std::endl;
-
-
+                                        // std::cout << "Model Load Successful: " << relativePath << std::endl
                                         std::string fileSerializeName = relativePath.substr(relativePath.find_last_of("/") + 1);
                                         texturePath = "../Resources/Textures/Props";
                                         outputPath = "../Resources/Models/" + fileSerializeName.substr(0, fileSerializeName.find_last_of(".")) + ".modelbin";
@@ -75,22 +71,24 @@ void ContentBrowser::DrawBrowser()
                                     }
 
                           objectList.loadedModels.push_back(modelInstance);
-                    }
+
+                          }
+
                      catch (const std::exception& e) {
                      std::cerr << "ErrorLoadModel: " << e.what() << std::endl;
-                    }
 
+                      }
 
                         ImGuiFileDialog::Instance()->Close();
                         showFileDialog = false;
 
-                    }
+                             }
                     ImGuiFileDialog::Instance()->Close();
                     showFileDialog = false;
                 }
             }
 
- ImGui::SameLine();
+        ImGui::SameLine();
 
             if (ImGui::Button("Objects", buttonSize)) {
 
@@ -102,6 +100,8 @@ void ContentBrowser::DrawBrowser()
                 DrawFolderTree("../Resources", 0);
 
             }
+
+            ImGui::Separator();
 
         });
      
@@ -258,17 +258,18 @@ void ContentBrowser::DrawSceneObjects()
 
     //int panelHeight = std::max(h - 2500, 150);
 
-    DrawPanel("SceneObjects", ImVec2(0, h / 1.651), ImVec2(w / 7, 515  ), [&]()
+    DrawPanel("SceneObjects", ImVec2(w - (w / 7), 950), ImVec2(w / 7, 515  ), [&]()
         {
-        ImGui::Text("Selected Objects");
+        ImGui::Text("Selected Objects                             ID");
 
         UpdateObjectData();
+        ImGui::Separator();
 
         for (int i = 0; i < myScene.objects.size(); ++i) {
             SceneObject& object = myScene.objects[i];
 
            
-            std::string objectInfo = object.getObjectName() + "             " + " ID " + std::to_string(i);
+            std::string objectInfo = object.getObjectName() + "                                              " +   std::to_string(i);
 
             if (ImGui::Selectable(objectInfo.c_str(), i == selectedObjectIndex)) {
                 selectedObjectIndex = i;
@@ -282,6 +283,12 @@ void ContentBrowser::DrawSceneObjects()
                 glm::vec3 scale = selectedObject.getScale();
                 glm::vec3 rotation = selectedObject.getRotation();
 
+            }
+
+
+            if (i < myScene.objects.size() - 1)
+            {
+                ImGui::Separator();
             }
 
                 if (i == selectedObjectIndex) {
@@ -306,78 +313,100 @@ void ContentBrowser::DrawProperties()
 
     //int panelHeight = std::max(h - 2500, 150);
 
-    DrawPanel("Properties", ImVec2(w - (w / 7), 150), ImVec2(w / 5, h - 195), [&]()
+    DrawPanel("Properties", ImVec2(w - (w / 7), 150), ImVec2(w / 5, 800), [&]()
         {
 
             if (selectedObjectIndex >= 0 && selectedObjectIndex < myScene.objects.size()) {
+               
                 SceneObject& selectedObject = myScene.objects[selectedObjectIndex];
-                float dragSpeed = 0.1f;
-
-                    ImGui::Text("Position");
+            ImGui::Separator();
+            
+                
+                 
+                    ImGui::Text("   X              Y                 Z");
                     glm::vec3 position = selectedObject.getPosition();
-                    if (ImGui::DragFloat3("Position##Pos", glm::value_ptr(position), dragSpeed)) {
+                    ImGui::SetNextItemWidth(200.0f);
+                    if (ImGui::DragFloat3("Position##Pos", glm::value_ptr(position), DragStep)) {
                         selectedObject.setPosition(position);
                     }
 
-                        float rotation_drag_speed = 1.0f;
-
-                        ImGui::Text("Rotation");
+                      
+           ImGui::Separator();
+         
+                        ImGui::Text("   X              Y                 Z");
                         glm::vec3 rotation = selectedObject.getRotation();
-                        if (ImGui::DragFloat3("Rotation##Rot", glm::value_ptr(rotation), rotation_drag_speed)) {
+                        ImGui::SetNextItemWidth(200.0f);
+                        if (ImGui::DragFloat3("Rotation##Rot", glm::value_ptr(rotation), DragStep)) {
                             selectedObject.setRotation(rotation);
                         }
 
-                            float scale_drag_speed = 0.1f;
-
-                            ImGui::Text("Scale");
+                          
+             ImGui::Separator();
+            
+                            ImGui::Text("   X              Y                 Z");
                             glm::vec3 scale = selectedObject.getScale();
-                            if (ImGui::DragFloat3("Scale##Scale", glm::value_ptr(scale), scale_drag_speed)) {
+                            ImGui::SetNextItemWidth(200.0f);
+                            if (ImGui::DragFloat3("Scale##Scale", glm::value_ptr(scale), DragStep)) {
                                 selectedObject.setScale(scale);
                             }
 
 
                 static glm::vec4 highlightColor = selectedObject.getHighlightColor();
 
+               
                 selectedObject.setHighlightColor(glm::vec4(highlightColor.r, highlightColor.g, highlightColor.b, highlightColor.a));
-
+                ImGui::Separator();
              
+            } 
+            
+           // LOG.Log(Logger::LogLevel::INFO, "b", DirLightProperties);
+            if (DirLightProperties) {
+
+               
+
+                ImGui::Text("DirectionalLight");
+
+                ImGui::Separator();
+                static glm::vec3 color = enginelight.gVideoManager.DirectionalLight.getDirectionalLightColor();
+                ImGui::SetNextItemWidth(250.0f);
+                ImGui::ColorPicker4("SetColor", (float*)&color, ImGuiColorEditFlags_Float);
+
+                ImGui::Separator();
+                ImGui::SetNextItemWidth(300.0f);
+                static glm::vec3 position(0.0f, 0.0f, 0.0f);
+                ImGui::DragFloat3("Position", glm::value_ptr(position), DragStep);
+
+                ImGui::Separator();
+                ImGui::SetNextItemWidth(200.0f);
+                static glm::vec3 Ambient(0.2f);
+                ImGui::DragFloat("Ambient  [ Def. 0.2 ] ", glm::value_ptr(Ambient), DragStep);
+
+                ImGui::Separator();
+                ImGui::SetNextItemWidth(200.0f);
+                static glm::vec3 Diffuse(1.0f);
+                ImGui::DragFloat("Diffuse [ Def. 1.0 ]", glm::value_ptr(Diffuse), DragStep);
+
+                ImGui::Separator();
+                ImGui::SetNextItemWidth(200.0f);
+                static glm::vec3 Specular(0.5f);
+                ImGui::DragFloat("Specular [ Def. 0.5 ] ", glm::value_ptr(Specular), DragStep);
+
+                ImGui::Separator();
+                ImGui::SetNextItemWidth(200.0f);
+                static float Strength = 2.5f;
+                ImGui::DragFloat("Strength [ Def. 2.5 ]", &Strength, DragStep);
+
+                ImGui::Separator();
+                ImGui::SetNextItemWidth(200.0f);
+                static float Attenuation = 0.0f;
+                ImGui::DragFloat("Attenuation [ Def. 0.0 ]", &Attenuation, DragStep);
+
+
+                enginelight.gVideoManager.DirectionalLight.setDirectionalLight(color, position, Ambient, Diffuse, Specular);
+                enginelight.gVideoManager.DirectionalLight.setDirectionalLightAttenuation(Attenuation);
+                enginelight.gVideoManager.DirectionalLight.setDirectionalLightStrength(Strength);
+
             }
-
-
-
-            ImGui::Text("DirectionalLight");
-
-           
-         static glm::vec3 color= enginelight.gVideoManager.DirectionalLight.getDirectionalLightColor();
-           ImGui::SetNextItemWidth(250.0f);
-           ImGui::ColorPicker4("SetColor", (float*)&color, ImGuiColorEditFlags_Float);
-
-          
-           ImGui::SetNextItemWidth(300.0f);
-          static glm::vec3 position (0.0f, 0.0f, 0.0f);
-           ImGui::DragFloat3("Position", glm::value_ptr(position), DragStep);
-
-           ImGui::SetNextItemWidth(200.0f);
-           static glm::vec3 Ambient(0.2f);
-           ImGui::DragFloat("Ambient  [ Def. 0.2 ] ", glm::value_ptr(Ambient),DragStep);
-           ImGui::SetNextItemWidth(200.0f);
-           static glm::vec3 Diffuse(1.0f);
-           ImGui::DragFloat("Diffuse [ Def. 1.0 ]", glm::value_ptr(Diffuse), DragStep);
-           ImGui::SetNextItemWidth(200.0f);
-           static glm::vec3 Specular(0.5f);
-           ImGui::DragFloat("Specular [ Def. 0.5 ] ", glm::value_ptr(Specular),DragStep);
-           ImGui::SetNextItemWidth(200.0f);
-           static float Strength  = 2.5f;
-           ImGui::DragFloat("Strength [ Def. 2.5 ]", &Strength, DragStep);
-           ImGui::SetNextItemWidth(200.0f);
-           static float Attenuation = 0.0f;
-           ImGui::DragFloat("Attenuation [ Def. 0.0 ]", &Attenuation, DragStep);
-              
-    
-           enginelight.gVideoManager.DirectionalLight.setDirectionalLight(color ,position, Ambient, Diffuse, Specular);
-           enginelight.gVideoManager.DirectionalLight.setDirectionalLightAttenuation(Attenuation);
-           enginelight.gVideoManager.DirectionalLight.setDirectionalLightStrength(Strength);
-              
         });
 }
 

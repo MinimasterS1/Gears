@@ -56,13 +56,7 @@ public:
 
     Lighting DirectionalLight;
     
-    std::function<void(unsigned int codepoint)> on_char;
-    std::function<void(int key, int action, int mods)> on_key;
-    std::function<void(int button, int action, int mods)> on_mouse_button;
-    std::function<void(linalg::aliases::float2 pos)> on_cursor_pos;
-    std::function<void(int numFiles, const char** paths)> on_drop;
-
-
+  
     static float getFPS() {
         return FPS;
     }
@@ -100,11 +94,7 @@ public:
     GLFWwindow* get_glfw_window_handle() { return window; };
     bool should_close() const { return !!glfwWindowShouldClose(window); }
     int get_window_attrib(int attrib) const { return glfwGetWindowAttrib(window, attrib); }
-    linalg::aliases::int2 get_window_size() const { linalg::aliases::int2 size; glfwGetWindowSize(window, &size.x, &size.y); return size; }
-    void set_window_size(linalg::aliases::int2 newSize) { glfwSetWindowSize(window, newSize.x, newSize.y); }
-    linalg::aliases::int2 get_framebuffer_size() const { linalg::aliases::int2 size; glfwGetFramebufferSize(window, &size.x, &size.y); return size; }
-    linalg::aliases::float2 get_cursor_pos() const { linalg::aliases::double2 pos; glfwGetCursorPos(window, &pos.x, &pos.y); return linalg::aliases::float2(pos); }
-
+  
     void swap_buffers() { glfwSwapBuffers(window); }
     void close() { glfwSetWindowShouldClose(window, 1); }
 

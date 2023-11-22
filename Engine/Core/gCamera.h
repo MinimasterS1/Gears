@@ -7,8 +7,6 @@
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 
-#include "Editor/linalg.h"
-
 #include <vector>
 
 enum Camera_Movement {
@@ -40,13 +38,8 @@ public:
     glm::vec3 Right;
     glm::vec3 WorldUp;
 
-    float yfov, near_clip, far_clip;
-    linalg::aliases::float3 position;
-    float pitch, yaw;
-    float roll;
 
-   
-
+ 
     float Yaw;
     float Pitch;
     float MovementSpeed;
@@ -169,12 +162,7 @@ public:
         updateCameraVectors();
     }
 
-    void SetRotation(float Roll)
-    {
-        Roll = roll;
-       
-        updateCameraVectors();
-    }
+  
 
 
     void updateCameraVectors()

@@ -2,8 +2,9 @@
 
 #include "gEditor.h"
 #include "Core/gObject.h"
+#include "gContentBrowser.h"
 
-class HeaderPanel : public EditorAPI
+class HeaderPanel : public EditorAPI 
 
 {
 
