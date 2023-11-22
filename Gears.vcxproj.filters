@@ -129,12 +129,6 @@
     <ClCompile Include="Engine\Core\gObject.cpp">
       <Filter>Resource Files\Source Files\Core</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\Editor\gGizmo.cpp">
-      <Filter>Resource Files\Source Files\Editor</Filter>
-    </ClCompile>
-    <ClCompile Include="Engine\Editor\gGizmoInit.cpp">
-      <Filter>Resource Files\Source Files\Editor</Filter>
-    </ClCompile>
     <ClCompile Include="Engine\Core\gParticleEmitter.cpp">
       <Filter>Resource Files\Source Files\Core</Filter>
     </ClCompile>
@@ -245,15 +239,6 @@
     <ClInclude Include="Engine\Core\gDefferedShading.h">
       <Filter>Resource Files\Header Files\Core</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\Editor\linalg.h">
-      <Filter>Resource Files\Header Files\Core</Filter>
-    </ClInclude>
-    <ClInclude Include="Engine\Editor\gUtil.hpp">
-      <Filter>Resource Files\Header Files\Editor</Filter>
-    </ClInclude>
-    <ClInclude Include="Engine\Editor\gGizmo.hpp">
-      <Filter>Resource Files\Header Files\Editor</Filter>
-    </ClInclude>
     <ClInclude Include="Engine\Core\gParticleEmitter.h">
       <Filter>Resource Files\Header Files\Core</Filter>
     </ClInclude>
@@ -289,6 +274,9 @@
     </ClInclude>
     <ClInclude Include="Engine\Core\gShadow.h">
       <Filter>Resource Files\Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\gAnimation.h">
+      <Filter>Resource Files\Source Files\Editor</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

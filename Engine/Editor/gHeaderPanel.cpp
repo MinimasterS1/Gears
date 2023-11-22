@@ -2,7 +2,6 @@
 #include "Core/gCommon.h"
 #include "ImGuiFileDialog.h"
 #include "Core/gResources.h"
-
 #include "Core/Containers/gObjectsList.h"
 
 
@@ -26,13 +25,39 @@ void HeaderPanel::DrawHeaderPanel()
     DrawPanel("Toolbar", ImVec2(0, 0), ImVec2(w, panelHeight), [&]()
         {
            
-         
-
-            if (ImGui::Button("Load ", buttonSize)) {
-                
+        
+     
+            if (ImGui::Button("Load", buttonSize)) {
                 loadLevel.LoadLevel();
             }
 
+
+            
+
+            ImGui::SameLine();
+
+            if (ImGui::Button("Level", buttonSize)) {
+                currentTab = LEVEL;
+                
+            }
+
+
+
+            ImGui::SameLine();
+            if (ImGui::Button("Materials", buttonSize)) {
+                currentTab = MATERIAL;
+            }
+            ImGui::SameLine();
+            if (ImGui::Button("Particles", buttonSize)) {
+                currentTab = PARTICLE;
+            }
+            if (ImGui::Button("Simulation", buttonSize)) {
+                // Действия при нажатии
+            }
+            ImGui::SameLine();
+            if (ImGui::Button("Animations", buttonSize)) {
+                currentTab = ANIMATION;
+            }
             if (ImGui::Button("Save", buttonSize))
             {
                 if (currentTab == PARTICLE)
@@ -48,6 +73,7 @@ void HeaderPanel::DrawHeaderPanel()
                 }
               
             }
+
 
 
             if (ShowSaveFileDialog)
@@ -98,38 +124,150 @@ void HeaderPanel::DrawHeaderPanel()
                 }
             }
 
+            ImGui::Separator();
 
-            if (ImGui::Button("Simulation", buttonSize)) {
-                // Действия при нажатии
+          
+            ImVec2 buttonSize = ImVec2(60, 24);
+
+            if (ImGui::Button("Actor", buttonSize)) {
+                
             }
+            ImGui::SameLine();
 
+            ImGui::Text( "Light:");
 
-            ImGui::SameLine(w / 2 - 4 * buttonSize.x / 2);
+            ImGui::SameLine();
 
-            if (ImGui::Button("Level", buttonSize)) {
-                currentTab = LEVEL;
+            if (ImGui::Button("Direct.", buttonSize)) {
+
+                DirLightProperties = true;
+
+                LOG.Log(Logger::LogLevel::INFO, "bool", DirLightProperties);
+               
             }
 
             ImGui::SameLine();
 
-            if (ImGui::Button("Materials", buttonSize)) {
-                currentTab = MATERIAL;
+            if (ImGui::Button("Spot ", buttonSize)) {
+
             }
 
             ImGui::SameLine();
 
-            if (ImGui::Button("Particles", buttonSize)) {
-                currentTab = PARTICLE;
+            if (ImGui::Button("Point", buttonSize)) {
+
+            }
+          
+            ImGui::SameLine();
+
+
+            ImGui::Text("Trigger: ");
+
+            ImGui::SameLine();
+
+            if (ImGui::Button("Box", buttonSize)) {
+
             }
 
             ImGui::SameLine();
 
-            if (ImGui::Button("Animations", buttonSize)) {
-                currentTab = ANIMATION;
+
+            if (ImGui::Button("Sphere", buttonSize)) {
+
             }
 
+            ImGui::SameLine();
 
+
+            if (ImGui::Button("Cylinder", buttonSize)) {
+
+            }
+
+            ImGui::SameLine();
+
+            ImGui::Text("DragStep: ");
+
+            ImGui::SameLine();
+
+            ImGui::SetNextItemWidth(70.0f);
+            static float tempDragStep = 0.03;
+            if (ImGui::DragFloat("##DragStep", &tempDragStep)) {
+                DragStep = tempDragStep;
+            }
             
+            ImGui::SameLine();
+
+            ImGui::Text("CameraSpeed: ");
+
+            ImGui::SameLine();
+
+
+            ImGui::SetNextItemWidth(70.0f);
+            static float tempCameraSpeed = 1.0f;
+            if (ImGui::DragFloat("##CameraSpeed", &tempCameraSpeed)) {
+               
+            }
+
+            ImGui::SameLine();
+
+            ImGui::Text("Block Volume: ");
+
+            ImGui::SameLine();
+
+            if (ImGui::Button("Box", buttonSize)) {
+
+            }
+
+            ImGui::SameLine();
+
+
+            if (ImGui::Button("Sphere", buttonSize)) {
+
+            }
+
+            ImGui::SameLine();
+
+
+            if (ImGui::Button("Cylinder", buttonSize)) {
+
+            }
+
+            ImGui::SameLine();
+
+        
+
+            ImGui::Text("Sound Source: ");
+
+            ImGui::SameLine();
+
+            if (ImGui::Button("Add ", buttonSize)) {
+
+            }
+
+            ImGui::SameLine();
+            ImGui::Text("Gravity Zone: ");
+
+            ImGui::SameLine();
+
+            if (ImGui::Button(" Add ", buttonSize)) {
+
+            }
+
+            ImGui::SameLine();
+            ImGui::Text("Window Flags: ");
+
+            ImGui::SameLine();
+
+            static bool checkboxValue = false;
+            if (ImGui::Checkbox("##Window Flags ", &checkboxValue))
+            {
+
+            }
+           
+          
+
+       
+
         });
 }
 

@@ -4,7 +4,7 @@
 #include "Game/gActor.h"
 #include "Game/gTerrain.h"
 #include "gParticleEmitter.h"
-
+#include <ImGuizmo.h>
 
 float VideoAPI::FPS = 0.0f;
 float VideoAPI::DeltaTime = 0.0f;
@@ -52,9 +52,7 @@ void VideoAPI::CreateWindow()
     InputManager = new Input(camera);
     InputManager->startUp();
 
-    glfwSetMouseButtonCallback(window, [](GLFWwindow* window, int button, int action, int mods) {
-        auto w = (VideoAPI*)glfwGetWindowUserPointer(window); if (w->on_mouse_button) w->on_mouse_button(button, action, mods);
-        });
+  
 
     glfwSetCursorPosCallback(window, [](GLFWwindow* window, double x, double y) {
         static_cast<VideoAPI*>(glfwGetWindowUserPointer(window))->InputManager->MouseCallback(window, x, y);
@@ -96,7 +94,7 @@ void VideoAPI::Render()
 
     InputManager->update(window, DeltaTime);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-   // glClearColor(0.5f, 0.5f, 0.5f, 0.0f);
+    glClearColor(0.5f, 0.5f, 0.5f, 0.0f);
 
 
     glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
@@ -125,6 +123,12 @@ void VideoAPI::Render()
         
         EditorUI->RenderEditor();
         camera.CameraMode = false;
+
+
+
+       
+
+        
         
     }
     else

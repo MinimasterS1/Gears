@@ -80,7 +80,7 @@ public:
 
     std::string fileSerializeName;
 
-    float DragStep = 0.03;
+    
   
 private:
 
@@ -88,10 +88,7 @@ private:
     std::vector<glm::vec3> initialScale;
     std::vector<glm::vec3> initialRotation;
 
-
-        
-   
-
+ 
 
 };
 

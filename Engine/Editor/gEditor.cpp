@@ -10,6 +10,8 @@
 #include <GLFW/glfw3.h>
 #include <Core/gVideoMg.h>
 
+#include <ImGuizmo.h>
+
 
 MemoryPool ConsoleMemory(800, 1024);
 MemoryPool EditorMemo(800, 1024);
@@ -103,6 +105,8 @@ void EditorAPI::RenderEditor()
             browser->DrawBrowser();
             browser->DrawSceneObjects();
             browser->DrawProperties();
+
+           
         }
        
      
@@ -119,7 +123,7 @@ void EditorAPI::RenderEditor()
         }
 
 
-       
+
 
        
         DrawFrameBuffer();
@@ -168,7 +172,7 @@ void EditorAPI::DrawFrameBuffer()
 
     ImGui::SetNextWindowPos(ImVec2(w / 7, 150));
 
-    ImGui::SetNextWindowSize(ImVec2(w - (w / 3.5), h - 345));
+    ImGui::SetNextWindowSize(ImVec2(w - (w / 3.5), h - 200 ));
 
     ImGuiStyle& default_style = ImGui::GetStyle();
     ImVec4 default_window_bg = default_style.Colors[ImGuiCol_WindowBg];

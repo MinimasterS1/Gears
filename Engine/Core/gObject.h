@@ -12,8 +12,7 @@
 #include <filesystem>
 #include <vector>
 
-#include "gPrimitive.h"
-
+#include <ImGuizmo.h>
 
 
 
@@ -60,6 +59,10 @@ public:
     void AddObject(const SceneObject& object) {
         objects.push_back(object);
     }
+
+
+
+  
 
     void Draw(Camera& camera, int SCR_WIDTH, int SCR_HEIGHT) {
 
